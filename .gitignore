@@ -1,0 +1,28 @@
+# Raw dataset — do not commit (size + Kaggle licensing). Keep only the small sample.
+data/*.csv
+!data/sample_tickets.csv
+
+# Local model / index artifacts
+*.faiss
+*.index
+embeddings/
+.ollama/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# notebook por ahora no lo subo
+notebook/rag_ticket_triage.ipynb
+
+# el index.html es solo para presentar en campus, no subir
+index.html
