@@ -21,7 +21,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# notebook por ahora no lo subo
+# notebook por ahora no lo subo, sigo trabajando en la adecuacion
 notebook/rag_ticket_triage.ipynb
 
 # el index.html es solo para presentar en campus, no subir
