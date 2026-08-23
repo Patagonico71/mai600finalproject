@@ -1,0 +1,21 @@
+Test ID,Input Type,System Version,Output Summary,Metric Used,Score / Result,Observation
+T1,Support ticket,V1 RAG prototype,Queue: Billing and Payments Type: Problem Priority: medium Citations: DOC-001 Draft respon...,Routing accuracy,1/1,routed correctly
+T2,Support ticket,V1 RAG prototype,Queue: Billing and Payments Type: Incident Priority: high Citations: DOC-001 Draft respons...,Routing accuracy,1/1,routed correctly
+T3,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: medium Citations: DOC-003, DOC-008 Draft r...",Routing accuracy,0/1,"routed to General Inquiry, expected Customer Service"
+T4,Support ticket,V1 RAG prototype,"Queue: Technical Support Type: Incident Priority: medium Citations: DOC-010, DOC-005 Draft...",Routing accuracy,0/1,"routed to Technical Support, expected Customer Service"
+T5,Support ticket,V1 RAG prototype,Queue: Returns and Exchanges Type: Change Priority: medium Citations: DOC-007 Draft respon...,Routing accuracy,0/1,"routed to Returns and Exchanges, expected General Inquiry"
+T6,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Problem Priority: high Citations: DOC-003, DOC-005 Draft resp...",Routing accuracy,1/1,routed correctly
+T7,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-006 Draft resp...",Routing accuracy,0/1,"routed to General Inquiry, expected Human Resources"
+T8,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Request Priority: low Citations: DOC-003, DOC-002 Draft respo...",Routing accuracy,0/1,"routed to General Inquiry, expected Human Resources"
+T9,Support ticket,V1 RAG prototype,"Queue: Human Resources Type: Incident Priority: medium Citations: DOC-004, DOC-009 Draft r...",Routing accuracy,0/1,"routed to Human Resources, expected IT Support"
+T10,Support ticket,V1 RAG prototype,"Queue: Technical Support Type: Incident Priority: high Citations: DOC-010, DOC-002 Draft r...",Routing accuracy,0/1,"routed to Technical Support, expected IT Support"
+T11,Support ticket,V1 RAG prototype,"Queue: Service Outages and Maintenance Type: Incident Priority: high Citations: DOC-010, D...",Routing accuracy,0/1,"routed to Service Outages and Maintenance, expected Product Support"
+T12,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: medium Citations: DOC-003, DOC-010 Draft r...",Routing accuracy,0/1,"routed to General Inquiry, expected Product Support"
+T13,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Request Priority: medium Citations: DOC-002, DOC-008 Draft re...",Routing accuracy,0/1,"routed to General Inquiry, expected Returns and Exchanges"
+T14,Support ticket,V1 RAG prototype,"Queue: Customer Service Type: Incident Priority: medium Citations: DOC-002, DOC-007 Draft ...",Routing accuracy,0/1,"routed to Customer Service, expected Returns and Exchanges"
+T15,Support ticket,V1 RAG prototype,Queue: Sales and Pre-Sales Type: Problem Priority: low Citations: DOC-008 Draft response: ...,Routing accuracy,1/1,routed correctly
+T16,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-008 Draft resp...",Routing accuracy,0/1,"routed to General Inquiry, expected Sales and Pre-Sales"
+T17,Support ticket,V1 RAG prototype,"Queue: Service Outages and Maintenance Type: Incident Priority: medium Citations: DOC-009,...",Routing accuracy,1/1,routed correctly
+T18,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-009, DOC-005 D...",Routing accuracy,0/1,"routed to General Inquiry, expected Service Outages and Maintenance"
+T19,Support ticket,V1 RAG prototype,Queue: Sales and Pre-Sales Type: Request Priority: high Citations: DOC-008 Draft response:...,Routing accuracy,0/1,"routed to Sales and Pre-Sales, expected Technical Support"
+T20,Support ticket,V1 RAG prototype,"Queue: Customer Service Type: Request Priority: medium Citations: DOC-002, DOC-006 Draft r...",Routing accuracy,0/1,"routed to Customer Service, expected Technical Support"

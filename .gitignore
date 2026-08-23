@@ -1,6 +1,8 @@
 # Raw dataset — do not commit (size + Kaggle licensing). Keep only the small sample.
 data/*.csv
 !data/sample_tickets.csv
+!data/sample_documents.csv
+!data/test_cases.csv
 
 # Local model / index artifacts
 *.faiss

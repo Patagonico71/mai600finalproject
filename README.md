@@ -1,72 +1,111 @@
 # Local RAG Assistant for Customer Support Ticket Triage
 
-MAI 600 — Module 6 Final Project (Proposal milestone)
-Approach: **Local SLM + RAG** — Llama 3.2 (3B) served with Ollama, retrieval with FAISS and Sentence-Transformers.
+MAI 600 — Final Project. **Current milestone: Module 7 (working prototype / progress report).**
 
-## Overview
+Approach: **local SLM + RAG**. `llama3.2:3b` served by Ollama, retrieval with
+Sentence-Transformers and FAISS. Everything runs on the laptop; no ticket text leaves the
+machine.
 
-Support teams read every incoming ticket, route it to a queue, set a priority, and write a first reply — by hand, which is slow and inconsistent. This project builds an assistant that runs on the agent's own machine and, for each new ticket, retrieves the most similar resolved tickets and drafts a triage (suggested queue, type, priority, and a first-response reply) with citations back to the tickets it used. Running locally keeps ticket text in-house instead of sending it to a cloud API.
+## What it does
 
-This repository currently holds the **proposal milestone**: it defines the problem, the data, the approach, the baseline, the evaluation plan, and the risks. The full system is built in the next milestone.
+A support ticket comes in. The system retrieves similar past cases from a knowledge base
+built out of the team's own resolution history, then asks a locally served small language
+model to triage it: routing queue, ticket type, priority, a draft first response, and
+citations back to the sources used.
 
-## Approach
+## Results so far
 
-- **Generation:** Llama 3.2 (3B) via Ollama, running locally.
-- **Retrieval:** past resolved tickets embedded with `all-MiniLM-L6-v2` (Sentence-Transformers) and searched with a FAISS index.
-- **Grounding:** for a new ticket, the top-k similar tickets are passed as context; every factual part of the draft cites the ticket it came from.
-- **Baseline:** the same model prompted zero-shot, with no retrieval, so the RAG version can be measured against it.
+Three columns, 20 held-out tickets. The **majority class** column answers
+every ticket with the most frequent label and uses no model — it is the floor a real system
+has to clear. V0 and V1 use the same model, so retrieval is the only variable between them.
+
+| Metric | Majority class | V0 baseline | V1 RAG |
+|---|---|---|---|
+| Routing accuracy | 0.10 | 0.00 | **0.25** |
+| Queue validity | 1.00 | 0.00 | **1.00** |
+| Type accuracy | **0.50** | 0.45 | 0.45 |
+| Priority accuracy | 0.35 | 0.40 | 0.40 |
+| Retrieval hit rate @5 | n/a | n/a | 0.50 |
+| Citation accuracy | n/a | n/a | 0.45 |
+| Mean response time | n/a | 2.0s | 1.9s |
+
+Two things to read here.
+
+**Queue routing works and retrieval is why.** Without it the model invents queue names that
+do not exist — "Excessive Billing Inquiry", "Adobe Premiere Pro Crash Investigation" — because
+the list of real queues is organisation-specific knowledge it has no way to know. Validity
+goes 0.00 to 1.00, and routing beats the
+0.10 floor.
+
+**Type and priority do not work yet.** Both sit at or barely above the majority-class floor.
+Answering "Incident" to every ticket would score higher on type than either system does.
+This is written up rather than buried; see `progress_report.md`.
+
+## Documents
+
+| File | What it is |
+|---|---|
+| `progress_report.md` | Module 7 progress report — the main deliverable |
+| `methodology_draft.md` | Draft methodology section for the final article |
+| `preliminary_results.md` | Draft preliminary results section |
+| `ai_usage_disclosure.md` | How AI tools were used, and what they got wrong |
+| `proposal.md` | Module 6 proposal |
+| `docs/REFERENCES.md` | Sources and links |
+
+## Running it
+
+Requires Ollama with `llama3.2:3b` pulled, and the Kaggle dataset in `data/`.
+
+```bash
+python3 -m venv venv && source venv/bin/activate
+pip install pandas numpy matplotlib scikit-learn sentence-transformers faiss-cpu requests jupyter
+ollama pull llama3.2:3b
+jupyter notebook notebooks/module7_project_progress_colab.ipynb
+```
+
+Headless:
+
+```bash
+jupyter nbconvert --to notebook --execute --inplace notebooks/module7_project_progress_colab.ipynb
+```
+
+The notebook writes everything under `results/` and `images/`, and regenerates
+`methodology_draft.md` and `preliminary_results.md` with the numbers from that run, so the
+reports cannot drift from the results.
 
 ## Dataset
 
-*Customer IT Support — Ticket Dataset* (tobiasbueck / Open Ticket AI), public and synthetic, from Kaggle:
-https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets
+*Customer IT Support — Ticket Dataset* (tobiasbueck / Open Ticket AI), public and
+synthetic: https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets
 
-20,000 tickets across several languages; this project uses the English subset (~12,800). Each row has a subject, body, agent answer, type, queue, priority, language, and up to eight tags.
-
-The raw dataset is **not committed** to this repo (size and Kaggle licensing). Download it from the link above and place it under `data/`. A small sample (`data/sample_tickets.csv`) is included so the notebook can run end to end without the full download.
+20,000 tickets; this project uses the 11,919 English rows with a complete subject, body,
+answer, queue, type and priority. The raw CSV is **not committed** (size and Kaggle
+licensing) — download it and place it in `data/`.
 
 ## Repository structure
 
 ```
 .
-├── README.md                     # this file
-├── proposal.md                   # the 14-section proposal (main deliverable)
-├── docs/
-│   ├── AI_USAGE_DISCLOSURE.md     # how AI tools were used and verified
-│   └── REFERENCES.md             # sources and links
+├── progress_report.md              # Module 7 deliverable
+├── methodology_draft.md            # generated by the notebook
+├── preliminary_results.md          # generated by the notebook
+├── ai_usage_disclosure.md
+├── proposal.md                     # Module 6
 ├── data/
-│   ├── sample_tickets.csv        # small sample (safe to commit)
-│   └── .gitkeep                  # full dataset goes here, not committed
-├── notebook			  # the python code
-├── results			   # the results of the RAG
-└── images			  # images of the process and result
-
+│   ├── sample_documents.csv        # the 10 queue documents
+│   ├── test_cases.csv              # held-out test tickets
+│   └── sample_tickets.csv          # small sample of the raw data
+├── notebooks/
+│   ├── module7_project_progress_colab.ipynb   # the Module 7 prototype
+│   └── rag_ticket_triage.ipynb                # Module 6 exploratory notebook
+├── results/                        # CSVs written by the notebook
+├── images/                         # charts and pipeline diagram
+└── docs/
 ```
 
+## Milestones
 
-## How to run the prototype
+Tagged per module so each submission can be read on its own:
 
-1. Install Ollama: https://ollama.com
-2. Pull the model:
-   ```
-   ollama pull llama3.2:3b
-   ```
-3. Install the Python dependencies:
-   ```
-   pip install pandas sentence-transformers faiss-cpu requests
-   ```
-4. Open `notebook/ollama_rag_starter.ipynb` and point it at your local dataset (or the included sample). It chunks the tickets, builds the FAISS index, retrieves similar tickets, and calls the local Ollama model to generate a cited triage.
-
-Ollama must be running locally (it listens on `http://localhost:11434`) before you run the retrieval-and-generation cells.
-
-## Evaluation plan
-
-Three RAG metrics plus two that fit a local triage assistant: retrieval hit rate, citation accuracy, groundedness, routing accuracy (queue / type / priority vs. the real labels), and response time. Targets and measurement details are in `proposal.md`, Section 11.
-
-## Project status
-
-Module 6 — proposal milestone. The next milestone builds and evaluates the system described here.
-
-## AI usage and academic integrity
-
-See `docs/AI_USAGE_DISCLOSURE.md`. All data used is public and synthetic; no real, confidential, or protected information is included.
+- `assignment-6` — proposal
+- `assignment-7` — this prototype

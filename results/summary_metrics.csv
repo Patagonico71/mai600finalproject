@@ -1,0 +1,4 @@
+version,num_tests,routing_accuracy,type_accuracy,priority_accuracy,queue_validity,retrieval_hit_rate,vote_source_match,citation_accuracy,format_adherence,avg_response_time_s,avg_answer_chars
+V_majority_class,20,0.1,0.5,0.35,1.0,,,,,,
+V0_baseline,20,0.0,0.4,0.35,0.0,0.0,0.0,0.0,1.0,1.847,374.65
+V1_rag,20,0.25,0.45,0.4,1.0,0.5,0.3,0.4,1.0,2.622,375.7
