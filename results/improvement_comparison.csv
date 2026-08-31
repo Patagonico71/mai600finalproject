@@ -1,0 +1,9 @@
+Area,Module 7 prototype,Module 8 final,Improvement evidence
+Data integrity,no duplicate check,"de-duplicated at 0.90, asserted in the notebook","highest test-to-knowledge-base similarity 0.899, below threshold; raw corpus scored 0.68 on queue prediction purely from near-duplicate leakage"
+Knowledge base,"140 cases, sampled at random","1,782 cases, balanced across queues",generic-queue fallback fell from 8/50 to 2/50 predictions
+Routing accuracy,0.25,0.30,"McNemar against the no-retrieval baseline: p = 0.0001, 15 tickets corrected, 0 broken"
+Type accuracy,0.45 (below the 0.50 floor),0.72 (floor 0.40),the Module 7 finding was a small-sample artefact and is corrected here
+Queue vote,sum of similarities,mean of similarities,offline ablation over logged retrievals: mean ranks the correct queue first 0.24 of the time against 0.18 for sum
+Test set,20 tickets,50 tickets,5 per queue instead of 2
+Statistics,none,McNemar on every paired comparison,differences are now reported with a p-value instead of asserted from a delta
+Error analysis,counts only,failure attributed to pipeline stage,results/error_taxonomy.csv

@@ -1,0 +1,7 @@
+reference,dimensions,top_1,top_3
+Majority-class floor,,0.1,
+V0 - no retrieval,,0.0,
+V2 - RAG pipeline (this system),384.0,0.3,
+Supervised classifier on all-MiniLM-L6-v2,384.0,0.34,0.54
+Supervised classifier on BAAI/bge-base-en-v1.5,768.0,0.36,0.58
+Supervised classifier on intfloat/e5-base-v2,768.0,0.4,0.56

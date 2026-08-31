@@ -1,0 +1,50 @@
+You are a support triage assistant. Use the retrieved knowledge base
+passages below to triage the new ticket. The passages come from the support team's own
+resolution history, so the queue, type and priority labels they carry are the valid ones.
+
+Retrieved context:
+Source: DOC-002 | queue: Customer Service | type: Problem | priority: medium
+Past ticket: Concern Regarding Data Analytics Tool Malfunction. To the support team. Please review the following detailed issue: Event: The data analytics tools are not producing reports. Possible reason: software compatibility could be the issue. Actions taken: Systems were restarted and software updates were checked.
+How it was resolved: Dear [name], we regret the inconvenience caused by the malfunction of your data analytics tools. Since you have already tried restarting the systems and verifying software updates, could you now provide us with more details on the suspected software compatibility issues? We will look into this and might need to contact you at [tel_num] to address potential solutions. Kindly inform us if you are av
+
+Source: DOC-006 | queue: Product Support | type: Incident | priority: high
+Past ticket: Reported Issue with Investment Data Analytics Tools. Dear Customer Support, I am contacting you to report a problem with our investment data analytics tools. The tools have all malfunctioned at the same time, and we are uncertain of the reason. We believe the issue could be due to software compatibility or recent updates. We have attempted to resolve the problem by restarting the systems, checking
+How it was resolved: Dear [Your Name], thank you for notifying us about the issue with your investment data analytics tools. We apologize for the inconvenience this has caused. To help us investigate the problem further, could you provide us with the exact error messages you are receiving and the versions of the software and operating system you are using? Additionally, would it be convenient for you to have a call to
+
+Source: DOC-010 | queue: Technical Support | type: Incident | priority: low
+Past ticket: Assistance with Sluggish Data Analytics Tools. Noticing that the financial firm's data analytics tools are running slowly during peak hours. Potential reasons could be insufficient system resources or software conflicts. Improvements might be achieved by optimizing settings and restarting applications.
+How it was resolved: We appreciate you reaching out about the slow performance of your data analytics tools during peak hours. To better investigate the issue, we would like to gather more information about your system configuration and any specific error messages you are encountering. Could you please provide us with details about your setup and any steps you have already taken? We would need to schedule a call at yo
+
+Source: DOC-005 | queue: IT Support | type: Problem | priority: medium
+Past ticket: Problem with the data analytics software. The data analytics software isn't functioning correctly because of incompatible updates. Despite restarting the system and looking for updates, the issue still exists.
+How it was resolved: Thank you for your email concerning the data analytics software issue. For effective resolution, could you please share the current version of the software you are using? After receiving this information, I will be able to address the problem related to incompatible updates and assist you in getting the software operational again.
+
+Source: DOC-003 | queue: General Inquiry | type: Incident | priority: low
+Past ticket: Inquiry About Data Analytics Tool Malfunction. Dear Customer Support, I am writing to report an issue with our data analytics tools. The tools have malfunctioned, and we suspect a possible software incompatibility. We have attempted to restart the systems and check for updates, but the issue still persists. This incident occurred recently, and we are concerned about its ongoing impact on our opera
+How it was resolved: Dear [Your Name], I acknowledge receipt of your email concerning the troubles with your data analytics tools. I will look into the software incompatibility issue and work on a solution. To better assist you, could you please provide the version numbers of the software and tools you are currently using? If necessary, I can arrange a call to discuss further at [Tel Number] or at a time that suits yo
+
+New ticket:
+{{TICKET_SUBJECT_AND_BODY}}
+
+The retrieved evidence ranks these queues as candidates, strongest first:
+  1. Customer Service  (retrieval score 0.802)
+  2. Product Support  (retrieval score 0.802)
+  3. Technical Support  (retrieval score 0.794)
+  4. IT Support  (retrieval score 0.793)
+  5. General Inquiry  (retrieval score 0.771)
+
+Rules for the Queue field:
+1. Choose one queue from the candidate list above. Do not invent a queue name and do not
+   use a queue that is not listed.
+2. The top-ranked candidate is the default. Choose a lower-ranked one only if the ticket
+   clearly belongs there, and say why in the draft response.
+3. Judge type and priority from the ticket itself -- a retrieved case may be similar in
+   topic but differ in urgency.
+
+Answer in exactly this format, one field per line:
+
+Queue: <the support queue this ticket should be routed to>
+Type: <Incident, Request, Problem, or Change>
+Priority: <low, medium, or high>
+Citations: <the DOC ids you used, or NONE>
+Draft response: <two or three sentences to send to the customer>

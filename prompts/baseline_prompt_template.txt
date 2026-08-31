@@ -1,0 +1,12 @@
+You are a support triage assistant. Triage the new ticket below.
+
+New ticket:
+{{TICKET_SUBJECT_AND_BODY}}
+
+Answer in exactly this format, one field per line:
+
+Queue: <the support queue this ticket should be routed to>
+Type: <Incident, Request, Problem, or Change>
+Priority: <low, medium, or high>
+Citations: <the DOC ids you used, or NONE>
+Draft response: <two or three sentences to send to the customer>

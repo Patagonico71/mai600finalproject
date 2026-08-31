@@ -25,3 +25,8 @@ Thumbs.db
 
 # el index.html es solo para presentar en campus, no subir
 index.html
+
+# npm — only used to generate the APA article with docx-js
+node_modules/
+package.json
+package-lock.json

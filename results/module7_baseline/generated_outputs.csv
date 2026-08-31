@@ -1,0 +1,229 @@
+test_id,version,model,used_retrieval,question,true_queue,true_type,true_priority,expected_source,retrieved_vote_source,top_retrieved_source,retrieval_hit_topk,generated_answer,response_time_s,answer_chars,pred_queue,pred_queue_raw,queue_valid,pred_type,pred_priority,citations
+T1,V0_baseline,llama3.2:3b,0,"Excessive Billing Inquiry. There are unexpected charges on your monthly invoice due to potential misconfigurations in your subscription settings. You have already contacted support and reviewed the settings, but the issue still exists.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Excessive Billing Inquiry
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear [Customer Name], 
+We apologize for the unexpected charges on your recent invoice. 
+Our team will review your subscription settings again to identify the cause of the issue and provide a resolution as soon as possible. 
+We will be in touch with you shortly to discuss the next steps.",4.4,384,,Excessive Billing Inquiry,0,Problem,medium,NONE
+T2,V0_baseline,llama3.2:3b,0,"Detected Payment Processing Problem. I encountered an unexpected payment failure during the renewal of my subscription. It may be because my payment method is outdated. After reviewing my account settings, I did not find a solution. I would greatly appreciate your help in resolving this to avoid any interruptions to my subscription.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Payment Processing
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+We apologize for the unexpected payment failure during your subscription renewal. 
+Our team will review your account settings and payment method to determine the cause of the issue and provide a solution as soon as possible. 
+Please allow us to investigate this further and we will be in touch with an update.",2.24,417,,Payment Processing,0,Problem,medium,NONE
+T3,V0_baseline,llama3.2:3b,0,Campaign Data Lost in HubSpot CRM Linked to SAP ERP Integration. Your campaign data has vanished from HubSpot CRM because of problems with the SAP ERP integration. You have already restarted the NAS-System and verified your network settings.,Customer Service,Incident,medium,DOC-002,,,0,"Queue: SAP Integration Support
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Thank you for reaching out to us regarding the lost campaign data in HubSpot CRM. We're sorry to hear that the SAP ERP integration issue has caused this issue. We'll need to investigate further to resolve this issue and retrieve your data.""",1.85,334,,SAP Integration Support,0,Incident,high,NONE
+T4,V0_baseline,llama3.2:3b,0,"Reported Slow Performance in Applications. Multiple software applications are currently experiencing slow performance. This might be due to conflicting updates or insufficient system resources. Steps like restarting and freeing up resources have been attempted, but the issue still persists.",Customer Service,Incident,low,DOC-002,,,0,"Queue: Critical System Issue
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: ""Thank you for reaching out to us about the slow performance in your applications. We'll be happy to assist you in resolving this issue. Can you please provide more information about the applications experiencing slow performance, such as their names and versions?""",1.82,355,,Critical System Issue,0,Problem,high,NONE
+T5,V0_baseline,llama3.2:3b,0,"Update to Digital Toolkit. Hello Customer Support, I am contacting you to request an upgrade to our digital toolkit to include new software integrations. This upgrade is crucial for us to improve our brand growth strategies and campaign management. The new integrations will allow us to handle our campaigns more efficiently and effectively, track our progress, and base our decisions on data. I believe this upgrade is vital for our company's ongoing success. I would greatly appreciate an estimate of when this can be done. Thank you for your time and help. I look forward to your response.",General Inquiry,Change,low,DOC-003,,,0,"Queue: Digital Toolkit Upgrade
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us about upgrading your digital toolkit. We'd be happy to help you explore new software integrations that can improve your brand growth strategies and campaign management. Can you please provide more information about the specific integrations you're interested in and what your current setup looks like?",2.07,428,,Digital Toolkit Upgrade,0,Request,medium,NONE
+T6,V0_baseline,llama3.2:3b,0,"Issue with Inconsistent Results in Investment Optimization Tool. Dear Customer Support, I have been encountering inconsistent results with the investment optimization analytics tool. It seems that recent changes to the data sources might be the cause. After attempting to refresh the data sources and recalibrate the analytics model, the issue still persists. I have also ensured that my system meets all the necessary requirements and checked for any software updates. However, the inconsistent results continue to impact my ability to make informed investment decisions. Could you please assist in resolving this issue?",General Inquiry,Incident,low,DOC-003,,,0,"Queue: Investment Optimization Tool Support
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+Thank you for reaching out to us about the inconsistent results in your investment optimization analytics tool. 
+We'll be happy to help you resolve this issue and would like to schedule a call to discuss further.",1.72,338,,Investment Optimization Tool Support,0,Problem,medium,NONE
+T7,V0_baseline,llama3.2:3b,0,Technical Issue with Data Synchronization Across Platforms. We are currently experiencing discrepancies in reports and analytics tools due to an integration problem.,Human Resources,Problem,low,DOC-004,,,0,"Queue: Technical Issue Queue
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+We're sorry to hear that you're experiencing discrepancies in your reports and analytics tools. Our team is investigating the integration issue and will work to resolve the problem as soon as possible. In the meantime, please let us know if you have any further questions or concerns.",1.78,377,,Technical Issue Queue,0,Problem,medium,NONE
+T8,V0_baseline,llama3.2:3b,0,"Support for Digital Marketing Strategies. Enhance digital marketing strategies tools to boost brand growth and improve customer engagement, aiming to effectively reach the target audience.",Human Resources,Change,medium,DOC-004,,,0,"Queue: Digital Marketing Strategies
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us about enhancing our digital marketing strategies tools. We'd be happy to help you explore ways to boost brand growth and improve customer engagement. Can you please provide more information about your current digital marketing efforts and what you're hoping to achieve?",1.64,401,,Digital Marketing Strategies,0,Request,medium,NONE
+T9,V0_baseline,llama3.2:3b,0,"Problem with SaaS system. The SaaS system has failed, leading to data loss and hindering our workflow. We have rebooted the server and reviewed the logs, yet the issue remains unresolved.",IT Support,Problem,high,DOC-005,,,0,"Queue: Critical Incident Response
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: ""Our team is actively investigating the issue and working to resolve the problem as soon as possible. We apologize for the inconvenience this has caused and will keep you updated on our progress. In the meantime, please reach out to us if you have any further questions or concerns.""",1.62,378,,Critical Incident Response,0,Problem,high,NONE
+T10,V0_baseline,llama3.2:3b,0,Problem with Adobe Premiere Pro. Encountered system crashes while editing videos in Adobe Premiere Pro 2021,IT Support,Incident,high,DOC-005,,,0,"Queue: Premiere Pro Crash Reports
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: ""Sorry to hear that you're experiencing system crashes while editing videos in Adobe Premiere Pro 2021. Can you please provide more details about the crashes, such as when they occur and any error messages you see? This will help us troubleshoot the issue and provide a more accurate solution.""",1.84,391,,Premiere Pro Crash Reports,0,Problem,medium,NONE
+T11,V0_baseline,llama3.2:3b,0,Unanticipated Crash of Campaign. The digital campaign abruptly stopped functioning. Possible reasons include incompatible recent software updates. Restarting the system and verifying compatibility did not resolve the problem. Urgent assistance is required to address this.,Product Support,Incident,low,DOC-006,,,0,"Queue: Critical Campaign Support
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Thank you for reaching out to us regarding the unanticipated crash of your campaign. Our team is here to assist you in resolving this issue as soon as possible. Please allow us to investigate the cause and provide a solution.""",1.53,322,,Critical Campaign Support,0,Incident,high,NONE
+T12,V0_baseline,llama3.2:3b,0,"Concern about Campaign Analytics Dashboard. The campaign analytics dashboard is not showing data, which may be due to an API connection problem or outdated software. I have already tried restarting the system and verifying the API credentials.",Product Support,Problem,medium,DOC-006,,,0,"Queue: Campaign Analytics Dashboard
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: ""Thank you for reaching out to us about the issue with your Campaign Analytics Dashboard. We've checked the API connection and software, but couldn't find any issues. Can you please provide more details about the error message you're seeing or any recent changes you've made to your setup?""",1.6,389,,Campaign Analytics Dashboard,0,Problem,medium,NONE
+T13,V0_baseline,llama3.2:3b,0,"Enhance Efficiency of Excel Data Imports for Investment Analytics. Hello support team, I am contacting you to seek help in optimizing the process of importing data from Excel to enhance investment analytics and reporting efficiency. Our team currently devotes much time to manually transferring data from Excel sheets, which can result in inaccuracies and delays. I believe that by improving this procedure, we could increase our productivity and improve our returns. Could you provide advice on how to optimize our data import procedure? I would be grateful for any suggestions or solutions you can offer. Thank you for your time and assistance. We are looking forward to your prompt response.",Returns and Exchanges,Change,low,DOC-007,,,0,"Queue: Investment Analytics Optimization
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+Thank you for reaching out to us about optimizing your Excel data import process. We'd be happy to help you explore ways to improve your data import efficiency and accuracy. 
+Please allow us to review your current process and provide a more detailed response.",2.09,382,,Investment Analytics Optimization,0,Request,medium,NONE
+T14,V0_baseline,llama3.2:3b,0,Campaign Engagement Issues Reported. The recent campaign did not succeed due to technical problems. Our attempts to resolve these issues have been unsuccessful.,Returns and Exchanges,Incident,medium,DOC-007,,,0,"Queue: Campaign Engagement Issues
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+We apologize for the technical issues that prevented your recent campaign from succeeding. Our team is actively working to resolve the problem, and we will provide an update on the status of the fix as soon as it is available. In the meantime, we can discuss alternative solutions to help you achieve your campaign goals.",1.71,417,,Campaign Engagement Issues,0,Problem,high,NONE
+T15,V0_baseline,llama3.2:3b,0,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,,,0,"Queue: Digital Campaign Support
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+Thank you for reaching out to us about your digital campaign engagement challenges. We'd be happy to help you refresh your approach and improve engagement. Our team will review your current strategies and provide recommendations and resources to better understand your audience and create more effective campaigns.",1.65,410,,Digital Campaign Support,0,Request,medium,NONE
+T16,V0_baseline,llama3.2:3b,0,"Support Needed for Marketing Campaign. We launched a digital marketing campaign but are seeing low engagement and conversion rates. This may be due to inadequate targeting or ineffective messaging. Despite adjusting the ad spend and refining the audience segments, we haven't seen significant improvements. We would appreciate some guidance on how to optimize the campaign to achieve better results.",Sales and Pre-Sales,Problem,medium,DOC-008,,,0,"Queue: Marketing Campaign Optimization
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: Our team is happy to help you optimize your marketing campaign. Can you please provide more details on your current targeting and messaging strategy, as well as any recent adjustments you've made to the ad spend and audience segments?",1.39,336,,Marketing Campaign Optimization,0,Problem,medium,NONE
+T17,V0_baseline,llama3.2:3b,0,Service Interruption. Seek information on service interruptions impacting investment optimization tools.,Service Outages and Maintenance,Change,high,DOC-009,,,0,"Queue: Investment Optimization Tools Support
+Type: Incident
+Priority: Medium
+Citations: NONE
+Draft response: We are currently investigating reports of service interruptions impacting investment optimization tools. Our team is working to resolve the issue as soon as possible. In the meantime, please contact us at [insert contact info] for assistance.",1.3,351,,Investment Optimization Tools Support,0,Incident,medium,NONE
+T18,V0_baseline,llama3.2:3b,0,"Platform Crash. Hello Customer Support, I am reporting an unexpected crash of the data analytics platform. It might have been caused by a server overload. Despite my efforts to restart the servers and review the configurations, the problem still exists. I would be grateful if you could look into this and provide a solution promptly. Our business relies heavily on this tool, and its downtime is affecting our operations significantly. Please provide any additional information needed to address this issue and get back to me. I am ready to offer any necessary details or help. I appreciate your swift action on this matter and look forward to your response. The platform's crash is causing considerable disruptions, and I am hopeful we can resolve it swiftly with your support. Please contact me if further information is required. Thank you for your assistance.",Service Outages and Maintenance,Incident,high,DOC-009,,,0,"Queue: Platform Crash
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: 
+""Thank you for reaching out to us regarding the data analytics platform crash. Our team is actively investigating the issue and will work to resolve it as soon as possible. We appreciate your patience and understanding as we work to minimize the impact on your business operations.""",1.67,367,,Platform Crash,0,Incident,high,NONE
+T19,V0_baseline,llama3.2:3b,0,"Enhancing Brand Expansion Through Products. Dear Customer Support, I am writing to seek insights on the digital strategies that can enhance brand expansion through the products your company offers. I am eager to learn how to effectively leverage these products to boost brand visibility and connect with a broader audience. Could you share details on the most successful digital strategies utilized by other clients? Your guidance and suggestions would be greatly appreciated. Moreover, I am interested in understanding the tools and resources available to support brand growth. Thank you for your time and assistance. I look forward to your response.",Technical Support,Request,high,DOC-010,,,0,"Queue: Brand Expansion and Growth
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear valued customer, 
+We'd be happy to help you explore digital strategies to enhance brand expansion through our products. 
+Please allow 3-5 business days for a response to your inquiry.",1.4,286,,Brand Expansion and Growth,0,Request,medium,NONE
+T20,V0_baseline,llama3.2:3b,0,"Marketing Assistance. Seeking to enhance digital marketing strategies for products affected by recent changes. Believe integrating these efforts will boost brand visibility and customer engagement. Suggestions include social media campaigns, email marketing, and targeted advertising. Looking forward to your guidance. Kindly let me know a suitable time for a meeting to discuss further.",Technical Support,Change,high,DOC-010,,,0,"Queue: Marketing Assistance
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us regarding your marketing assistance needs. We'd be happy to help you enhance your digital marketing strategies and boost brand visibility and customer engagement. Can you please provide more information about the specific changes affecting your products and what you're hoping to achieve with our guidance?",1.62,430,,Marketing Assistance,0,Request,medium,NONE
+T1,V1_rag,llama3.2:3b,1,"Excessive Billing Inquiry. There are unexpected charges on your monthly invoice due to potential misconfigurations in your subscription settings. You have already contacted support and reviewed the settings, but the issue still exists.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Problem
+Priority: medium
+Citations: DOC-001
+Draft response: We've reviewed your subscription settings and billing history, but the issue persists. To further assist you, could you please provide more details about the discrepancies you've found?",2.34,279,Billing and Payments,Billing and Payments,1,Problem,medium,DOC-001
+T2,V1_rag,llama3.2:3b,1,"Detected Payment Processing Problem. I encountered an unexpected payment failure during the renewal of my subscription. It may be because my payment method is outdated. After reviewing my account settings, I did not find a solution. I would greatly appreciate your help in resolving this to avoid any interruptions to my subscription.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Incident
+Priority: high
+Citations: DOC-001
+Draft response: Hello, I'm here to help you resolve the payment processing problem with your subscription renewal. Could you please provide your account number and the date of the failed payment so I can investigate and assist you further?",2.35,316,Billing and Payments,Billing and Payments,1,Incident,high,DOC-001
+T3,V1_rag,llama3.2:3b,1,Campaign Data Lost in HubSpot CRM Linked to SAP ERP Integration. Your campaign data has vanished from HubSpot CRM because of problems with the SAP ERP integration. You have already restarted the NAS-System and verified your network settings.,Customer Service,Incident,medium,DOC-002,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Incident
+Priority: medium
+Citations: DOC-003, DOC-008
+Draft response: Thank you for reaching out about the issue with your campaign data being lost in HubSpot CRM due to problems with the SAP ERP integration. We apologize for the inconvenience this has caused and would like to help resolve the issue. Can you please provide more details about the last time you noticed the data was accurate and any error messages you've encountered?",2.9,463,General Inquiry,General Inquiry,1,Incident,medium,"DOC-003, DOC-008"
+T4,V1_rag,llama3.2:3b,1,"Reported Slow Performance in Applications. Multiple software applications are currently experiencing slow performance. This might be due to conflicting updates or insufficient system resources. Steps like restarting and freeing up resources have been attempted, but the issue still persists.",Customer Service,Incident,low,DOC-002,DOC-010,DOC-007,0,"Queue: Technical Support
+Type: Incident
+Priority: medium
+Citations: DOC-010, DOC-005
+Draft response: I will examine your concern and reach out to you at <tel_num> to explore additional troubleshooting methods and solutions. Can you please provide more details about the applications experiencing slow performance, such as the software versions and any error messages you've encountered?",2.44,386,Technical Support,Technical Support,1,Incident,medium,"DOC-010, DOC-005"
+T5,V1_rag,llama3.2:3b,1,"Update to Digital Toolkit. Hello Customer Support, I am contacting you to request an upgrade to our digital toolkit to include new software integrations. This upgrade is crucial for us to improve our brand growth strategies and campaign management. The new integrations will allow us to handle our campaigns more efficiently and effectively, track our progress, and base our decisions on data. I believe this upgrade is vital for our company's ongoing success. I would greatly appreciate an estimate of when this can be done. Thank you for your time and help. I look forward to your response.",General Inquiry,Change,low,DOC-003,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Type: Change
+Priority: medium
+Citations: DOC-007
+Draft response: Thank you for reaching out to us regarding the upgrade to your digital toolkit. We'll investigate the matter and provide an update on the feasibility and timeline for implementation. We'll be in touch soon to discuss further.",2.49,319,Returns and Exchanges,Returns and Exchanges,1,Change,medium,DOC-007
+T6,V1_rag,llama3.2:3b,1,"Issue with Inconsistent Results in Investment Optimization Tool. Dear Customer Support, I have been encountering inconsistent results with the investment optimization analytics tool. It seems that recent changes to the data sources might be the cause. After attempting to refresh the data sources and recalibrate the analytics model, the issue still persists. I have also ensured that my system meets all the necessary requirements and checked for any software updates. However, the inconsistent results continue to impact my ability to make informed investment decisions. Could you please assist in resolving this issue?",General Inquiry,Incident,low,DOC-003,DOC-003,DOC-003,1,"Queue: General Inquiry
+Type: Problem
+Priority: high
+Citations: DOC-003, DOC-005
+Draft response: Thank you for reaching out to us about the inconsistent results in your investment optimization analytics tool. We'll look into this matter and verify if recent changes to the data sources are the cause of the issue. Please provide more details about the data sources you've updated and the specific results you're experiencing.",3.16,424,General Inquiry,General Inquiry,1,Problem,high,"DOC-003, DOC-005"
+T7,V1_rag,llama3.2:3b,1,Technical Issue with Data Synchronization Across Platforms. We are currently experiencing discrepancies in reports and analytics tools due to an integration problem.,Human Resources,Problem,low,DOC-004,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Incident
+Priority: low
+Citations: DOC-003, DOC-006
+Draft response: Thank you for reaching out about the discrepancies in reports and analytics tools. Could you please provide more information about the specific issue you're experiencing, such as the platforms involved and any error messages you've encountered?",2.52,340,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-006"
+T8,V1_rag,llama3.2:3b,1,"Support for Digital Marketing Strategies. Enhance digital marketing strategies tools to boost brand growth and improve customer engagement, aiming to effectively reach the target audience.",Human Resources,Change,medium,DOC-004,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Request
+Priority: low
+Citations: DOC-003, DOC-002
+Draft response: Thank you for reaching out to us about enhancing your digital marketing strategies. We'd be happy to provide guidance on tools and methods to boost brand growth and improve customer engagement. Please allow us to review your request and get back to you soon.",2.5,353,General Inquiry,General Inquiry,1,Request,low,"DOC-003, DOC-002"
+T9,V1_rag,llama3.2:3b,1,"Problem with SaaS system. The SaaS system has failed, leading to data loss and hindering our workflow. We have rebooted the server and reviewed the logs, yet the issue remains unresolved.",IT Support,Problem,high,DOC-005,DOC-009,DOC-004,0,"Queue: Human Resources
+Type: Incident
+Priority: medium
+Citations: DOC-004, DOC-009
+Draft response: We acknowledge the receipt of your email regarding the reported issue with the SaaS system failure. We understand that the issue has resulted in data loss and hindered your workflow. Please provide any additional details or error messages you have encountered to assist in resolving the issue.",2.64,392,Human Resources,Human Resources,1,Incident,medium,"DOC-004, DOC-009"
+T10,V1_rag,llama3.2:3b,1,Problem with Adobe Premiere Pro. Encountered system crashes while editing videos in Adobe Premiere Pro 2021,IT Support,Incident,high,DOC-005,DOC-010,DOC-005,1,"Queue: Technical Support
+Type: Incident
+Priority: high
+Citations: DOC-010, DOC-002
+Draft response: 
+Dear customer, 
+Thank you for reaching out to us regarding the system crashes in Adobe Premiere Pro 2021. 
+I will look into the issue and arrange a call to discuss the problem and explore potential solutions to prevent future occurrences at a convenient time.",2.84,359,Technical Support,Technical Support,1,Incident,high,"DOC-010, DOC-002"
+T11,V1_rag,llama3.2:3b,1,Unanticipated Crash of Campaign. The digital campaign abruptly stopped functioning. Possible reasons include incompatible recent software updates. Restarting the system and verifying compatibility did not resolve the problem. Urgent assistance is required to address this.,Product Support,Incident,low,DOC-006,DOC-009,DOC-009,0,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: high
+Citations: DOC-010, DOC-005
+Draft response: Our system is currently experiencing an unanticipated crash of a digital campaign. We are investigating the cause and will reach out to you at <tel_num> to explore additional troubleshooting methods and solutions.",2.27,326,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,high,"DOC-010, DOC-005"
+T12,V1_rag,llama3.2:3b,1,"Concern about Campaign Analytics Dashboard. The campaign analytics dashboard is not showing data, which may be due to an API connection problem or outdated software. I have already tried restarting the system and verifying the API credentials.",Product Support,Problem,medium,DOC-006,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Incident
+Priority: medium
+Citations: DOC-003, DOC-010
+Draft response: Thank you for reaching out to us regarding the issue with your campaign analytics dashboard not showing data. We'll investigate the possible causes, such as API connection problems or outdated software, and get back to you with an update on our progress.",2.27,353,General Inquiry,General Inquiry,1,Incident,medium,"DOC-003, DOC-010"
+T13,V1_rag,llama3.2:3b,1,"Enhance Efficiency of Excel Data Imports for Investment Analytics. Hello support team, I am contacting you to seek help in optimizing the process of importing data from Excel to enhance investment analytics and reporting efficiency. Our team currently devotes much time to manually transferring data from Excel sheets, which can result in inaccuracies and delays. I believe that by improving this procedure, we could increase our productivity and improve our returns. Could you provide advice on how to optimize our data import procedure? I would be grateful for any suggestions or solutions you can offer. Thank you for your time and assistance. We are looking forward to your prompt response.",Returns and Exchanges,Change,low,DOC-007,DOC-008,DOC-003,1,"Queue: General Inquiry
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-008
+Draft response: Hello, thank you for reaching out to us about optimizing your Excel data import process for investment analytics. We'd be happy to provide guidance on improving data import efficiency and offer suggestions for increasing productivity and accuracy.",2.64,345,General Inquiry,General Inquiry,1,Request,medium,"DOC-002, DOC-008"
+T14,V1_rag,llama3.2:3b,1,Campaign Engagement Issues Reported. The recent campaign did not succeed due to technical problems. Our attempts to resolve these issues have been unsuccessful.,Returns and Exchanges,Incident,medium,DOC-007,DOC-007,DOC-002,1,"Queue: Customer Service
+Type: Incident
+Priority: medium
+Citations: DOC-002, DOC-007
+Draft response: Thank you for reaching out about the technical issues affecting your recent campaign. We'll investigate the cause of the problem and work to resolve it as soon as possible. Can you please provide more details about the technical issues you're experiencing?",2.7,356,Customer Service,Customer Service,1,Incident,medium,"DOC-002, DOC-007"
+T15,V1_rag,llama3.2:3b,1,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,DOC-002,DOC-008,1,"Queue: Sales and Pre-Sales
+Type: Problem
+Priority: low
+Citations: DOC-008
+Draft response: 
+Thank you for reaching out to us about your digital campaign engagement challenges. We'd be happy to help you refresh your approach and provide recommendations on how to better understand your audience and create more effective campaigns. Please share more details about your current targeting approach and the kind of content you're using.",2.98,431,Sales and Pre-Sales,Sales and Pre-Sales,1,Problem,low,DOC-008
+T16,V1_rag,llama3.2:3b,1,"Support Needed for Marketing Campaign. We launched a digital marketing campaign but are seeing low engagement and conversion rates. This may be due to inadequate targeting or ineffective messaging. Despite adjusting the ad spend and refining the audience segments, we haven't seen significant improvements. We would appreciate some guidance on how to optimize the campaign to achieve better results.",Sales and Pre-Sales,Problem,medium,DOC-008,DOC-002,DOC-003,1,"Queue: General Inquiry
+Type: Incident
+Priority: low
+Citations: DOC-003, DOC-008
+Draft response: We've received your concern about low engagement and conversion rates in your digital marketing campaign. Can you please provide more details about your targeting approach and the kind of content you're using, so we can better assist you in optimizing the campaign?",2.59,361,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-008"
+T17,V1_rag,llama3.2:3b,1,Service Interruption. Seek information on service interruptions impacting investment optimization tools.,Service Outages and Maintenance,Change,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: medium
+Citations: DOC-009, DOC-009
+Draft response: Dear [Name], thank you for reaching out to us regarding the service interruption affecting your investment optimization tools. We apologize for the inconvenience caused and are happy to assist in resolving the issue. We will investigate the cause of the outage and provide an update on our progress.",2.45,414,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,"DOC-009, DOC-009"
+T18,V1_rag,llama3.2:3b,1,"Platform Crash. Hello Customer Support, I am reporting an unexpected crash of the data analytics platform. It might have been caused by a server overload. Despite my efforts to restart the servers and review the configurations, the problem still exists. I would be grateful if you could look into this and provide a solution promptly. Our business relies heavily on this tool, and its downtime is affecting our operations significantly. Please provide any additional information needed to address this issue and get back to me. I am ready to offer any necessary details or help. I appreciate your swift action on this matter and look forward to your response. The platform's crash is causing considerable disruptions, and I am hopeful we can resolve it swiftly with your support. Please contact me if further information is required. Thank you for your assistance.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-003,1,"Queue: General Inquiry
+Type: Incident
+Priority: low
+Citations: DOC-003, DOC-009, DOC-005
+Draft response: 
+Dear [Customer], 
+Thank you for reaching out to us regarding the unexpected crash of your data analytics platform. 
+Could you please provide more details about the issue, such as any error messages you received or the specific actions you took to restart the servers and review the configurations?",2.98,403,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-009, DOC-005"
+T19,V1_rag,llama3.2:3b,1,"Enhancing Brand Expansion Through Products. Dear Customer Support, I am writing to seek insights on the digital strategies that can enhance brand expansion through the products your company offers. I am eager to learn how to effectively leverage these products to boost brand visibility and connect with a broader audience. Could you share details on the most successful digital strategies utilized by other clients? Your guidance and suggestions would be greatly appreciated. Moreover, I am interested in understanding the tools and resources available to support brand growth. Thank you for your time and assistance. I look forward to your response.",Technical Support,Request,high,DOC-010,DOC-002,DOC-008,0,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: high
+Citations: DOC-008
+Draft response: Thank you for reaching out to us about enhancing brand expansion through our products. We'd be happy to provide guidance on the most effective digital strategies to boost brand visibility and connect with a broader audience. Could you please share more information about your current marketing efforts and what you aim to accomplish with these digital strategies?",2.74,454,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,high,DOC-008
+T20,V1_rag,llama3.2:3b,1,"Marketing Assistance. Seeking to enhance digital marketing strategies for products affected by recent changes. Believe integrating these efforts will boost brand visibility and customer engagement. Suggestions include social media campaigns, email marketing, and targeted advertising. Looking forward to your guidance. Kindly let me know a suitable time for a meeting to discuss further.",Technical Support,Change,high,DOC-010,DOC-003,DOC-007,0,"Queue: Customer Service
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-006
+Draft response: We will assist in updating your digital marketing strategies for brand expansion. To better understand your goals, we would like to discuss them with you and provide tailored guidance. I am available for a call at your convenience to explore the latest trends and practices that can help enhance your online presence and customer engagement.",2.65,440,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-006"

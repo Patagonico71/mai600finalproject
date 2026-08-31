@@ -1,0 +1,11 @@
+test_id,model,runtime,hardware,temperature,top_p,prompt_tokens,output_tokens,output_chars,seconds,tokens_per_second
+T1,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1168,93,444,0.98,95.2
+T2,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1205,78,376,1.0,78.2
+T3,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1133,109,496,1.2,91.1
+T4,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1089,103,498,1.17,87.8
+T5,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,810,101,459,1.09,93.0
+T6,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1157,75,324,0.92,81.5
+T7,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1052,69,379,0.9,76.5
+T8,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1092,101,465,1.13,89.4
+T9,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,1094,68,339,0.86,79.4
+T10,llama3.2:3b,Ollama (native),"Apple M4 Pro, 48 GB unified memory",0.2,0.8,939,59,310,0.68,86.4

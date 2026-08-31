@@ -1,0 +1,25 @@
+temperature,run,queue,type,priority,chars,seconds
+0.0,1,Product Support,Incident,high,444,1.02
+0.0,2,Product Support,Incident,high,444,0.95
+0.0,3,Product Support,Incident,high,444,0.95
+0.0,4,Product Support,Incident,high,444,0.95
+0.0,5,Product Support,Incident,high,444,0.95
+0.0,6,Product Support,Incident,high,444,0.95
+0.2,1,Product Support,Incident,high,471,1.01
+0.2,2,Product Support,Incident,high,462,1.08
+0.2,3,Product Support,Incident,high,337,0.72
+0.2,4,Product Support,Incident,high,341,0.76
+0.2,5,Product Support,Incident,high,380,0.8
+0.2,6,Product Support,Incident,high,360,0.77
+0.7,1,Product Support,Incident,high,307,0.69
+0.7,2,Customer Service,Problem,medium,407,0.85
+0.7,3,Product Support,Incident,high,418,0.9
+0.7,4,Product Support,Incident,high,357,0.74
+0.7,5,Product Support,Incident,high,469,1.01
+0.7,6,Product Support,Incident,high,395,0.84
+1.0,1,Customer Service,Problem,medium,348,0.77
+1.0,2,Product Support,Incident,high,433,0.97
+1.0,3,Customer Service,Problem,medium,421,0.91
+1.0,4,Product Support,Incident,high,371,0.8
+1.0,5,Product Support,Incident,high,357,0.8
+1.0,6,Customer Service,Problem,medium,330,0.78

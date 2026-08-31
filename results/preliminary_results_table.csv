@@ -1,21 +1,51 @@
 Test ID,Input Type,System Version,Output Summary,Metric Used,Score / Result,Observation
-T1,Support ticket,V1 RAG prototype,Queue: Billing and Payments Type: Problem Priority: medium Citations: DOC-001 Draft respon...,Routing accuracy,1/1,routed correctly
-T2,Support ticket,V1 RAG prototype,Queue: Billing and Payments Type: Incident Priority: high Citations: DOC-001 Draft respons...,Routing accuracy,1/1,routed correctly
-T3,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: medium Citations: DOC-003, DOC-008 Draft r...",Routing accuracy,0/1,"routed to General Inquiry, expected Customer Service"
-T4,Support ticket,V1 RAG prototype,"Queue: Technical Support Type: Incident Priority: medium Citations: DOC-010, DOC-005 Draft...",Routing accuracy,0/1,"routed to Technical Support, expected Customer Service"
-T5,Support ticket,V1 RAG prototype,Queue: Returns and Exchanges Type: Change Priority: medium Citations: DOC-007 Draft respon...,Routing accuracy,0/1,"routed to Returns and Exchanges, expected General Inquiry"
-T6,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Problem Priority: high Citations: DOC-003, DOC-005 Draft resp...",Routing accuracy,1/1,routed correctly
-T7,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-006 Draft resp...",Routing accuracy,0/1,"routed to General Inquiry, expected Human Resources"
-T8,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Request Priority: low Citations: DOC-003, DOC-002 Draft respo...",Routing accuracy,0/1,"routed to General Inquiry, expected Human Resources"
-T9,Support ticket,V1 RAG prototype,"Queue: Human Resources Type: Incident Priority: medium Citations: DOC-004, DOC-009 Draft r...",Routing accuracy,0/1,"routed to Human Resources, expected IT Support"
-T10,Support ticket,V1 RAG prototype,"Queue: Technical Support Type: Incident Priority: high Citations: DOC-010, DOC-002 Draft r...",Routing accuracy,0/1,"routed to Technical Support, expected IT Support"
-T11,Support ticket,V1 RAG prototype,"Queue: Service Outages and Maintenance Type: Incident Priority: high Citations: DOC-010, D...",Routing accuracy,0/1,"routed to Service Outages and Maintenance, expected Product Support"
-T12,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: medium Citations: DOC-003, DOC-010 Draft r...",Routing accuracy,0/1,"routed to General Inquiry, expected Product Support"
-T13,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Request Priority: medium Citations: DOC-002, DOC-008 Draft re...",Routing accuracy,0/1,"routed to General Inquiry, expected Returns and Exchanges"
-T14,Support ticket,V1 RAG prototype,"Queue: Customer Service Type: Incident Priority: medium Citations: DOC-002, DOC-007 Draft ...",Routing accuracy,0/1,"routed to Customer Service, expected Returns and Exchanges"
-T15,Support ticket,V1 RAG prototype,Queue: Sales and Pre-Sales Type: Problem Priority: low Citations: DOC-008 Draft response: ...,Routing accuracy,1/1,routed correctly
-T16,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-008 Draft resp...",Routing accuracy,0/1,"routed to General Inquiry, expected Sales and Pre-Sales"
-T17,Support ticket,V1 RAG prototype,"Queue: Service Outages and Maintenance Type: Incident Priority: medium Citations: DOC-009,...",Routing accuracy,1/1,routed correctly
-T18,Support ticket,V1 RAG prototype,"Queue: General Inquiry Type: Incident Priority: low Citations: DOC-003, DOC-009, DOC-005 D...",Routing accuracy,0/1,"routed to General Inquiry, expected Service Outages and Maintenance"
-T19,Support ticket,V1 RAG prototype,Queue: Sales and Pre-Sales Type: Request Priority: high Citations: DOC-008 Draft response:...,Routing accuracy,0/1,"routed to Sales and Pre-Sales, expected Technical Support"
-T20,Support ticket,V1 RAG prototype,"Queue: Customer Service Type: Request Priority: medium Citations: DOC-002, DOC-006 Draft r...",Routing accuracy,0/1,"routed to Customer Service, expected Technical Support"
+T1,Support ticket,V2 constrained RAG,Queue: Product Support Type: Incident Priority: high Citations: DOC-006 Draft response: Th...,Routing accuracy,0/1,"routed to Product Support, expected Billing and Payments"
+T2,Support ticket,V2 constrained RAG,Queue: Billing and Payments Type: Incident Priority: medium Citations: DOC-001 | queue: Bi...,Routing accuracy,1/1,routed correctly
+T3,Support ticket,V2 constrained RAG,Queue: Billing and Payments Type: Incident Priority: high Citations: DOC-001 | queue: Bill...,Routing accuracy,1/1,routed correctly
+T4,Support ticket,V2 constrained RAG,Queue: Billing and Payments Type: Problem Priority: low Citations: DOC-001 | queue: Billin...,Routing accuracy,1/1,routed correctly
+T5,Support ticket,V2 constrained RAG,Queue: Billing and Payments Type: Problem Priority: high Citations: DOC-001 | queue: Billi...,Routing accuracy,1/1,routed correctly
+T6,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Request Priority: medium Citations: DOC-006, DOC-008 Draft re...",Routing accuracy,0/1,"routed to Product Support, expected Customer Service"
+T7,Support ticket,V2 constrained RAG,Queue: Service Outages and Maintenance Type: Change Priority: high Citations: DOC-009 Draf...,Routing accuracy,0/1,"routed to Service Outages and Maintenance, expected Customer Service"
+T8,Support ticket,V2 constrained RAG,"Queue: IT Support Type: Request Priority: low Citations: DOC-005, DOC-006 Draft response: ...",Routing accuracy,0/1,"routed to IT Support, expected Customer Service"
+T9,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Change Priority: high Citations: DOC-006, DOC-001 Draft respo...",Routing accuracy,0/1,"routed to Product Support, expected Customer Service"
+T10,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Request Priority: medium Citations: DOC-006, DOC-007 Draft re...",Routing accuracy,0/1,"routed to Product Support, expected Customer Service"
+T11,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Request Priority: medium Citations: DOC-002, DOC-001 Draft r...",Routing accuracy,0/1,"routed to Customer Service, expected General Inquiry"
+T12,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Request Priority: low Citations: DOC-002, DOC-008 Draft resp...",Routing accuracy,0/1,"routed to Customer Service, expected General Inquiry"
+T13,Support ticket,V2 constrained RAG,Queue: Technical Support Type: Problem Priority: low Citations: DOC-010 Draft response: Th...,Routing accuracy,0/1,"routed to Technical Support, expected General Inquiry"
+T14,Support ticket,V2 constrained RAG,"Queue: General Inquiry Type: Problem Priority: low Citations: DOC-003, DOC-002 Draft respo...",Routing accuracy,1/1,routed correctly
+T15,Support ticket,V2 constrained RAG,"Queue: Technical Support Type: Incident Priority: high Citations: DOC-010, DOC-003 Draft r...",Routing accuracy,0/1,"routed to Technical Support, expected General Inquiry"
+T16,Support ticket,V2 constrained RAG,"Queue: Returns and Exchanges Type: Incident Priority: medium Citations: DOC-007, DOC-002, ...",Routing accuracy,0/1,"routed to Returns and Exchanges, expected Human Resources"
+T17,Support ticket,V2 constrained RAG,"Queue: Sales and Pre-Sales Type: Request Priority: medium Citations: DOC-008, DOC-007 Draf...",Routing accuracy,0/1,"routed to Sales and Pre-Sales, expected Human Resources"
+T18,Support ticket,V2 constrained RAG,"Queue: Technical Support Type: Problem Priority: high Citations: DOC-010, DOC-006 Draft re...",Routing accuracy,0/1,"routed to Technical Support, expected Human Resources"
+T19,Support ticket,V2 constrained RAG,"Queue: IT Support Type: Incident Priority: medium Citations: DOC-001, DOC-006 Draft respon...",Routing accuracy,0/1,"routed to IT Support, expected Human Resources"
+T20,Support ticket,V2 constrained RAG,Queue: Human Resources Type: Request Priority: low Citations: DOC-004 Draft response: Than...,Routing accuracy,1/1,routed correctly
+T21,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Request Priority: high Citations: DOC-002, DOC-008 Draft res...",Routing accuracy,0/1,"routed to Customer Service, expected IT Support"
+T22,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Request Priority: medium Citations: DOC-002, DOC-002, DOC-00...",Routing accuracy,0/1,"routed to Customer Service, expected IT Support"
+T23,Support ticket,V2 constrained RAG,"Queue: Billing and Payments Type: Incident Priority: medium Citations: DOC-001, DOC-007 Dr...",Routing accuracy,0/1,"routed to Billing and Payments, expected IT Support"
+T24,Support ticket,V2 constrained RAG,"Queue: General Inquiry Type: Request Priority: low Citations: DOC-003, DOC-002 Draft respo...",Routing accuracy,0/1,"routed to General Inquiry, expected IT Support"
+T25,Support ticket,V2 constrained RAG,"Queue: Returns and Exchanges Type: Request Priority: medium Citations: DOC-007, DOC-009 Dr...",Routing accuracy,0/1,"routed to Returns and Exchanges, expected IT Support"
+T26,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Incident Priority: low Citations: DOC-006, DOC-010 Draft resp...",Routing accuracy,1/1,routed correctly
+T27,Support ticket,V2 constrained RAG,"Queue: IT Support Type: Incident Priority: medium Citations: DOC-005, DOC-007 Draft respon...",Routing accuracy,0/1,"routed to IT Support, expected Product Support"
+T28,Support ticket,V2 constrained RAG,"Queue: Returns and Exchanges Type: Incident Priority: medium Citations: DOC-007, DOC-010 D...",Routing accuracy,0/1,"routed to Returns and Exchanges, expected Product Support"
+T29,Support ticket,V2 constrained RAG,Queue: Sales and Pre-Sales Type: Request Priority: low Citations: DOC-008 Draft response: ...,Routing accuracy,0/1,"routed to Sales and Pre-Sales, expected Product Support"
+T30,Support ticket,V2 constrained RAG,Queue: Billing and Payments Type: Problem Priority: medium Citations: DOC-001 Draft respon...,Routing accuracy,0/1,"routed to Billing and Payments, expected Product Support"
+T31,Support ticket,V2 constrained RAG,Queue: Returns and Exchanges Type: Incident Priority: low Citations: DOC-007 Draft respons...,Routing accuracy,1/1,routed correctly
+T32,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Incident Priority: high Citations: DOC-006, DOC-004 Draft res...",Routing accuracy,0/1,"routed to Product Support, expected Returns and Exchanges"
+T33,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Incident Priority: medium Citations: DOC-002, DOC-008 Draft ...",Routing accuracy,0/1,"routed to Customer Service, expected Returns and Exchanges"
+T34,Support ticket,V2 constrained RAG,"Queue: Returns and Exchanges Type: Incident Priority: low Citations: DOC-007, DOC-005, DOC...",Routing accuracy,1/1,routed correctly
+T35,Support ticket,V2 constrained RAG,"Queue: IT Support Type: Incident Priority: high Citations: DOC-005, DOC-010 Draft response...",Routing accuracy,0/1,"routed to IT Support, expected Returns and Exchanges"
+T36,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Incident Priority: low Citations: DOC-006, DOC-010 Draft resp...",Routing accuracy,0/1,"routed to Product Support, expected Sales and Pre-Sales"
+T37,Support ticket,V2 constrained RAG,"Queue: Sales and Pre-Sales Type: Request Priority: medium Citations: DOC-008, DOC-002 Draf...",Routing accuracy,1/1,routed correctly
+T38,Support ticket,V2 constrained RAG,Queue: Returns and Exchanges Type: Request Priority: low Citations: DOC-007 Draft response...,Routing accuracy,0/1,"routed to Returns and Exchanges, expected Sales and Pre-Sales"
+T39,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Problem Priority: medium Citations: DOC-006, DOC-004 Draft re...",Routing accuracy,0/1,"routed to Product Support, expected Sales and Pre-Sales"
+T40,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Request Priority: medium Citations: DOC-006, DOC-002, DOC-009...",Routing accuracy,0/1,"routed to Product Support, expected Sales and Pre-Sales"
+T41,Support ticket,V2 constrained RAG,Queue: Service Outages and Maintenance Type: Problem Priority: medium Citations: DOC-009 D...,Routing accuracy,1/1,routed correctly
+T42,Support ticket,V2 constrained RAG,"Queue: Service Outages and Maintenance Type: Incident Priority: high Citations: DOC-009, D...",Routing accuracy,1/1,routed correctly
+T43,Support ticket,V2 constrained RAG,Queue: Service Outages and Maintenance Type: Incident Priority: medium Citations: DOC-009 ...,Routing accuracy,1/1,routed correctly
+T44,Support ticket,V2 constrained RAG,Queue: Service Outages and Maintenance Type: Incident Priority: medium Citations: DOC-009 ...,Routing accuracy,1/1,routed correctly
+T45,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Request Priority: medium Citations: DOC-002, DOC-008 Draft r...",Routing accuracy,0/1,"routed to Customer Service, expected Service Outages and Maintenance"
+T46,Support ticket,V2 constrained RAG,Queue: Returns and Exchanges Type: Request Priority: high Citations: DOC-007 Draft respons...,Routing accuracy,0/1,"routed to Returns and Exchanges, expected Technical Support"
+T47,Support ticket,V2 constrained RAG,"Queue: Sales and Pre-Sales Type: Incident Priority: medium Citations: DOC-008, DOC-010 Dra...",Routing accuracy,0/1,"routed to Sales and Pre-Sales, expected Technical Support"
+T48,Support ticket,V2 constrained RAG,"Queue: Technical Support Type: Problem Priority: low Citations: DOC-010, DOC-001 Draft res...",Routing accuracy,1/1,routed correctly
+T49,Support ticket,V2 constrained RAG,"Queue: Customer Service Type: Problem Priority: medium Citations: DOC-002, DOC-003 Draft r...",Routing accuracy,0/1,"routed to Customer Service, expected Technical Support"
+T50,Support ticket,V2 constrained RAG,"Queue: Product Support Type: Request Priority: medium Citations: DOC-006, DOC-002 Draft re...",Routing accuracy,0/1,"routed to Product Support, expected Technical Support"

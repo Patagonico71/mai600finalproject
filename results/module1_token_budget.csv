@@ -1,0 +1,2 @@
+encoder,token_limit,chunks,mean_tokens,median_tokens,max_tokens,chunks_truncated,share_truncated
+all-MiniLM-L6-v2,256,1782,75.4,68,346,6,0.0034

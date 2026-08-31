@@ -1,111 +1,160 @@
-# Local RAG Assistant for Customer Support Ticket Triage
+# Local Hybrid Assistant for Customer Support Ticket Triage
 
-MAI 600 — Final Project. **Current milestone: Module 7 (working prototype / progress report).**
+MAI 600 — Final Project (Module 8).
 
-Approach: **local SLM + RAG**. `llama3.2:3b` served by Ollama, retrieval with
-Sentence-Transformers and FAISS. Everything runs on the laptop; no ticket text leaves the
-machine.
+## Overview
 
-## What it does
+A support ticket arrives. The system retrieves similar past cases from a knowledge base
+built out of the support team's own resolution history, then asks a locally served small
+language model to produce a triage: routing queue, ticket type, priority, a draft first
+response, and citations to the sources used.
 
-A support ticket comes in. The system retrieves similar past cases from a knowledge base
-built out of the team's own resolution history, then asks a locally served small language
-model to triage it: routing queue, ticket type, priority, a draft first response, and
-citations back to the sources used.
+## Problem being solved
 
-## Results so far
+Support teams read every incoming ticket, route it to a queue, set a priority and write a
+first reply by hand. It is slow and inconsistent. Ticket text also routinely contains
+customer names, phone numbers and account details, so sending it to a hosted API is a
+privacy decision most support organisations would rather not make. This system runs
+entirely on the analyst's own machine.
 
-Three columns, 20 held-out tickets. The **majority class** column answers
-every ticket with the most frequent label and uses no model — it is the floor a real system
-has to clear. V0 and V1 use the same model, so retrieval is the only variable between them.
+## System type
 
-| Metric | Majority class | V0 baseline | V1 RAG |
-|---|---|---|---|
-| Routing accuracy | 0.10 | 0.00 | **0.25** |
-| Queue validity | 1.00 | 0.00 | **1.00** |
-| Type accuracy | **0.50** | 0.45 | 0.45 |
-| Priority accuracy | 0.35 | 0.40 | 0.40 |
-| Retrieval hit rate @5 | n/a | n/a | 0.50 |
-| Citation accuracy | n/a | n/a | 0.45 |
-| Mean response time | n/a | 2.0s | 1.9s |
+**Hybrid: RAG + local SLM.** Retrieval supplies the organisation-specific routing
+knowledge; the local model reads the ticket and writes the structured triage.
 
-Two things to read here.
+The split is not arbitrary. The evaluation shows retrieval carries the queue decision
+(p = 0.0001 against no retrieval) and does little for the type field. Type is a fixed
+four-way taxonomy that needs consistent judgement rather than fresh facts, which is where
+adapter-based fine-tuning belongs — so `data/training_examples.jsonl` prepares that path
+without claiming a trained adapter exists.
 
-**Queue routing works and retrieval is why.** Without it the model invents queue names that
-do not exist — "Excessive Billing Inquiry", "Adobe Premiere Pro Crash Investigation" — because
-the list of real queues is organisation-specific knowledge it has no way to know. Validity
-goes 0.00 to 1.00, and routing beats the
-0.10 floor.
+## Tools
 
-**Type and priority do not work yet.** Both sit at or barely above the majority-class floor.
-Answering "Incident" to every ticket would score higher on type than either system does.
-This is written up rather than buried; see `progress_report.md`.
+Python 3.13 · `sentence-transformers` (all-MiniLM-L6-v2) · FAISS · Ollama with
+`llama3.2:3b` · pandas · matplotlib · Jupyter. Hardware: MacBook Pro, Apple M4 Pro, 48 GB.
 
-## Documents
-
-| File | What it is |
-|---|---|
-| `progress_report.md` | Module 7 progress report — the main deliverable |
-| `methodology_draft.md` | Draft methodology section for the final article |
-| `preliminary_results.md` | Draft preliminary results section |
-| `ai_usage_disclosure.md` | How AI tools were used, and what they got wrong |
-| `proposal.md` | Module 6 proposal |
-| `docs/REFERENCES.md` | Sources and links |
-
-## Running it
-
-Requires Ollama with `llama3.2:3b` pulled, and the Kaggle dataset in `data/`.
+## Setup
 
 ```bash
 python3 -m venv venv && source venv/bin/activate
-pip install pandas numpy matplotlib scikit-learn sentence-transformers faiss-cpu requests jupyter
+pip install -r requirements.txt
 ollama pull llama3.2:3b
-jupyter notebook notebooks/module7_project_progress_colab.ipynb
+```
+
+Download the Kaggle dataset (link below) into `data/`. The raw CSV is not committed.
+
+## How to run
+
+```bash
+jupyter notebook notebooks/final_project_notebook.ipynb   # then Run All
+python3 scripts/build_artifacts.py
+python3 scripts/write_reports.py
+python3 scripts/ceiling_analysis.py   # optional, a few minutes
 ```
 
 Headless:
 
 ```bash
-jupyter nbconvert --to notebook --execute --inplace notebooks/module7_project_progress_colab.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/final_project_notebook.ipynb
 ```
 
-The notebook writes everything under `results/` and `images/`, and regenerates
-`methodology_draft.md` and `preliminary_results.md` with the numbers from that run, so the
-reports cannot drift from the results.
+## Data
 
-## Dataset
+*Customer IT Support — Ticket Dataset* (tobiasbueck / Open Ticket AI, 2025, version 14), public
+and synthetic: https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets
 
-*Customer IT Support — Ticket Dataset* (tobiasbueck / Open Ticket AI), public and
-synthetic: https://www.kaggle.com/datasets/tobiasbueck/multilingual-customer-support-tickets
+20,000 tickets; the English subset with complete fields is 10,888 rows. Each row is one
+support ticket: subject, body, the agent's actual answer, and the queue, type and priority
+it was filed under.
 
-20,000 tickets; this project uses the 11,919 English rows with a complete subject, body,
-answer, queue, type and priority. The raw CSV is **not committed** (size and Kaggle
-licensing) — download it and place it in `data/`.
+**The corpus is de-duplicated before use.** The data is synthetic and was generated by
+paraphrasing templates, so it contains large families of near-identical tickets — the
+median cosine similarity between a test ticket and its nearest neighbour in the raw corpus
+is 0.906. Left alone, this inflates every retrieval metric: queue prediction over the raw
+corpus scores 0.68, and removing neighbours above 0.85 collapses that to 0.12. The
+notebook removes near-duplicates at 0.90, keeping 66% of the rows,
+and then asserts that no test ticket has a knowledge-base neighbour above the threshold.
 
-## Repository structure
+## Evaluation
 
-```
-.
-├── progress_report.md              # Module 7 deliverable
-├── methodology_draft.md            # generated by the notebook
-├── preliminary_results.md          # generated by the notebook
-├── ai_usage_disclosure.md
-├── proposal.md                     # Module 6
-├── data/
-│   ├── sample_documents.csv        # the 10 queue documents
-│   ├── test_cases.csv              # held-out test tickets
-│   └── sample_tickets.csv          # small sample of the raw data
-├── notebooks/
-│   ├── module7_project_progress_colab.ipynb   # the Module 7 prototype
-│   └── rag_ticket_triage.ipynb                # Module 6 exploratory notebook
-├── results/                        # CSVs written by the notebook
-├── images/                         # charts and pipeline diagram
-└── docs/
-```
+50 held-out tickets, 5 per queue, scored automatically against the dataset's own labels.
+Eight metrics, three system versions, plus a majority-class floor. Paired comparisons use
+McNemar's exact test.
+
+## Results
+
+| Metric | Majority class | V0 no retrieval | V1 RAG | V2 RAG constrained |
+|---|---|---|---|---|
+| Routing accuracy | 0.10 | 0.00 | 0.30 | **0.30** |
+| Queue validity | 1.00 | 0.02 | 1.00 | 1.00 |
+| Type accuracy | 0.40 | 0.58 | 0.70 | **0.72** |
+| Priority accuracy | 0.40 | 0.46 | 0.44 | 0.44 |
+| Retrieval hit rate @5 | n/a | n/a | 0.50 | 0.50 |
+| Citation accuracy | n/a | n/a | 0.40 | 0.34 |
+| Mean response time | n/a | 1.0s | 1.6s | 1.8s |
+
+Retrieval corrected 15 of the baseline's routing errors and broke none (p = 0.0001).
+71% of the remaining errors are the retrieval step never surfacing the right
+document.
+
+Routing accuracy of 0.30 reads low until you know what the data
+supports. A logistic regression trained on all 7,113 labelled tickets — far more
+supervision than retrieval ever gets — reaches 0.34 on the same test set. The
+pipeline is at 88% of that. Four attempts to push past it are recorded in
+`results.md`, and none of them worked; the queue label is only weakly determined by the
+ticket text.
+
+## Known limitations
+
+- **50 test tickets.** Enough to detect the retrieval effect, too few for per-queue rates,
+  which move by 20 points on a single error.
+- **Routing accuracy is 0.30.** Three times the floor and not close to
+  unsupervised operation. This is a triage assistant for a human reviewer, not a router.
+- **Priority does not work** (0.44 against a 0.40
+  floor). Urgency depends on contract tier, SLA and blast radius, none of which appear in
+  the ticket text.
+- **The labels themselves are noisy.** Tickets asking "could you provide more information
+  on how to configure this" are filed as `Change` rather than `Request`, which caps type
+  accuracy below 1.00 for any model.
+- **Overlapping queues.** Customer Service, IT Support and Product Support are not cleanly
+  separable from ticket text, and score 0.00–0.20.
+- **Citation accuracy is a proxy** — it checks the right document id appears, not that the
+  cited source supports the sentence attached to it.
+- **Synthetic data.** Conclusions may not transfer to real support traffic.
+
+## Responsible use
+
+Outputs are drafts for human review. The system should not close, route or reply to a real
+ticket unattended. All processing is local, which is the point: no customer data leaves
+the machine.
+
+## Files
+
+| Path | What it is |
+|---|---|
+| `notebooks/final_project_notebook.ipynb` | the full pipeline, with outputs |
+| `results.md` | results and discussion |
+| `ai_usage_disclosure.md` | how AI tools were used, and what they got wrong |
+| `results/summary_metrics.csv` | metrics per system version |
+| `results/evaluation_scores.csv` | per-ticket scores |
+| `results/error_taxonomy.csv` | routing errors by pipeline stage |
+| `results/ceiling_analysis.csv` | what a supervised classifier reaches on the same tickets |
+| `results/module1_token_budget.csv` | encoder context budget |
+| `results/module2_sampling_comparison.csv` | temperature and reproducibility |
+| `results/module5_local_slm_benchmark.csv` | local serving cost per generation |
+| `results/module7_rag_vs_finetuning_decision.csv` | RAG or fine-tuning, decided per field |
+| `prompts/` | baseline and improved prompt templates |
+| `results/improvement_comparison.csv` | Module 7 to Module 8 |
+| `results/module7_baseline/` | frozen Module 7 results |
+| `data/training_examples.jsonl` | LoRA-ready type-classification examples |
+| `scripts/` | notebook builder, artefacts, report generation |
 
 ## Milestones
 
-Tagged per module so each submission can be read on its own:
-
 - `assignment-6` — proposal
-- `assignment-7` — this prototype
+- `assignment-7` — working prototype
+- `assignment-8` — this final version
+
+## AI usage disclosure
+
+See `ai_usage_disclosure.md`.

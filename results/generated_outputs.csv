@@ -1,229 +1,799 @@
 test_id,version,model,used_retrieval,question,true_queue,true_type,true_priority,expected_source,retrieved_vote_source,top_retrieved_source,retrieval_hit_topk,generated_answer,response_time_s,answer_chars,pred_queue,pred_queue_raw,queue_valid,pred_type,pred_priority,citations
-T1,V0_baseline,llama3.2:3b,0,"Excessive Billing Inquiry. There are unexpected charges on your monthly invoice due to potential misconfigurations in your subscription settings. You have already contacted support and reviewed the settings, but the issue still exists.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Excessive Billing Inquiry
+T1,V0_baseline,llama3.2:3b,0,"Troubleshooting Financial Firm's Data Analytics Tools. The financial firm's data analytics tools are experiencing malfunctions, which might be due to compatibility issues with recent software updates. Reinstalling the affected applications and updating drivers resolved the issue previously. We require your assistance to identify and fix the problem.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Financial Tools Support
 Type: Problem
 Priority: Medium
+Citations: NONE
+Draft response: 
+We've received your request for assistance with the malfunctions in your financial firm's data analytics tools. Our team will investigate the compatibility issues with recent software updates and work to resolve the problem. We'll be in touch with an estimated resolution time once the issue is identified and fixed.",4.35,411,,Financial Tools Support,0,Problem,medium,NONE
+T2,V0_baseline,llama3.2:3b,0,"Unanticipated Billing Variance in User Accounts. Noticed an unanticipated billing variance across multiple user accounts following a recent update. After reviewing account settings and reprocessing invoices, the discrepancies still exist. Assistance is required to resolve this issue.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Billing Variance
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+We apologize for the unexpected billing variance in your user accounts. Our team is investigating the issue and will work to resolve it as soon as possible. In the meantime, please contact us for further assistance or guidance.",0.81,315,,Billing Variance,0,Problem,medium,NONE
+T3,V0_baseline,llama3.2:3b,0,"Encountered Billing Discrepancies with SaaS. Noted billing discrepancies in SaaS, with recent overcharges. These issues might be linked to recent system updates or payment gateway problems. Recalculated invoices and verified payment configurations, but the problems still exist.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Billing Discrepancies
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+We apologize for the billing discrepancies you've encountered with our SaaS. 
+Our team is investigating the issue and will provide an update on the resolution as soon as possible. 
+Please contact us if you have any further questions or concerns.",0.96,356,,Billing Discrepancies,0,Problem,medium,NONE
+T4,V0_baseline,llama3.2:3b,0,"Unexpected Excessive Billing Errors This Month. Several subscriptions were overcharged at the same time due to a possible system glitch or synchronization issue. I have already contacted support and reviewed the invoices manually, but the problem remains unresolved. I would be grateful if you could look into this issue and provide a solution as soon as possible.",Billing and Payments,Incident,high,DOC-001,,,0,"Queue: Billing and Invoicing
+Type: Incident
+Priority: High
 Citations: NONE
 Draft response: 
 Dear [Customer Name], 
-We apologize for the unexpected charges on your recent invoice. 
-Our team will review your subscription settings again to identify the cause of the issue and provide a resolution as soon as possible. 
-We will be in touch with you shortly to discuss the next steps.",4.4,384,,Excessive Billing Inquiry,0,Problem,medium,NONE
-T2,V0_baseline,llama3.2:3b,0,"Detected Payment Processing Problem. I encountered an unexpected payment failure during the renewal of my subscription. It may be because my payment method is outdated. After reviewing my account settings, I did not find a solution. I would greatly appreciate your help in resolving this to avoid any interruptions to my subscription.",Billing and Payments,Incident,medium,DOC-001,,,0,"Queue: Payment Processing
+We apologize for the unexpected excessive billing errors this month. Our team is actively investigating the issue and will work to resolve it as soon as possible. You will receive an update on the status of the issue as soon as it is resolved.",1.1,358,,Billing and Invoicing,0,Incident,high,NONE
+T5,V0_baseline,llama3.2:3b,0,Concerns Regarding Subscription Billing Services. Facing issues with billing amounts,Billing and Payments,Problem,high,DOC-001,,,0,"Queue: Billing Services
 Type: Problem
 Priority: Medium
 Citations: NONE
-Draft response: 
-Dear [Customer], 
-We apologize for the unexpected payment failure during your subscription renewal. 
-Our team will review your account settings and payment method to determine the cause of the issue and provide a solution as soon as possible. 
-Please allow us to investigate this further and we will be in touch with an update.",2.24,417,,Payment Processing,0,Problem,medium,NONE
-T3,V0_baseline,llama3.2:3b,0,Campaign Data Lost in HubSpot CRM Linked to SAP ERP Integration. Your campaign data has vanished from HubSpot CRM because of problems with the SAP ERP integration. You have already restarted the NAS-System and verified your network settings.,Customer Service,Incident,medium,DOC-002,,,0,"Queue: SAP Integration Support
-Type: Incident
-Priority: High
-Citations: NONE
-Draft response: ""Thank you for reaching out to us regarding the lost campaign data in HubSpot CRM. We're sorry to hear that the SAP ERP integration issue has caused this issue. We'll need to investigate further to resolve this issue and retrieve your data.""",1.85,334,,SAP Integration Support,0,Incident,high,NONE
-T4,V0_baseline,llama3.2:3b,0,"Reported Slow Performance in Applications. Multiple software applications are currently experiencing slow performance. This might be due to conflicting updates or insufficient system resources. Steps like restarting and freeing up resources have been attempted, but the issue still persists.",Customer Service,Incident,low,DOC-002,,,0,"Queue: Critical System Issue
-Type: Problem
-Priority: High
-Citations: NONE
-Draft response: ""Thank you for reaching out to us about the slow performance in your applications. We'll be happy to assist you in resolving this issue. Can you please provide more information about the applications experiencing slow performance, such as their names and versions?""",1.82,355,,Critical System Issue,0,Problem,high,NONE
-T5,V0_baseline,llama3.2:3b,0,"Update to Digital Toolkit. Hello Customer Support, I am contacting you to request an upgrade to our digital toolkit to include new software integrations. This upgrade is crucial for us to improve our brand growth strategies and campaign management. The new integrations will allow us to handle our campaigns more efficiently and effectively, track our progress, and base our decisions on data. I believe this upgrade is vital for our company's ongoing success. I would greatly appreciate an estimate of when this can be done. Thank you for your time and help. I look forward to your response.",General Inquiry,Change,low,DOC-003,,,0,"Queue: Digital Toolkit Upgrade
+Draft response: ""Thank you for reaching out to us about the billing issues you're experiencing. We're here to help and would like to investigate this further. Can you please provide more details about the billing amounts you're concerned about?""",0.86,316,,Billing Services,0,Problem,medium,NONE
+T6,V0_baseline,llama3.2:3b,0,"Inquiry About ClickUp Integration Specifications. Seeking comprehensive information on integrating ClickUp for scalable SaaS project management. This would significantly aid in streamlining our workflow and enhancing productivity. Thank you for your assistance, and we look forward to your response soon.",Customer Service,Request,medium,DOC-002,,,0,"Queue: Integration and API Support
 Type: Request
 Priority: Medium
 Citations: NONE
-Draft response: Thank you for reaching out to us about upgrading your digital toolkit. We'd be happy to help you explore new software integrations that can improve your brand growth strategies and campaign management. Can you please provide more information about the specific integrations you're interested in and what your current setup looks like?",2.07,428,,Digital Toolkit Upgrade,0,Request,medium,NONE
-T6,V0_baseline,llama3.2:3b,0,"Issue with Inconsistent Results in Investment Optimization Tool. Dear Customer Support, I have been encountering inconsistent results with the investment optimization analytics tool. It seems that recent changes to the data sources might be the cause. After attempting to refresh the data sources and recalibrate the analytics model, the issue still persists. I have also ensured that my system meets all the necessary requirements and checked for any software updates. However, the inconsistent results continue to impact my ability to make informed investment decisions. Could you please assist in resolving this issue?",General Inquiry,Incident,low,DOC-003,,,0,"Queue: Investment Optimization Tool Support
-Type: Problem
-Priority: Medium
-Citations: NONE
 Draft response: 
-Dear [Customer], 
-Thank you for reaching out to us about the inconsistent results in your investment optimization analytics tool. 
-We'll be happy to help you resolve this issue and would like to schedule a call to discuss further.",1.72,338,,Investment Optimization Tool Support,0,Problem,medium,NONE
-T7,V0_baseline,llama3.2:3b,0,Technical Issue with Data Synchronization Across Platforms. We are currently experiencing discrepancies in reports and analytics tools due to an integration problem.,Human Resources,Problem,low,DOC-004,,,0,"Queue: Technical Issue Queue
-Type: Problem
-Priority: Medium
-Citations: NONE
-Draft response: 
-We're sorry to hear that you're experiencing discrepancies in your reports and analytics tools. Our team is investigating the integration issue and will work to resolve the problem as soon as possible. In the meantime, please let us know if you have any further questions or concerns.",1.78,377,,Technical Issue Queue,0,Problem,medium,NONE
-T8,V0_baseline,llama3.2:3b,0,"Support for Digital Marketing Strategies. Enhance digital marketing strategies tools to boost brand growth and improve customer engagement, aiming to effectively reach the target audience.",Human Resources,Change,medium,DOC-004,,,0,"Queue: Digital Marketing Strategies
+We appreciate your interest in integrating ClickUp for your SaaS project management needs. Our team will review the available integration options and provide you with a comprehensive guide on how to streamline your workflow and enhance productivity. We'll be in touch soon with more information.",0.92,394,,Integration and API Support,0,Request,medium,NONE
+T7,V0_baseline,llama3.2:3b,0,Security Requirement. It is crucial to implement strengthened security measures to protect medical data in our hospital systems urgently. This will enhance overall safety.,Customer Service,Change,high,DOC-002,,,0,"Queue: Security and Compliance
 Type: Request
-Priority: Medium
-Citations: NONE
-Draft response: Thank you for reaching out to us about enhancing our digital marketing strategies tools. We'd be happy to help you explore ways to boost brand growth and improve customer engagement. Can you please provide more information about your current digital marketing efforts and what you're hoping to achieve?",1.64,401,,Digital Marketing Strategies,0,Request,medium,NONE
-T9,V0_baseline,llama3.2:3b,0,"Problem with SaaS system. The SaaS system has failed, leading to data loss and hindering our workflow. We have rebooted the server and reviewed the logs, yet the issue remains unresolved.",IT Support,Problem,high,DOC-005,,,0,"Queue: Critical Incident Response
-Type: Problem
 Priority: High
 Citations: NONE
-Draft response: ""Our team is actively investigating the issue and working to resolve the problem as soon as possible. We apologize for the inconvenience this has caused and will keep you updated on our progress. In the meantime, please reach out to us if you have any further questions or concerns.""",1.62,378,,Critical Incident Response,0,Problem,high,NONE
-T10,V0_baseline,llama3.2:3b,0,Problem with Adobe Premiere Pro. Encountered system crashes while editing videos in Adobe Premiere Pro 2021,IT Support,Incident,high,DOC-005,,,0,"Queue: Premiere Pro Crash Reports
-Type: Problem
-Priority: Medium
-Citations: NONE
-Draft response: ""Sorry to hear that you're experiencing system crashes while editing videos in Adobe Premiere Pro 2021. Can you please provide more details about the crashes, such as when they occur and any error messages you see? This will help us troubleshoot the issue and provide a more accurate solution.""",1.84,391,,Premiere Pro Crash Reports,0,Problem,medium,NONE
-T11,V0_baseline,llama3.2:3b,0,Unanticipated Crash of Campaign. The digital campaign abruptly stopped functioning. Possible reasons include incompatible recent software updates. Restarting the system and verifying compatibility did not resolve the problem. Urgent assistance is required to address this.,Product Support,Incident,low,DOC-006,,,0,"Queue: Critical Campaign Support
-Type: Incident
-Priority: High
-Citations: NONE
-Draft response: ""Thank you for reaching out to us regarding the unanticipated crash of your campaign. Our team is here to assist you in resolving this issue as soon as possible. Please allow us to investigate the cause and provide a solution.""",1.53,322,,Critical Campaign Support,0,Incident,high,NONE
-T12,V0_baseline,llama3.2:3b,0,"Concern about Campaign Analytics Dashboard. The campaign analytics dashboard is not showing data, which may be due to an API connection problem or outdated software. I have already tried restarting the system and verifying the API credentials.",Product Support,Problem,medium,DOC-006,,,0,"Queue: Campaign Analytics Dashboard
-Type: Problem
-Priority: Medium
-Citations: NONE
-Draft response: ""Thank you for reaching out to us about the issue with your Campaign Analytics Dashboard. We've checked the API connection and software, but couldn't find any issues. Can you please provide more details about the error message you're seeing or any recent changes you've made to your setup?""",1.6,389,,Campaign Analytics Dashboard,0,Problem,medium,NONE
-T13,V0_baseline,llama3.2:3b,0,"Enhance Efficiency of Excel Data Imports for Investment Analytics. Hello support team, I am contacting you to seek help in optimizing the process of importing data from Excel to enhance investment analytics and reporting efficiency. Our team currently devotes much time to manually transferring data from Excel sheets, which can result in inaccuracies and delays. I believe that by improving this procedure, we could increase our productivity and improve our returns. Could you provide advice on how to optimize our data import procedure? I would be grateful for any suggestions or solutions you can offer. Thank you for your time and assistance. We are looking forward to your prompt response.",Returns and Exchanges,Change,low,DOC-007,,,0,"Queue: Investment Analytics Optimization
+Draft response: ""Thank you for reaching out to us about the urgent need for strengthened security measures to protect medical data in our hospital systems. Our team will review this request and provide a detailed response with a timeline for implementation. In the meantime, please contact our security team directly at [insert contact info].""",0.97,419,,Security and Compliance,0,Request,high,NONE
+T8,V0_baseline,llama3.2:3b,0,"Guidance on ClickUp Adobe Photoshop CC 2021 Integration. Hello Customer Support, I am writing to seek integration guidelines for ClickUp and Adobe Photoshop CC 2021. Can you offer me detailed instructions or documentation on how to integrate these tools? My goal is to optimize my workflow and boost productivity. Particularly, I am interested in learning how to import and export files, as well as how to synchronize tasks and projects between the platforms. Any support or resources you can provide would be very helpful. Thank you for your time and help.",Customer Service,Request,medium,DOC-002,,,0,"Queue: Integration and Third-Party App Support
 Type: Request
 Priority: Medium
 Citations: NONE
 Draft response: 
 Dear [Customer], 
-Thank you for reaching out to us about optimizing your Excel data import process. We'd be happy to help you explore ways to improve your data import efficiency and accuracy. 
-Please allow us to review your current process and provide a more detailed response.",2.09,382,,Investment Analytics Optimization,0,Request,medium,NONE
-T14,V0_baseline,llama3.2:3b,0,Campaign Engagement Issues Reported. The recent campaign did not succeed due to technical problems. Our attempts to resolve these issues have been unsuccessful.,Returns and Exchanges,Incident,medium,DOC-007,,,0,"Queue: Campaign Engagement Issues
-Type: Problem
-Priority: High
+Thank you for reaching out to us about integrating ClickUp with Adobe Photoshop CC 2021. We'll be happy to provide you with more information on how to import and export files, as well as synchronize tasks and projects between the platforms. Please allow us a few hours to research and provide you with the necessary documentation and instructions.",1.2,476,,Integration and Third-Party App Support,0,Request,medium,NONE
+T9,V0_baseline,llama3.2:3b,0,Improve Customer Support. Seeking to enhance data analytics tools to improve investment optimization and decision-making for our firm. Upgrading these tools is essential for making informed decisions and staying competitive in the market. We believe this enhancement is crucial for our growth and success. We look forward to hearing back from you soon. Thank you for your time and assistance.,Customer Service,Change,low,DOC-002,,,0,"Queue: Customer Support Analytics Enhancement
+Type: Request
+Priority: Medium
 Citations: NONE
-Draft response: 
-We apologize for the technical issues that prevented your recent campaign from succeeding. Our team is actively working to resolve the problem, and we will provide an update on the status of the fix as soon as it is available. In the meantime, we can discuss alternative solutions to help you achieve your campaign goals.",1.71,417,,Campaign Engagement Issues,0,Problem,high,NONE
-T15,V0_baseline,llama3.2:3b,0,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,,,0,"Queue: Digital Campaign Support
+Draft response: Thank you for reaching out to us about enhancing our data analytics tools. We'd be happy to discuss how we can improve our investment optimization and decision-making capabilities. Can you please provide more information about your specific requirements and goals?",0.84,373,,Customer Support Analytics Enhancement,0,Request,medium,NONE
+T10,V0_baseline,llama3.2:3b,0,Safekeeping of Medical Data. Could you suggest security measures for safeguarding medical data stored on USB drives? Are there any specific encryption techniques or applications that should be employed to ensure the confidentiality of patient data?,Customer Service,Request,low,DOC-002,,,0,"Queue: Medical Data Security
 Type: Request
 Priority: Medium
 Citations: NONE
 Draft response: 
-Thank you for reaching out to us about your digital campaign engagement challenges. We'd be happy to help you refresh your approach and improve engagement. Our team will review your current strategies and provide recommendations and resources to better understand your audience and create more effective campaigns.",1.65,410,,Digital Campaign Support,0,Request,medium,NONE
-T16,V0_baseline,llama3.2:3b,0,"Support Needed for Marketing Campaign. We launched a digital marketing campaign but are seeing low engagement and conversion rates. This may be due to inadequate targeting or ineffective messaging. Despite adjusting the ad spend and refining the audience segments, we haven't seen significant improvements. We would appreciate some guidance on how to optimize the campaign to achieve better results.",Sales and Pre-Sales,Problem,medium,DOC-008,,,0,"Queue: Marketing Campaign Optimization
+We recommend using full-disk encryption and secure storage solutions, such as encrypted USB drives or cloud storage services with robust security features. Additionally, consider using secure protocols like HTTPS and SFTP to transmit medical data.",0.8,340,,Medical Data Security,0,Request,medium,NONE
+T11,V0_baseline,llama3.2:3b,0,Support for Data Integration. Improve the integration of data between IBM SPSS Statistics and SAP ERP to enhance investment analytics and predictive capabilities.,General Inquiry,Change,low,DOC-003,,,0,"Queue: Data Integration Support
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to our support team. We'd be happy to help improve the integration of data between IBM SPSS Statistics and SAP ERP to enhance investment analytics and predictive capabilities. Can you please provide more information about your current integration setup and desired outcomes?",0.97,396,,Data Integration Support,0,Request,medium,NONE
+T12,V0_baseline,llama3.2:3b,0,Services in Data Analytics. Is it possible to receive data analytics services that optimize investment strategies? Thank you.,General Inquiry,Request,medium,DOC-003,,,0,"Queue: Data Analytics Services
+Type: Request
+Priority: Low
+Citations: NONE
+Draft response: We'd be happy to help you optimize your investment strategies with our data analytics services. Our team can provide personalized recommendations and insights to help you make informed investment decisions. Would you like us to schedule a consultation to discuss further?",0.82,362,,Data Analytics Services,0,Request,low,NONE
+T13,V0_baseline,llama3.2:3b,0,"Support Request: Issue with Integrating SendGrid, GitHub, and Airtable. Greetings, I am encountering difficulties in setting up an automated workflow update system by integrating SendGrid and GitHub with Airtable. Could you please offer assistance with this problem?",General Inquiry,Change,low,DOC-003,,,0,"Queue: Integration Assistance
 Type: Problem
 Priority: Medium
 Citations: NONE
-Draft response: Our team is happy to help you optimize your marketing campaign. Can you please provide more details on your current targeting and messaging strategy, as well as any recent adjustments you've made to the ad spend and audience segments?",1.39,336,,Marketing Campaign Optimization,0,Problem,medium,NONE
-T17,V0_baseline,llama3.2:3b,0,Service Interruption. Seek information on service interruptions impacting investment optimization tools.,Service Outages and Maintenance,Change,high,DOC-009,,,0,"Queue: Investment Optimization Tools Support
-Type: Incident
+Draft response: Thank you for reaching out to us about your integration issues with SendGrid, GitHub, and Airtable. We'd be happy to help you set up an automated workflow update system. Can you please provide more details about the specific challenges you're experiencing?",0.87,349,,Integration Assistance,0,Problem,medium,NONE
+T14,V0_baseline,llama3.2:3b,0,Digital campaigns showing poor performance. Limited data analysis tools are currently utilized,General Inquiry,Problem,low,DOC-003,,,0,"Queue: Digital Campaigns Support
+Type: Problem
 Priority: Medium
 Citations: NONE
-Draft response: We are currently investigating reports of service interruptions impacting investment optimization tools. Our team is working to resolve the issue as soon as possible. In the meantime, please contact us at [insert contact info] for assistance.",1.3,351,,Investment Optimization Tools Support,0,Incident,medium,NONE
-T18,V0_baseline,llama3.2:3b,0,"Platform Crash. Hello Customer Support, I am reporting an unexpected crash of the data analytics platform. It might have been caused by a server overload. Despite my efforts to restart the servers and review the configurations, the problem still exists. I would be grateful if you could look into this and provide a solution promptly. Our business relies heavily on this tool, and its downtime is affecting our operations significantly. Please provide any additional information needed to address this issue and get back to me. I am ready to offer any necessary details or help. I appreciate your swift action on this matter and look forward to your response. The platform's crash is causing considerable disruptions, and I am hopeful we can resolve it swiftly with your support. Please contact me if further information is required. Thank you for your assistance.",Service Outages and Maintenance,Incident,high,DOC-009,,,0,"Queue: Platform Crash
+Draft response: ""Thank you for reaching out about the poor performance of your digital campaigns. We're happy to help you optimize your campaigns and provide more detailed data analysis tools. Can you please provide more information about the specific issues you're experiencing?""",0.8,360,,Digital Campaigns Support,0,Problem,medium,NONE
+T15,V0_baseline,llama3.2:3b,0,"Investment Portfolio Optimization Report Issue. Hello Customer Support, I require assistance with a problem concerning my investment portfolio optimization report. It has not been generated, and I suspect this might be due to a data feed disruption or a system error. Despite restarting my system and verifying the data feeds, the issue remains unresolved. I kindly request that you investigate this matter and offer a solution at your earliest convenience. Please inform me if you require any further information from me to address this issue. Thank you for your attention and support. I am awaiting your response.",General Inquiry,Incident,low,DOC-003,,,0,"Queue: Investment Portfolio Optimization Report
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+Thank you for reaching out to us regarding the issue with your investment portfolio optimization report. 
+We will investigate the matter and work to resolve the issue as soon as possible. 
+Please allow us a few hours to gather more information and get back to you with an update.",1.05,407,,Investment Portfolio Optimization Report,0,Problem,high,NONE
+T16,V0_baseline,llama3.2:3b,0,"Problem with Project Management Features. We are facing a significant issue with the project management features, impacting a large number of users across various platforms. The problem seems to have started after recent software updates, which may suggest potential compatibility issues. Despite attempts to troubleshoot, including clearing the cache, updating software versions, and running system checks, the issue remains unresolved. This is causing affected users difficulty in managing projects, which is impacting their productivity.",Human Resources,Incident,medium,DOC-004,,,0,"Queue: Project Management Issues
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+We apologize for the inconvenience caused by the issue with our project management features. Our team is actively investigating the problem and will provide a resolution as soon as possible. In the meantime, we recommend that you reach out to our dedicated support team for further assistance and guidance.",0.98,401,,Project Management Issues,0,Problem,high,NONE
+T17,V0_baseline,llama3.2:3b,0,Query on Gaming Product Digital Promotion Tactics. Could you furnish more information on digital strategies for promoting gaming products? Thank you!,Human Resources,Request,medium,DOC-004,,,0,"Queue: Gaming Product Support
+Type: Request
+Priority: Low
+Citations: NONE
+Draft response: We'd be happy to help with digital promotion tactics for gaming products. Can you please provide more details about the specific strategies you're looking for, such as social media, email marketing, or influencer partnerships?",0.81,316,Product Support,Gaming Product Support,1,Request,low,NONE
+T18,V0_baseline,llama3.2:3b,0,Hospital Systems Security Breach Detected. security issue identified in hospital systems,Human Resources,Incident,high,DOC-004,,,0,"Queue: Hospital Systems Security Breach Response
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Dear [Customer], We have detected a security issue in our hospital systems and are currently investigating the cause. Our team is working to resolve the issue as quickly as possible and will provide an update as soon as it is resolved. In the meantime, please contact our security team at [security contact info] for further assistance.""",1.08,449,,Hospital Systems Security Breach Response,0,Incident,high,NONE
+T19,V0_baseline,llama3.2:3b,0,"Concern Regarding Precision of QuickBooks Software. Recently encountered problems with the accuracy of QuickBooks, impacting financial reporting.",Human Resources,Incident,low,DOC-004,,,0,"Queue: QuickBooks Accuracy Issues
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us about the accuracy issues you're experiencing with QuickBooks. We'd be happy to help you troubleshoot the problem and provide guidance on resolving the issue. Can you please provide more details about the specific errors you're encountering?",0.92,371,,QuickBooks Accuracy Issues,0,Problem,medium,NONE
+T20,V0_baseline,llama3.2:3b,0,"Company Policies on Remote Work and Flexible Scheduling. I am reaching out to inquire about the company's policies regarding remote work and flexible scheduling, as a prospective employee. I am particularly interested in learning about the company's stance on work-life balance and flexibility. Could you provide me with information on the company's remote work and flexible scheduling policies, as well as any additional benefits that may be available? Additionally, I would be grateful if you could share how these policies are put into practice, including any criteria or responsibilities that employees need to fulfill to participate. Furthermore, I am curious to know if certain roles or departments are eligible for remote work or flexible scheduling. I am excited about the prospect of joining the company and believe that a thorough understanding of these policies will aid in my decision-making. Thank you for your time and assistance, and I look forward to a prompt response. Sincerely, [Your Name]",Human Resources,Request,low,DOC-004,,,0,"Queue: Remote Work and Flexible Scheduling Inquiries
+Type: Request
+Priority: Low
+Citations: NONE
+Draft response: Thank you for reaching out to us about our remote work and flexible scheduling policies. We'd be happy to provide you with more information on our company's stance on work-life balance and flexibility, as well as details on how our policies are put into practice. Please allow 2-3 business days for a response, and we'll be in touch with more information.",1.32,468,,Remote Work and Flexible Scheduling Inquiries,0,Request,low,NONE
+T21,V0_baseline,llama3.2:3b,0,Request for Information on Securing Medical Data Services for Healthcare Providers. Could you provide detailed information on securing medical data services for healthcare providers to ensure the confidentiality and integrity of patient information? Your assistance would be greatly appreciated.,IT Support,Request,high,DOC-005,,,0,"Queue: Medical Data Security
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: We'd be happy to help you secure medical data services for your healthcare providers. Our team can provide guidance on best practices for protecting patient information and ensuring compliance with relevant regulations. Would you like us to schedule a call to discuss further?",0.85,368,,Medical Data Security,0,Request,medium,NONE
+T22,V0_baseline,llama3.2:3b,0,Enhancing Digital Marketing Tactics. Is it possible to offer insights on optimizing digital marketing strategies for our marketing agency? We are looking to enhance our online presence and reach a broader audience. Our team is exploring ways to effectively utilize the products at our disposal to achieve our goals. We would greatly appreciate any guidance or support in this matter.,IT Support,Request,high,DOC-005,,,0,"Queue: Digital Marketing Strategy Support
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+We'd be happy to help you optimize your digital marketing strategies. Our team can provide guidance on leveraging our products to reach a broader audience and enhance your online presence. Would you like us to schedule a call to discuss further?",0.86,351,,Digital Marketing Strategy Support,0,Request,medium,NONE
+T23,V0_baseline,llama3.2:3b,0,"Request for Assistance with Security Incident. I need support in writing a report on a critical security incident. An unauthorized access incident occurred, which could have potentially exposed sensitive medical data and compromised hospital systems. The breach may have happened due to a configuration error in cloud services. I have already reinforced passwords and monitored access logs, but I successfully resolved the immediate issue and now urgently need assistance in containing and investigating the breach. Please provide guidance on the next steps and any additional information required to resolve this matter.",IT Support,Incident,high,DOC-005,,,0,"Queue: Critical Incident Response
 Type: Incident
 Priority: High
 Citations: NONE
 Draft response: 
-""Thank you for reaching out to us regarding the data analytics platform crash. Our team is actively investigating the issue and will work to resolve it as soon as possible. We appreciate your patience and understanding as we work to minimize the impact on your business operations.""",1.67,367,,Platform Crash,0,Incident,high,NONE
-T19,V0_baseline,llama3.2:3b,0,"Enhancing Brand Expansion Through Products. Dear Customer Support, I am writing to seek insights on the digital strategies that can enhance brand expansion through the products your company offers. I am eager to learn how to effectively leverage these products to boost brand visibility and connect with a broader audience. Could you share details on the most successful digital strategies utilized by other clients? Your guidance and suggestions would be greatly appreciated. Moreover, I am interested in understanding the tools and resources available to support brand growth. Thank you for your time and assistance. I look forward to your response.",Technical Support,Request,high,DOC-010,,,0,"Queue: Brand Expansion and Growth
+Dear [Customer], 
+Thank you for reaching out to us regarding the unauthorized access incident. 
+Our team will guide you through the next steps to contain and investigate the breach, and we will require additional information from you to resolve this matter. 
+Please expect a follow-up call from our security expert within the next 2 hours to discuss further.",1.14,455,,Critical Incident Response,0,Incident,high,NONE
+T24,V0_baseline,llama3.2:3b,0,"Improvements. Hello, I need assistance in optimizing digital tools and refining marketing strategies. Could you please inform me about any available upgrades that could help enhance brand growth? I would greatly appreciate your help with this matter.",IT Support,Change,high,DOC-005,,,0,"Queue: Improvements and Enhancements
 Type: Request
 Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us about optimizing your digital tools and refining your marketing strategies. We'd be happy to help you explore available upgrades that can enhance your brand growth. Our team will review your request and get back to you with a personalized solution.",0.91,381,,Improvements and Enhancements,0,Request,medium,NONE
+T25,V0_baseline,llama3.2:3b,0,Data Protection. Seeking advice on data security measures for a hospital's Linux and Alteryx environment. Could offer some general guidance on this matter?,IT Support,Request,medium,DOC-005,,,0,"Queue: Data Protection and Security
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: We'd be happy to help with general guidance on data security measures for your hospital's Linux and Alteryx environment. Please provide more details about your specific concerns and we'll do our best to assist you.",0.84,313,,Data Protection and Security,0,Request,medium,NONE
+T26,V0_baseline,llama3.2:3b,0,"Problem during campaign activation. Campaign launches have not been successful because of potential integration complications with Netgear Wi-Fi. Despite restarting the router and examining MongoDB connections, the problem remains unresolved.",Product Support,Incident,high,DOC-006,,,0,"Queue: Network Integration Issues
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+We apologize for the inconvenience you're experiencing with your campaign activation. Our team is investigating the issue with Netgear Wi-Fi integration and will work to resolve it as soon as possible. In the meantime, we recommend reaching out to our technical support team for further assistance.",0.92,394,,Network Integration Issues,0,Problem,high,NONE
+T27,V0_baseline,llama3.2:3b,0,ClickUp Support Inquiry. The ClickUp integration has suddenly stopped working.,Product Support,Incident,medium,DOC-006,,,0,"Queue: General Support
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Hello, sorry to hear that the ClickUp integration has stopped working. Can you please provide more information about the issue, such as any error messages or recent changes made to your account?""",0.71,281,,General Support,0,Incident,high,NONE
+T28,V0_baseline,llama3.2:3b,0,"Problem with Login in Mobile Application. I am currently facing difficulties in logging into my mobile application, which I suspect is due to the recent software update. Despite attempting to restart the application and clearing the cache, the issue has not been resolved. I kindly request you to look into this matter and provide a prompt solution. Please inform me if there are any specific actions I should take to address this problem. I am eager to receive your feedback and find a solution to my issue. Thank you for your time and assistance.",Product Support,Incident,low,DOC-006,,,0,"Queue: Mobile Application Support
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+We apologize for the inconvenience you're experiencing with logging into your mobile application. We'll investigate the issue related to the recent software update and provide a solution as soon as possible. In the meantime, please try updating your device's operating system and try logging in again.",0.98,399,,Mobile Application Support,0,Problem,medium,NONE
+T29,V0_baseline,llama3.2:3b,0,"Request for Cassandra 4.0 Integration Documentation with Project Management SaaS. I am contacting you to seek information on the available documentation for integrating Cassandra 4.0 with project management software as a service. Could you kindly share any guides, tutorials, or API documentation that might be available? I would greatly appreciate any support you can offer in this regard.",Product Support,Request,medium,DOC-006,,,0,"Queue: Integration Documentation Support
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+We appreciate your interest in integrating Cassandra 4.0 with project management software as a service. Unfortunately, we do not have specific documentation or guides available for this integration. We recommend checking our API documentation for Cassandra 4.0 and exploring third-party resources for project management software integrations.",1.0,447,,Integration Documentation Support,0,Request,medium,NONE
+T30,V0_baseline,llama3.2:3b,0,"Support Case. An unauthorized access incident has taken place, possibly leading to the exposure of sensitive medical information.",Product Support,Incident,high,DOC-006,,,0,"Queue: Incident Response
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Dear [Customer], We are aware of an unauthorized access incident that may have exposed sensitive medical information. Our team is actively investigating the incident and will provide an update as soon as possible. In the meantime, we recommend that you contact our dedicated incident response team at [phone number] or [email address] for further assistance.""",1.04,447,,Incident Response,0,Incident,high,NONE
+T31,V0_baseline,llama3.2:3b,0,"Detected Unlawful Access to Patient Information. Esteemed Customer Support, <br>We have identified unauthorized access to patient data. This may have resulted from inadequate firewall settings. Despite verifying user authentication methods, the problem continues. We require your immediate help to address this emergency and avoid future security breaches. <br>Please instruct us on measures to safeguard our system and prevent such unauthorized access. <br>We are grateful for your rapid intervention. <br>Thank you for your cooperation.",Returns and Exchanges,Incident,low,DOC-007,,,0,"Queue: Security Breach Response
+Type: Incident
+Priority: High
 Citations: NONE
 Draft response: 
 Dear valued customer, 
-We'd be happy to help you explore digital strategies to enhance brand expansion through our products. 
-Please allow 3-5 business days for a response to your inquiry.",1.4,286,,Brand Expansion and Growth,0,Request,medium,NONE
-T20,V0_baseline,llama3.2:3b,0,"Marketing Assistance. Seeking to enhance digital marketing strategies for products affected by recent changes. Believe integrating these efforts will boost brand visibility and customer engagement. Suggestions include social media campaigns, email marketing, and targeted advertising. Looking forward to your guidance. Kindly let me know a suitable time for a meeting to discuss further.",Technical Support,Change,high,DOC-010,,,0,"Queue: Marketing Assistance
+We apologize for the unauthorized access to your patient data and are taking immediate action to address the issue. Our team of experts will work closely with you to implement additional security measures to prevent future breaches and ensure the confidentiality of your data. 
+Please expect a follow-up call from our security team to discuss the details of the incident and the steps we will take to rectify the situation.",1.28,541,,Security Breach Response,0,Incident,high,NONE
+T32,V0_baseline,llama3.2:3b,0,"Problem with Data Analysis Tools. Customers are having trouble accessing critical data analysis tools for investment optimization. The issue might be related to recent software compatibility updates. Restarting applications and reinstalling software seemed to have resolved it for some, but further assistance is needed promptly. Could you please provide the most recent updates and any error messages received when trying to access the data analysis tools? Also, let me know a convenient time to call and discuss this further.",Returns and Exchanges,Incident,medium,DOC-007,,,0,"Queue: Data Analysis Tools Support
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: Thank you for reaching out to us about the issue with your data analysis tools. We're here to help and would like to schedule a call to discuss the issue further and provide any necessary updates. Please let us know a convenient time for you to call us back.",0.99,356,,Data Analysis Tools Support,0,Problem,medium,NONE
+T33,V0_baseline,llama3.2:3b,0,"Support for Campaign Performance Issues. Hello Customer Support, I am contacting you to address the underperformance of our digital campaigns. We suspect that insufficient research on the target audience might be the reason. We have made several attempts to adjust ad targeting and messaging, but the problem continues. I would greatly appreciate any suggestions on how to enhance our campaign performance. Please inform me if you require any additional information. Thank you for your support.",Returns and Exchanges,Problem,low,DOC-007,,,0,"Queue: Campaign Performance Issues
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+We appreciate you reaching out to us regarding the underperformance of your digital campaigns. To better assist you, could you please provide more information on the specific metrics that are not meeting your expectations and any recent changes made to your targeting and messaging?",0.94,381,,Campaign Performance Issues,0,Problem,medium,NONE
+T34,V0_baseline,llama3.2:3b,0,"Concern Regarding Investment Calculations. A financial company is encountering inconsistencies in investment return calculations with H2O.ai SQL Server analytics. The issue might be due to data integration errors or outdated algorithms. To date, the team has reviewed data sources and updated the software, but the inaccuracies persist. Despite attempts to troubleshoot, the problem remains unresolved. We would greatly appreciate it if you could look into this matter and provide a solution as soon as possible. Please let us know if additional information is needed.",Returns and Exchanges,Problem,low,DOC-007,,,0,"Queue: Financial Analytics Support
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+We apologize for the inconsistencies in your investment return calculations with H2O.ai SQL Server analytics. We'll investigate the issue and work with our team to identify the root cause and provide a solution as soon as possible. Please allow 24-48 hours for our response.",1.03,371,,Financial Analytics Support,0,Problem,high,NONE
+T35,V0_baseline,llama3.2:3b,0,"Data Leak. The healthcare facility's system was subjected to a data leak, resulting in the exposure of confidential medical information. This issue might be due to the use of outdated software and inadequate security protocols within the hospital's IT department. We have already updated the software, reset passwords, and performed initial security checks, but the breach still continues. We require your help to resolve this matter and ensure the security of patients' data.",Returns and Exchanges,Problem,medium,DOC-007,,,0,"Queue: Incident Response
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+We apologize for the data leak incident and are taking immediate action to resolve the issue. Our team will conduct a thorough investigation to identify the root cause and implement additional security measures to prevent such incidents in the future. We will keep you updated on the progress of the investigation and resolution.",1.08,435,,Incident Response,0,Incident,high,NONE
+T36,V0_baseline,llama3.2:3b,0,"Issue with Task Disappearance on Dashboard. Hello customer support, we are experiencing delays in our project timelines because tasks are disappearing from the dashboard. Despite restarting servers, reviewing database logs, and confirming user permissions, the problem continues. Potential reasons may involve a MongoDB synchronization issue or a Chef configuration error. Your help in addressing this would greatly assist in regaining team productivity.",Sales and Pre-Sales,Problem,high,DOC-008,,,0,"Queue: Incident Response
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: ""Thank you for reaching out to us about the task disappearance issue on your dashboard. Our team will investigate the potential MongoDB synchronization issue or Chef configuration error to help you regain team productivity. We'll provide an update on our progress as soon as possible.""",0.91,372,,Incident Response,0,Incident,high,NONE
+T37,V0_baseline,llama3.2:3b,0,"Brand Growth Services Inquiry. Hello customer support, I am writing to seek information about the digital strategies your company provides for enhancing brand growth. Could you kindly furnish me with detailed information on these services and their potential benefits for business expansion? I would greatly appreciate any specifics you can offer. I eagerly await your response and am hopeful for a productive conversation. Thank you for your support.",Sales and Pre-Sales,Request,medium,DOC-008,,,0,"Queue: Brand Growth Services Inquiry
 Type: Request
 Priority: Medium
 Citations: NONE
-Draft response: Thank you for reaching out to us regarding your marketing assistance needs. We'd be happy to help you enhance your digital marketing strategies and boost brand visibility and customer engagement. Can you please provide more information about the specific changes affecting your products and what you're hoping to achieve with our guidance?",1.62,430,,Marketing Assistance,0,Request,medium,NONE
-T1,V1_rag,llama3.2:3b,1,"Excessive Billing Inquiry. There are unexpected charges on your monthly invoice due to potential misconfigurations in your subscription settings. You have already contacted support and reviewed the settings, but the issue still exists.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Draft response: 
+Dear [Customer], 
+We'd be happy to help you explore our digital strategies for brand growth. Our team can provide you with more information on our services and their benefits for business expansion. Please allow us to review your inquiry and get back to you shortly.",0.95,367,,Brand Growth Services Inquiry,0,Request,medium,NONE
+T38,V0_baseline,llama3.2:3b,0,Integration of Analytics Tools with RapidMiner for Investment Optimization. Could you please advise on the analytics tools that integrate with RapidMiner for the purpose of investment optimization?,Sales and Pre-Sales,Request,medium,DOC-008,,,0,"Queue: Investment Optimization Tools Integration
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: We'd be happy to help you integrate analytics tools with RapidMiner for investment optimization. Some popular analytics tools that integrate with RapidMiner include Google Analytics, Tableau, and Power BI. We'll need more information from you to determine the best course of action.",0.96,394,,Investment Optimization Tools Integration,0,Request,medium,NONE
+T39,V0_baseline,llama3.2:3b,0,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,,,0,"Queue: Digital Campaign Support
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+We appreciate your feedback and would be happy to assist you in refreshing your digital campaign approach. Our team will review your current strategies and provide recommendations on how to align with current market trends and improve engagement. Please allow 2-3 business days for our response.",0.98,391,,Digital Campaign Support,0,Request,medium,NONE
+T40,V0_baseline,llama3.2:3b,0,"Features for Medium Enterprises. Hello Customer Support, <br>I'm writing to request information about the features of your project management software as it pertains to medium-sized enterprises. <br>Could you please elaborate on the tools and functionalities your platform provides for project planning, execution, and monitoring? <br>I am particularly interested in learning about customization options, integrations with other software, and reporting capabilities. <br>Additionally, I would like to know how your solution can assist medium-sized enterprises in streamlining their project management processes and enhancing team collaboration. <br>Along with this, any details you could provide on pricing, scalability, and customer support would be greatly appreciated. <br>I look forward to your response and am eager to learn more about your project management software. <br>Thank you for your assistance. <br>Sincerely, <br>[Your Name]",Sales and Pre-Sales,Request,medium,DOC-008,,,0,"Queue: Enterprise Features Inquiry
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+We'd be happy to provide more information on our project management software's features and how they can support medium-sized enterprises. Our platform offers customizable workflows, integrations with popular software, and robust reporting capabilities to help streamline project management processes. We'd be delighted to discuss pricing, scalability, and customer support in more detail to determine if our solution meets your specific needs.",1.24,543,,Enterprise Features Inquiry,0,Request,medium,NONE
+T41,V0_baseline,llama3.2:3b,0,"Concern about Service Disruption. A service disruption has affected several software integrations, halting project management processes. This might be due to recent software updates or server issues. I've attempted to restart applications and clear cache, but the problem remains unresolved. I would greatly appreciate if you could address this urgently and provide a solution, along with an estimated time for resolution. Please inform me if there is any additional information needed to assist with the investigation.",Service Outages and Maintenance,Problem,low,DOC-009,,,0,"Queue: Critical Service Disruption
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: 
+Our team is actively investigating the service disruption affecting your software integrations. We apologize for the inconvenience this has caused and will provide an update on the status of the issue as soon as possible. Please allow our team 2-4 hours to resolve the issue, and we will notify you with a further update.",1.09,419,,Critical Service Disruption,0,Incident,high,NONE
+T42,V0_baseline,llama3.2:3b,0,"Alert for Data Breach. Dear Support Team, We are contacting you to alert you about a data breach which was due to a human error. We believe that an employee might have accidentally disclosed confidential information. Despite our efforts to reboot the systems, the issue is still ongoing. We are actively working to resolve this situation and are committed to preventing such breaches in the future. We will keep you informed about the progress and value your patience and understanding. We are dedicated to protecting customer data and will implement all necessary measures to prevent such occurrences in the future.",Service Outages and Maintenance,Incident,high,DOC-009,,,0,"Queue: Incident Response
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+We apologize for the data breach and are actively working to resolve the issue. 
+Our team is committed to protecting your data and will implement all necessary measures to prevent such occurrences in the future.",0.88,317,,Incident Response,0,Incident,high,NONE
+T43,V0_baseline,llama3.2:3b,0,"Problem with Services. We have encountered service interruptions on several important tools, which have impacted our marketing efforts. These disruptions could be due to recent system updates or third-party issues. Despite restarting the systems and checking the operational status, we have not found a solution.",Service Outages and Maintenance,Incident,high,DOC-009,,,0,"Queue: Problem Resolution
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+Our team is investigating the service interruptions on your important tools. We will provide an update on the status of the issue as soon as possible. In the meantime, please reach out to us at [support email] if you need assistance with any urgent tasks.",0.92,343,,Problem Resolution,0,Problem,high,NONE
+T44,V0_baseline,llama3.2:3b,0,"Problem with Server During Peak Hours. To Whom It May Concern, I hope this message finds you well. I am reaching out due to a server outage that happened during our busiest period. It might have been caused by a server overload. My team has tried to address the issue by restarting the servers and reviewing the logs, but the problem still exists. I kindly request your assistance in looking into this issue promptly and offering a solution to prevent similar occurrences in the future. The downtime has greatly affected our operations, and we urgently need to return to normal. Please let us know if there is any information you require from us to help investigate and resolve this matter. Thank you for your swift response. We are looking forward to hearing from you soon.",Service Outages and Maintenance,Incident,medium,DOC-009,,,0,"Queue: Server Outage
+Type: Incident
+Priority: High
+Citations: NONE
+Draft response: 
+Dear [Customer], 
+Thank you for reaching out to us regarding the server outage during peak hours. Our team is actively investigating the cause and working to resolve the issue as soon as possible. We will provide an update on the status of the investigation and any resolution as soon as it is available.",1.1,388,,Server Outage,0,Incident,high,NONE
+T45,V0_baseline,llama3.2:3b,0,Investment Portfolio. I hope this message finds you well. I am interested in learning more about analytics tools that can be used to optimize my investment portfolio for the highest possible returns. Could you please share some information on this matter? It would be greatly appreciated if you could offer any recommendations or advice. Thank you for your time and support.,Service Outages and Maintenance,Request,high,DOC-009,,,0,"Queue: Investment Portfolio Analytics Tools
+Type: Request
+Priority: Low
+Citations: NONE
+Draft response: We'd be happy to help you optimize your investment portfolio for the highest possible returns. Can you please provide more information about your current portfolio and what specific analytics tools you're interested in learning more about?",0.82,343,,Investment Portfolio Analytics Tools,0,Request,low,NONE
+T46,V0_baseline,llama3.2:3b,0,Google Cloud Integration. I require assistance in connecting Google Cloud Platform with our current project management tools to improve scalability and performance. Could you offer some guidance on this?,Technical Support,Change,high,DOC-010,,,0,"Queue: Google Cloud Integration
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: We'd be happy to help you integrate Google Cloud Platform with your project management tools. Can you please provide more details about the tools you're currently using and the specific issues you're experiencing?",0.75,308,,Google Cloud Integration,0,Request,medium,NONE
+T47,V0_baseline,llama3.2:3b,0,"Concerns Regarding Engagement Metric Reduction. Noticed a decline in brand engagement metrics. Recent modifications to our marketing strategies might be the reason. We have reviewed the updated campaigns and observed some positive changes, but further details are needed.",Technical Support,Problem,medium,DOC-010,,,0,"Queue: Marketing Strategy Support
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: 
+We're sorry to hear that you're experiencing a decline in brand engagement metrics. Our team is reviewing the recent marketing campaigns to identify the cause and potential solutions. We'll be in touch soon to discuss further.",0.8,324,,Marketing Strategy Support,0,Problem,medium,NONE
+T48,V0_baseline,llama3.2:3b,0,"Problem with Access to Medical Data. I am reporting a sudden lack of access to medical records. This issue could be due to recent software compatibility issues. I have already attempted to restart the systems and verify the settings, but the problem still exists. I would greatly appreciate your assistance in looking into this and providing a solution as soon as possible. Please inform me if you need any further details from me to resolve this issue.",Technical Support,Incident,medium,DOC-010,,,0,"Queue: Medical Data Access
+Type: Problem
+Priority: High
+Citations: NONE
+Draft response: 
+We apologize for the inconvenience you're experiencing with access to your medical records. Our team is investigating the issue and will work to resolve the software compatibility problem as soon as possible. We will be in touch with you shortly to provide an update on the status of your request.",0.98,386,,Medical Data Access,0,Problem,high,NONE
+T49,V0_baseline,llama3.2:3b,0,Investment Projections Are Inexact. Investment projections are imprecise. The data analytics software seems to have a glitch. Restarted the Hub and Kubernetes.,Technical Support,Problem,low,DOC-010,,,0,"Queue: Investment Projections Glitch
+Type: Problem
+Priority: Medium
+Citations: NONE
+Draft response: We apologize for the inexact investment projections you're experiencing. Our data analytics software is currently undergoing maintenance, and we're investigating the issue. We'll provide an update as soon as the problem is resolved.",0.8,332,,Investment Projections Glitch,0,Problem,medium,NONE
+T50,V0_baseline,llama3.2:3b,0,Concerns About Securing Medical Data on WhatsApp Desktop. I am looking to inquire about measures that can be taken to secure medical data when using WhatsApp Desktop for healthcare-related communications. Could you provide detailed information on the security measures that can be implemented to protect sensitive information? I would greatly appreciate any guidance or best practices for using WhatsApp Desktop in a healthcare setting. Thank you for your assistance with this matter.,Technical Support,Request,medium,DOC-010,,,0,"Queue: Healthcare Security
+Type: Request
+Priority: Medium
+Citations: NONE
+Draft response: 
+We appreciate your concern about securing medical data on WhatsApp Desktop. Our primary focus is on providing a secure and private communication platform for healthcare professionals. We will provide more detailed information on security measures and best practices in our next response.",0.84,378,,Healthcare Security,0,Request,medium,NONE
+T1,V1_rag_open,llama3.2:3b,1,"Troubleshooting Financial Firm's Data Analytics Tools. The financial firm's data analytics tools are experiencing malfunctions, which might be due to compatibility issues with recent software updates. Reinstalling the affected applications and updating drivers resolved the issue previously. We require your assistance to identify and fix the problem.",Billing and Payments,Incident,medium,DOC-001,DOC-002,DOC-002,0,"Queue: Customer Service
 Type: Problem
 Priority: medium
+Citations: DOC-002, DOC-005
+Draft response: Dear [name], thank you for reaching out about the malfunctions with your financial firm's data analytics tools. We've experienced similar issues in the past and would like to assist you in identifying and fixing the compatibility issue. Could you please provide more details on the recent software updates and any error messages you're receiving?",1.97,445,Customer Service,Customer Service,1,Problem,medium,"DOC-002, DOC-005"
+T2,V1_rag_open,llama3.2:3b,1,"Unanticipated Billing Variance in User Accounts. Noticed an unanticipated billing variance across multiple user accounts following a recent update. After reviewing account settings and reprocessing invoices, the discrepancies still exist. Assistance is required to resolve this issue.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Incident
+Priority: medium
 Citations: DOC-001
-Draft response: We've reviewed your subscription settings and billing history, but the issue persists. To further assist you, could you please provide more details about the discrepancies you've found?",2.34,279,Billing and Payments,Billing and Payments,1,Problem,medium,DOC-001
-T2,V1_rag,llama3.2:3b,1,"Detected Payment Processing Problem. I encountered an unexpected payment failure during the renewal of my subscription. It may be because my payment method is outdated. After reviewing my account settings, I did not find a solution. I would greatly appreciate your help in resolving this to avoid any interruptions to my subscription.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Draft response: Dear customer, we are investigating an unanticipated billing variance across multiple user accounts following a recent update. We will review the account settings and reprocess invoices to resolve the discrepancies. Please provide your account number and any relevant information to aid our investigation.",1.78,400,Billing and Payments,Billing and Payments,1,Incident,medium,DOC-001
+T3,V1_rag_open,llama3.2:3b,1,"Encountered Billing Discrepancies with SaaS. Noted billing discrepancies in SaaS, with recent overcharges. These issues might be linked to recent system updates or payment gateway problems. Recalculated invoices and verified payment configurations, but the problems still exist.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Incident
+Priority: medium
+Citations: DOC-001
+Draft response: Thank you for reaching out to us about the billing discrepancies in your SaaS account. We've reviewed the recent system updates and payment gateway issues that may be causing the overcharges. We'd like to schedule a call to discuss this further and work on resolving the issue.",1.76,372,Billing and Payments,Billing and Payments,1,Incident,medium,DOC-001
+T4,V1_rag_open,llama3.2:3b,1,"Unexpected Excessive Billing Errors This Month. Several subscriptions were overcharged at the same time due to a possible system glitch or synchronization issue. I have already contacted support and reviewed the invoices manually, but the problem remains unresolved. I would be grateful if you could look into this issue and provide a solution as soon as possible.",Billing and Payments,Incident,high,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Problem
+Priority: low
+Citations: DOC-001
+Draft response: Dear [Name], we acknowledge your email regarding the unexpected excessive billing errors this month. We will review your account and investigate the possible system glitch or synchronization issue that led to the overcharging of your subscriptions. We will be in touch with you shortly to discuss the next steps to resolve this matter.",1.73,426,Billing and Payments,Billing and Payments,1,Problem,low,DOC-001
+T5,V1_rag_open,llama3.2:3b,1,Concerns Regarding Subscription Billing Services. Facing issues with billing amounts,Billing and Payments,Problem,high,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
 Type: Incident
 Priority: high
 Citations: DOC-001
-Draft response: Hello, I'm here to help you resolve the payment processing problem with your subscription renewal. Could you please provide your account number and the date of the failed payment so I can investigate and assist you further?",2.35,316,Billing and Payments,Billing and Payments,1,Incident,high,DOC-001
-T3,V1_rag,llama3.2:3b,1,Campaign Data Lost in HubSpot CRM Linked to SAP ERP Integration. Your campaign data has vanished from HubSpot CRM because of problems with the SAP ERP integration. You have already restarted the NAS-System and verified your network settings.,Customer Service,Incident,medium,DOC-002,DOC-003,DOC-003,0,"Queue: General Inquiry
-Type: Incident
+Draft response: We regret any frustration caused by unexpected billing discrepancies. We will review your account and payment details to identify the cause of the issue and provide a solution promptly.",1.19,278,Billing and Payments,Billing and Payments,1,Incident,high,DOC-001
+T6,V1_rag_open,llama3.2:3b,1,"Inquiry About ClickUp Integration Specifications. Seeking comprehensive information on integrating ClickUp for scalable SaaS project management. This would significantly aid in streamlining our workflow and enhancing productivity. Thank you for your assistance, and we look forward to your response soon.",Customer Service,Request,medium,DOC-002,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Request
 Priority: medium
-Citations: DOC-003, DOC-008
-Draft response: Thank you for reaching out about the issue with your campaign data being lost in HubSpot CRM due to problems with the SAP ERP integration. We apologize for the inconvenience this has caused and would like to help resolve the issue. Can you please provide more details about the last time you noticed the data was accurate and any error messages you've encountered?",2.9,463,General Inquiry,General Inquiry,1,Incident,medium,"DOC-003, DOC-008"
-T4,V1_rag,llama3.2:3b,1,"Reported Slow Performance in Applications. Multiple software applications are currently experiencing slow performance. This might be due to conflicting updates or insufficient system resources. Steps like restarting and freeing up resources have been attempted, but the issue still persists.",Customer Service,Incident,low,DOC-002,DOC-010,DOC-007,0,"Queue: Technical Support
-Type: Incident
-Priority: medium
-Citations: DOC-010, DOC-005
-Draft response: I will examine your concern and reach out to you at <tel_num> to explore additional troubleshooting methods and solutions. Can you please provide more details about the applications experiencing slow performance, such as the software versions and any error messages you've encountered?",2.44,386,Technical Support,Technical Support,1,Incident,medium,"DOC-010, DOC-005"
-T5,V1_rag,llama3.2:3b,1,"Update to Digital Toolkit. Hello Customer Support, I am contacting you to request an upgrade to our digital toolkit to include new software integrations. This upgrade is crucial for us to improve our brand growth strategies and campaign management. The new integrations will allow us to handle our campaigns more efficiently and effectively, track our progress, and base our decisions on data. I believe this upgrade is vital for our company's ongoing success. I would greatly appreciate an estimate of when this can be done. Thank you for your time and help. I look forward to your response.",General Inquiry,Change,low,DOC-003,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Citations: DOC-006, DOC-010
+Draft response: Thank you for reaching out to our support team regarding the integration specifications for ClickUp. We'll review our current documentation and provide you with comprehensive information on integrating ClickUp for scalable SaaS project management. We'll get back to you soon with more details.",1.74,391,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-010"
+T7,V1_rag_open,llama3.2:3b,1,Security Requirement. It is crucial to implement strengthened security measures to protect medical data in our hospital systems urgently. This will enhance overall safety.,Customer Service,Change,high,DOC-002,DOC-001,DOC-001,0,"Queue: Billing and Payments
 Type: Change
 Priority: medium
-Citations: DOC-007
-Draft response: Thank you for reaching out to us regarding the upgrade to your digital toolkit. We'll investigate the matter and provide an update on the feasibility and timeline for implementation. We'll be in touch soon to discuss further.",2.49,319,Returns and Exchanges,Returns and Exchanges,1,Change,medium,DOC-007
-T6,V1_rag,llama3.2:3b,1,"Issue with Inconsistent Results in Investment Optimization Tool. Dear Customer Support, I have been encountering inconsistent results with the investment optimization analytics tool. It seems that recent changes to the data sources might be the cause. After attempting to refresh the data sources and recalibrate the analytics model, the issue still persists. I have also ensured that my system meets all the necessary requirements and checked for any software updates. However, the inconsistent results continue to impact my ability to make informed investment decisions. Could you please assist in resolving this issue?",General Inquiry,Incident,low,DOC-003,DOC-003,DOC-003,1,"Queue: General Inquiry
-Type: Problem
+Citations: DOC-001, DOC-007
+Draft response: Thank you for bringing this to our attention. We will review and enhance security measures for medical data in hospital systems to ensure compliance and protection against cyber threats.",1.44,288,Billing and Payments,Billing and Payments,1,Change,medium,"DOC-001, DOC-007"
+T8,V1_rag_open,llama3.2:3b,1,"Guidance on ClickUp Adobe Photoshop CC 2021 Integration. Hello Customer Support, I am writing to seek integration guidelines for ClickUp and Adobe Photoshop CC 2021. Can you offer me detailed instructions or documentation on how to integrate these tools? My goal is to optimize my workflow and boost productivity. Particularly, I am interested in learning how to import and export files, as well as how to synchronize tasks and projects between the platforms. Any support or resources you can provide would be very helpful. Thank you for your time and help.",Customer Service,Request,medium,DOC-002,DOC-005,DOC-005,0,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-010
+Draft response: Dear [Name], thank you for reaching out to our customer support team regarding the integration guidelines for ClickUp and Adobe Photoshop CC 2021. We will review our current resources and provide you with detailed instructions or documentation on how to integrate these tools. We will also look into the possibility of enhancing our integration capabilities with ClickUp in the future.",1.87,483,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-010"
+T9,V1_rag_open,llama3.2:3b,1,Improve Customer Support. Seeking to enhance data analytics tools to improve investment optimization and decision-making for our firm. Upgrading these tools is essential for making informed decisions and staying competitive in the market. We believe this enhancement is crucial for our growth and success. We look forward to hearing back from you soon. Thank you for your time and assistance.,Customer Service,Change,low,DOC-002,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Change
 Priority: high
-Citations: DOC-003, DOC-005
-Draft response: Thank you for reaching out to us about the inconsistent results in your investment optimization analytics tool. We'll look into this matter and verify if recent changes to the data sources are the cause of the issue. Please provide more details about the data sources you've updated and the specific results you're experiencing.",3.16,424,General Inquiry,General Inquiry,1,Problem,high,"DOC-003, DOC-005"
-T7,V1_rag,llama3.2:3b,1,Technical Issue with Data Synchronization Across Platforms. We are currently experiencing discrepancies in reports and analytics tools due to an integration problem.,Human Resources,Problem,low,DOC-004,DOC-003,DOC-003,0,"Queue: General Inquiry
-Type: Incident
-Priority: low
-Citations: DOC-003, DOC-006
-Draft response: Thank you for reaching out about the discrepancies in reports and analytics tools. Could you please provide more information about the specific issue you're experiencing, such as the platforms involved and any error messages you've encountered?",2.52,340,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-006"
-T8,V1_rag,llama3.2:3b,1,"Support for Digital Marketing Strategies. Enhance digital marketing strategies tools to boost brand growth and improve customer engagement, aiming to effectively reach the target audience.",Human Resources,Change,medium,DOC-004,DOC-003,DOC-003,0,"Queue: General Inquiry
+Citations: DOC-006, DOC-001
+Draft response: Thank you for reaching out to us about enhancing data analytics tools for improved investment optimization and decision-making. We appreciate your interest in upgrading these tools to stay competitive in the market and drive growth for your firm.",1.62,341,Product Support,Product Support,1,Change,high,"DOC-006, DOC-001"
+T10,V1_rag_open,llama3.2:3b,1,Safekeeping of Medical Data. Could you suggest security measures for safeguarding medical data stored on USB drives? Are there any specific encryption techniques or applications that should be employed to ensure the confidentiality of patient data?,Customer Service,Request,low,DOC-002,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-007
+Draft response: We recommend using encryption techniques such as AES-256 to safeguard medical data stored on USB drives. Additionally, consider using secure applications like Veracrypt or BitLocker to protect patient data.",1.42,304,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-007"
+T11,V1_rag_open,llama3.2:3b,1,Support for Data Integration. Improve the integration of data between IBM SPSS Statistics and SAP ERP to enhance investment analytics and predictive capabilities.,General Inquiry,Change,low,DOC-003,DOC-002,DOC-002,0,"Queue: Customer Service
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-001
+Draft response: Thank you for reaching out to our support team. We can provide guidance on improving the integration of data between IBM SPSS Statistics and SAP ERP for enhanced investment analytics and predictive capabilities. We will need more information about your current setup to better assist you.",1.57,387,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-001"
+T12,V1_rag_open,llama3.2:3b,1,Services in Data Analytics. Is it possible to receive data analytics services that optimize investment strategies? Thank you.,General Inquiry,Request,medium,DOC-003,DOC-001,DOC-001,0,"Queue: Customer Service
 Type: Request
 Priority: low
-Citations: DOC-003, DOC-002
-Draft response: Thank you for reaching out to us about enhancing your digital marketing strategies. We'd be happy to provide guidance on tools and methods to boost brand growth and improve customer engagement. Please allow us to review your request and get back to you soon.",2.5,353,General Inquiry,General Inquiry,1,Request,low,"DOC-003, DOC-002"
-T9,V1_rag,llama3.2:3b,1,"Problem with SaaS system. The SaaS system has failed, leading to data loss and hindering our workflow. We have rebooted the server and reviewed the logs, yet the issue remains unresolved.",IT Support,Problem,high,DOC-005,DOC-009,DOC-004,0,"Queue: Human Resources
-Type: Incident
-Priority: medium
-Citations: DOC-004, DOC-009
-Draft response: We acknowledge the receipt of your email regarding the reported issue with the SaaS system failure. We understand that the issue has resulted in data loss and hindered your workflow. Please provide any additional details or error messages you have encountered to assist in resolving the issue.",2.64,392,Human Resources,Human Resources,1,Incident,medium,"DOC-004, DOC-009"
-T10,V1_rag,llama3.2:3b,1,Problem with Adobe Premiere Pro. Encountered system crashes while editing videos in Adobe Premiere Pro 2021,IT Support,Incident,high,DOC-005,DOC-010,DOC-005,1,"Queue: Technical Support
-Type: Incident
-Priority: high
-Citations: DOC-010, DOC-002
+Citations: DOC-002, DOC-008
+Draft response: Thank you for your inquiry regarding data analytics services. We use advanced tools and techniques to analyze market trends and predict investment outcomes. We would be happy to discuss the costs and provide case studies.",1.54,317,Customer Service,Customer Service,1,Request,low,"DOC-002, DOC-008"
+T13,V1_rag_open,llama3.2:3b,1,"Support Request: Issue with Integrating SendGrid, GitHub, and Airtable. Greetings, I am encountering difficulties in setting up an automated workflow update system by integrating SendGrid and GitHub with Airtable. Could you please offer assistance with this problem?",General Inquiry,Change,low,DOC-003,DOC-010,DOC-010,0,"Queue: Technical Support
+Type: Problem
+Priority: low
+Citations: DOC-010
 Draft response: 
-Dear customer, 
-Thank you for reaching out to us regarding the system crashes in Adobe Premiere Pro 2021. 
-I will look into the issue and arrange a call to discuss the problem and explore potential solutions to prevent future occurrences at a convenient time.",2.84,359,Technical Support,Technical Support,1,Incident,high,"DOC-010, DOC-002"
-T11,V1_rag,llama3.2:3b,1,Unanticipated Crash of Campaign. The digital campaign abruptly stopped functioning. Possible reasons include incompatible recent software updates. Restarting the system and verifying compatibility did not resolve the problem. Urgent assistance is required to address this.,Product Support,Incident,low,DOC-006,DOC-009,DOC-009,0,"Queue: Service Outages and Maintenance
+We acknowledge the issue with integrating SendGrid, GitHub, and Airtable. To assist you further, could you please provide more details on the specific difficulties you are experiencing with the automated workflow update system?",1.58,316,Technical Support,Technical Support,1,Problem,low,DOC-010
+T14,V1_rag_open,llama3.2:3b,1,Digital campaigns showing poor performance. Limited data analysis tools are currently utilized,General Inquiry,Problem,low,DOC-003,DOC-003,DOC-003,1,"Queue: General Inquiry
+Type: Problem
+Priority: low
+Citations: DOC-003
+Draft response: Thank you for reaching out to us about the poor performance of your digital campaigns. Could you please provide more details about the data analysis tools you are currently using and any specific issues you are experiencing? This will help us better understand the situation and provide guidance on potential solutions.",1.58,405,General Inquiry,General Inquiry,1,Problem,low,DOC-003
+T15,V1_rag_open,llama3.2:3b,1,"Investment Portfolio Optimization Report Issue. Hello Customer Support, I require assistance with a problem concerning my investment portfolio optimization report. It has not been generated, and I suspect this might be due to a data feed disruption or a system error. Despite restarting my system and verifying the data feeds, the issue remains unresolved. I kindly request that you investigate this matter and offer a solution at your earliest convenience. Please inform me if you require any further information from me to address this issue. Thank you for your attention and support. I am awaiting your response.",General Inquiry,Incident,low,DOC-003,DOC-010,DOC-010,1,"Queue: Technical Support
 Type: Incident
 Priority: high
-Citations: DOC-010, DOC-005
-Draft response: Our system is currently experiencing an unanticipated crash of a digital campaign. We are investigating the cause and will reach out to you at <tel_num> to explore additional troubleshooting methods and solutions.",2.27,326,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,high,"DOC-010, DOC-005"
-T12,V1_rag,llama3.2:3b,1,"Concern about Campaign Analytics Dashboard. The campaign analytics dashboard is not showing data, which may be due to an API connection problem or outdated software. I have already tried restarting the system and verifying the API credentials.",Product Support,Problem,medium,DOC-006,DOC-003,DOC-003,0,"Queue: General Inquiry
+Citations: DOC-010, DOC-003
+Draft response: Dear <name>, we regret the issue with your investment portfolio optimization report. We will investigate the matter and provide a solution at your earliest convenience. Please provide any additional information you can to help us troubleshoot the issue.",1.77,352,Technical Support,Technical Support,1,Incident,high,"DOC-010, DOC-003"
+T16,V1_rag_open,llama3.2:3b,1,"Problem with Project Management Features. We are facing a significant issue with the project management features, impacting a large number of users across various platforms. The problem seems to have started after recent software updates, which may suggest potential compatibility issues. Despite attempts to troubleshoot, including clearing the cache, updating software versions, and running system checks, the issue remains unresolved. This is causing affected users difficulty in managing projects, which is impacting their productivity.",Human Resources,Incident,medium,DOC-004,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
 Type: Incident
 Priority: medium
-Citations: DOC-003, DOC-010
-Draft response: Thank you for reaching out to us regarding the issue with your campaign analytics dashboard not showing data. We'll investigate the possible causes, such as API connection problems or outdated software, and get back to you with an update on our progress.",2.27,353,General Inquiry,General Inquiry,1,Incident,medium,"DOC-003, DOC-010"
-T13,V1_rag,llama3.2:3b,1,"Enhance Efficiency of Excel Data Imports for Investment Analytics. Hello support team, I am contacting you to seek help in optimizing the process of importing data from Excel to enhance investment analytics and reporting efficiency. Our team currently devotes much time to manually transferring data from Excel sheets, which can result in inaccuracies and delays. I believe that by improving this procedure, we could increase our productivity and improve our returns. Could you provide advice on how to optimize our data import procedure? I would be grateful for any suggestions or solutions you can offer. Thank you for your time and assistance. We are looking forward to your prompt response.",Returns and Exchanges,Change,low,DOC-007,DOC-008,DOC-003,1,"Queue: General Inquiry
+Citations: DOC-007, DOC-002, DOC-007, DOC-009
+Draft response: We acknowledge the issue with the project management features and apologize for the impact on your productivity. We will investigate the cause of the problem, which may be related to compatibility issues arising from recent software updates. Please provide specific error messages and detailed descriptions of the symptoms you are experiencing.",1.92,467,Returns and Exchanges,Returns and Exchanges,1,Incident,medium,"DOC-007, DOC-002, DOC-007, DOC-009"
+T17,V1_rag_open,llama3.2:3b,1,Query on Gaming Product Digital Promotion Tactics. Could you furnish more information on digital strategies for promoting gaming products? Thank you!,Human Resources,Request,medium,DOC-004,DOC-002,DOC-002,0,"Queue: Customer Service
+Type: Request
+Priority: low
+Citations: DOC-002, DOC-008, DOC-007
+Draft response: We appreciate your query on digital strategies for promoting gaming products. We can provide information on effective digital tactics used by gaming brands, including social media campaigns and influencer marketing. Would you like to discuss further?",1.45,355,Customer Service,Customer Service,1,Request,low,"DOC-002, DOC-008, DOC-007"
+T18,V1_rag_open,llama3.2:3b,1,Hospital Systems Security Breach Detected. security issue identified in hospital systems,Human Resources,Incident,high,DOC-004,DOC-010,DOC-010,0,"Queue: Technical Support
+Type: Incident
+Priority: high
+Citations: DOC-010, DOC-006
+Draft response: 
+We have detected a security issue in your hospital systems and are taking immediate action to investigate and resolve the issue. Please provide information about the error messages encountered with the affected systems so we can assist further.",1.42,344,Technical Support,Technical Support,1,Incident,high,"DOC-010, DOC-006"
+T19,V1_rag_open,llama3.2:3b,1,"Concern Regarding Precision of QuickBooks Software. Recently encountered problems with the accuracy of QuickBooks, impacting financial reporting.",Human Resources,Incident,low,DOC-004,DOC-005,DOC-005,0,"Queue: Billing and Payments
+Type: Incident
+Priority: medium
+Citations: DOC-001, DOC-006
+Draft response: We are aware of the issue with the accuracy of QuickBooks software impacting financial reporting. Our team is investigating the root cause and will provide an update shortly to mitigate any further disruptions. In the meantime, please contact us at [support email] for assistance.",1.44,384,Billing and Payments,Billing and Payments,1,Incident,medium,"DOC-001, DOC-006"
+T20,V1_rag_open,llama3.2:3b,1,"Company Policies on Remote Work and Flexible Scheduling. I am reaching out to inquire about the company's policies regarding remote work and flexible scheduling, as a prospective employee. I am particularly interested in learning about the company's stance on work-life balance and flexibility. Could you provide me with information on the company's remote work and flexible scheduling policies, as well as any additional benefits that may be available? Additionally, I would be grateful if you could share how these policies are put into practice, including any criteria or responsibilities that employees need to fulfill to participate. Furthermore, I am curious to know if certain roles or departments are eligible for remote work or flexible scheduling. I am excited about the prospect of joining the company and believe that a thorough understanding of these policies will aid in my decision-making. Thank you for your time and assistance, and I look forward to a prompt response. Sincerely, [Your Name]",Human Resources,Request,low,DOC-004,DOC-004,DOC-004,1,"Queue: Human Resources
+Type: Request
+Priority: low
+Citations: DOC-004
+Draft response: Thank you for your interest in our company's policies regarding remote work and flexible scheduling. I'll be happy to provide you with information on our stance on work-life balance and flexibility, as well as any additional benefits that may be available. Please allow me to look into this further and I will be in touch with you shortly.",1.92,425,Human Resources,Human Resources,1,Request,low,DOC-004
+T21,V1_rag_open,llama3.2:3b,1,Request for Information on Securing Medical Data Services for Healthcare Providers. Could you provide detailed information on securing medical data services for healthcare providers to ensure the confidentiality and integrity of patient information? Your assistance would be greatly appreciated.,IT Support,Request,high,DOC-005,DOC-002,DOC-008,0,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: medium
+Citations: DOC-008, DOC-002
+Draft response: We appreciate your interest in securing medical data services for healthcare providers. Our team offers a range of solutions to ensure the confidentiality and integrity of patient information, including data encryption, access controls, and network security measures. We would be happy to provide more details and discuss how our solutions can meet your specific needs.",1.81,471,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,medium,"DOC-008, DOC-002"
+T22,V1_rag_open,llama3.2:3b,1,Enhancing Digital Marketing Tactics. Is it possible to offer insights on optimizing digital marketing strategies for our marketing agency? We are looking to enhance our online presence and reach a broader audience. Our team is exploring ways to effectively utilize the products at our disposal to achieve our goals. We would greatly appreciate any guidance or support in this matter.,IT Support,Request,high,DOC-005,DOC-006,DOC-006,0,"Queue: Customer Service
 Type: Request
 Priority: medium
 Citations: DOC-002, DOC-008
-Draft response: Hello, thank you for reaching out to us about optimizing your Excel data import process for investment analytics. We'd be happy to provide guidance on improving data import efficiency and offer suggestions for increasing productivity and accuracy.",2.64,345,General Inquiry,General Inquiry,1,Request,medium,"DOC-002, DOC-008"
-T14,V1_rag,llama3.2:3b,1,Campaign Engagement Issues Reported. The recent campaign did not succeed due to technical problems. Our attempts to resolve these issues have been unsuccessful.,Returns and Exchanges,Incident,medium,DOC-007,DOC-007,DOC-002,1,"Queue: Customer Service
+Draft response: Dear [Name], thank you for reaching out to our support team. We'd be happy to assist with optimizing your digital marketing strategies for your marketing agency. Please provide more details about your current approach and goals, and we'll do our best to offer guidance and support.",1.66,380,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-008"
+T23,V1_rag_open,llama3.2:3b,1,"Request for Assistance with Security Incident. I need support in writing a report on a critical security incident. An unauthorized access incident occurred, which could have potentially exposed sensitive medical data and compromised hospital systems. The breach may have happened due to a configuration error in cloud services. I have already reinforced passwords and monitored access logs, but I successfully resolved the immediate issue and now urgently need assistance in containing and investigating the breach. Please provide guidance on the next steps and any additional information required to resolve this matter.",IT Support,Incident,high,DOC-005,DOC-001,DOC-001,0,"Queue: Billing and Payments
 Type: Incident
 Priority: medium
-Citations: DOC-002, DOC-007
-Draft response: Thank you for reaching out about the technical issues affecting your recent campaign. We'll investigate the cause of the problem and work to resolve it as soon as possible. Can you please provide more details about the technical issues you're experiencing?",2.7,356,Customer Service,Customer Service,1,Incident,medium,"DOC-002, DOC-007"
-T15,V1_rag,llama3.2:3b,1,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,DOC-002,DOC-008,1,"Queue: Sales and Pre-Sales
-Type: Problem
+Citations: DOC-001, DOC-007, DOC-004, DOC-010
+Draft response: Dear [Name], thank you for reporting the security incident. We will guide you through the next steps to contain and investigate the breach. Please provide detailed information about the incident, including the date and time it occurred, the systems affected, and any error messages you've received.",2.0,420,Billing and Payments,Billing and Payments,1,Incident,medium,"DOC-001, DOC-007, DOC-004, DOC-010"
+T24,V1_rag_open,llama3.2:3b,1,"Improvements. Hello, I need assistance in optimizing digital tools and refining marketing strategies. Could you please inform me about any available upgrades that could help enhance brand growth? I would greatly appreciate your help with this matter.",IT Support,Change,high,DOC-005,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Request
 Priority: low
-Citations: DOC-008
-Draft response: 
-Thank you for reaching out to us about your digital campaign engagement challenges. We'd be happy to help you refresh your approach and provide recommendations on how to better understand your audience and create more effective campaigns. Please share more details about your current targeting approach and the kind of content you're using.",2.98,431,Sales and Pre-Sales,Sales and Pre-Sales,1,Problem,low,DOC-008
-T16,V1_rag,llama3.2:3b,1,"Support Needed for Marketing Campaign. We launched a digital marketing campaign but are seeing low engagement and conversion rates. This may be due to inadequate targeting or ineffective messaging. Despite adjusting the ad spend and refining the audience segments, we haven't seen significant improvements. We would appreciate some guidance on how to optimize the campaign to achieve better results.",Sales and Pre-Sales,Problem,medium,DOC-008,DOC-002,DOC-003,1,"Queue: General Inquiry
+Citations: DOC-009, DOC-006
+Draft response: Thank you for reaching out to us about optimizing digital tools and refining marketing strategies. We'd be happy to provide you with information and insights on available upgrades that could help enhance brand growth. Please allow us to contact you at a later time to discuss these further.",1.64,385,General Inquiry,General Inquiry,1,Request,low,"DOC-009, DOC-006"
+T25,V1_rag_open,llama3.2:3b,1,Data Protection. Seeking advice on data security measures for a hospital's Linux and Alteryx environment. Could offer some general guidance on this matter?,IT Support,Request,medium,DOC-005,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Request
+Priority: medium
+Citations: DOC-007, DOC-009
+Draft response: We can provide general guidance on data security measures for a hospital's Linux and Alteryx environment. Please let us know if you would like specific recommendations for encryption methods, access controls, or data backup procedures. We will be happy to assist you further.",1.56,379,Returns and Exchanges,Returns and Exchanges,1,Request,medium,"DOC-007, DOC-009"
+T26,V1_rag_open,llama3.2:3b,1,"Problem during campaign activation. Campaign launches have not been successful because of potential integration complications with Netgear Wi-Fi. Despite restarting the router and examining MongoDB connections, the problem remains unresolved.",Product Support,Incident,high,DOC-006,DOC-006,DOC-006,1,"Queue: Product Support
 Type: Incident
 Priority: low
-Citations: DOC-003, DOC-008
-Draft response: We've received your concern about low engagement and conversion rates in your digital marketing campaign. Can you please provide more details about your targeting approach and the kind of content you're using, so we can better assist you in optimizing the campaign?",2.59,361,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-008"
-T17,V1_rag,llama3.2:3b,1,Service Interruption. Seek information on service interruptions impacting investment optimization tools.,Service Outages and Maintenance,Change,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Citations: DOC-006, DOC-010
+Draft response: I'm sorry to hear that your campaign activation is experiencing issues due to potential integration complications with Netgear Wi-Fi. I'll look into this further and reach out to you at <tel_num> to discuss and find a solution.",1.51,323,Product Support,Product Support,1,Incident,low,"DOC-006, DOC-010"
+T27,V1_rag_open,llama3.2:3b,1,ClickUp Support Inquiry. The ClickUp integration has suddenly stopped working.,Product Support,Incident,medium,DOC-006,DOC-005,DOC-005,1,"Queue: IT Support
 Type: Incident
 Priority: medium
-Citations: DOC-009, DOC-009
-Draft response: Dear [Name], thank you for reaching out to us regarding the service interruption affecting your investment optimization tools. We apologize for the inconvenience caused and are happy to assist in resolving the issue. We will investigate the cause of the outage and provide an update on our progress.",2.45,414,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,"DOC-009, DOC-009"
-T18,V1_rag,llama3.2:3b,1,"Platform Crash. Hello Customer Support, I am reporting an unexpected crash of the data analytics platform. It might have been caused by a server overload. Despite my efforts to restart the servers and review the configurations, the problem still exists. I would be grateful if you could look into this and provide a solution promptly. Our business relies heavily on this tool, and its downtime is affecting our operations significantly. Please provide any additional information needed to address this issue and get back to me. I am ready to offer any necessary details or help. I appreciate your swift action on this matter and look forward to your response. The platform's crash is causing considerable disruptions, and I am hopeful we can resolve it swiftly with your support. Please contact me if further information is required. Thank you for your assistance.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-003,1,"Queue: General Inquiry
+Citations: DOC-005, DOC-007
+Draft response: Dear [name], thank you for reaching out to us regarding the sudden stoppage of the ClickUp integration. Could you please provide more details about the issue, such as any error messages you've encountered, to help us troubleshoot and resolve the problem?",1.58,348,IT Support,IT Support,1,Incident,medium,"DOC-005, DOC-007"
+T28,V1_rag_open,llama3.2:3b,1,"Problem with Login in Mobile Application. I am currently facing difficulties in logging into my mobile application, which I suspect is due to the recent software update. Despite attempting to restart the application and clearing the cache, the issue has not been resolved. I kindly request you to look into this matter and provide a prompt solution. Please inform me if there are any specific actions I should take to address this problem. I am eager to receive your feedback and find a solution to my issue. Thank you for your time and assistance.",Product Support,Incident,low,DOC-006,DOC-007,DOC-007,0,"Queue: IT Support
 Type: Incident
-Priority: low
-Citations: DOC-003, DOC-009, DOC-005
-Draft response: 
-Dear [Customer], 
-Thank you for reaching out to us regarding the unexpected crash of your data analytics platform. 
-Could you please provide more details about the issue, such as any error messages you received or the specific actions you took to restart the servers and review the configurations?",2.98,403,General Inquiry,General Inquiry,1,Incident,low,"DOC-003, DOC-009, DOC-005"
-T19,V1_rag,llama3.2:3b,1,"Enhancing Brand Expansion Through Products. Dear Customer Support, I am writing to seek insights on the digital strategies that can enhance brand expansion through the products your company offers. I am eager to learn how to effectively leverage these products to boost brand visibility and connect with a broader audience. Could you share details on the most successful digital strategies utilized by other clients? Your guidance and suggestions would be greatly appreciated. Moreover, I am interested in understanding the tools and resources available to support brand growth. Thank you for your time and assistance. I look forward to your response.",Technical Support,Request,high,DOC-010,DOC-002,DOC-008,0,"Queue: Sales and Pre-Sales
+Priority: medium
+Citations: DOC-007, DOC-010
+Draft response: Thank you for reaching out to us about the issue with your mobile application login. I've checked on the status of the recent software update and will investigate further to assist you in resolving this issue. Please provide more details about the error message you're receiving.",1.58,373,IT Support,IT Support,1,Incident,medium,"DOC-007, DOC-010"
+T29,V1_rag_open,llama3.2:3b,1,"Request for Cassandra 4.0 Integration Documentation with Project Management SaaS. I am contacting you to seek information on the available documentation for integrating Cassandra 4.0 with project management software as a service. Could you kindly share any guides, tutorials, or API documentation that might be available? I would greatly appreciate any support you can offer in this regard.",Product Support,Request,medium,DOC-006,DOC-008,DOC-002,0,"Queue: Customer Service
 Type: Request
 Priority: high
-Citations: DOC-008
-Draft response: Thank you for reaching out to us about enhancing brand expansion through our products. We'd be happy to provide guidance on the most effective digital strategies to boost brand visibility and connect with a broader audience. Could you please share more information about your current marketing efforts and what you aim to accomplish with these digital strategies?",2.74,454,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,high,DOC-008
-T20,V1_rag,llama3.2:3b,1,"Marketing Assistance. Seeking to enhance digital marketing strategies for products affected by recent changes. Believe integrating these efforts will boost brand visibility and customer engagement. Suggestions include social media campaigns, email marketing, and targeted advertising. Looking forward to your guidance. Kindly let me know a suitable time for a meeting to discuss further.",Technical Support,Change,high,DOC-010,DOC-003,DOC-007,0,"Queue: Customer Service
+Citations: DOC-002, DOC-008
+Draft response: Thank you for reaching out to our service desk regarding the integration documentation for Cassandra 4.0 with project management SaaS. We will review our available resources to provide you with the most up-to-date information on guides, tutorials, and API documentation for this integration. Please allow us to contact you at a later time to discuss the details.",2.01,459,Customer Service,Customer Service,1,Request,high,"DOC-002, DOC-008"
+T30,V1_rag_open,llama3.2:3b,1,"Support Case. An unauthorized access incident has taken place, possibly leading to the exposure of sensitive medical information.",Product Support,Incident,high,DOC-006,DOC-001,DOC-001,0,"Queue: Billing and Payments
+Type: Problem
+Priority: medium
+Citations: DOC-001
+Draft response: We are unable to determine the cause of the unauthorized access incident and would like to investigate further. Please provide details about the incident, including the date and time it occurred and any error messages received.",1.46,321,Billing and Payments,Billing and Payments,1,Problem,medium,DOC-001
+T31,V1_rag_open,llama3.2:3b,1,"Detected Unlawful Access to Patient Information. Esteemed Customer Support, <br>We have identified unauthorized access to patient data. This may have resulted from inadequate firewall settings. Despite verifying user authentication methods, the problem continues. We require your immediate help to address this emergency and avoid future security breaches. <br>Please instruct us on measures to safeguard our system and prevent such unauthorized access. <br>We are grateful for your rapid intervention. <br>Thank you for your cooperation.",Returns and Exchanges,Incident,low,DOC-007,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Incident
+Priority: low
+Citations: DOC-007
+Draft response: We have received your report of unauthorized access to patient data. Please provide your account number and a suitable time for a call to discuss this further and offer guidance on securing your system.",1.71,295,Returns and Exchanges,Returns and Exchanges,1,Incident,low,DOC-007
+T32,V1_rag_open,llama3.2:3b,1,"Problem with Data Analysis Tools. Customers are having trouble accessing critical data analysis tools for investment optimization. The issue might be related to recent software compatibility updates. Restarting applications and reinstalling software seemed to have resolved it for some, but further assistance is needed promptly. Could you please provide the most recent updates and any error messages received when trying to access the data analysis tools? Also, let me know a convenient time to call and discuss this further.",Returns and Exchanges,Incident,medium,DOC-007,DOC-004,DOC-004,0,"Queue: Product Support
+Type: Incident
+Priority: high
+Citations: DOC-006, DOC-004
+Draft response: Dear Customer, thank you for reaching out to us about the issue with your data analysis tools. We apologize for the inconvenience this has caused and would like to assist you in resolving the problem as soon as possible. Could you please provide the most recent updates and any error messages received when trying to access the data analysis tools?",1.82,445,Product Support,Product Support,1,Incident,high,"DOC-006, DOC-004"
+T33,V1_rag_open,llama3.2:3b,1,"Support for Campaign Performance Issues. Hello Customer Support, I am contacting you to address the underperformance of our digital campaigns. We suspect that insufficient research on the target audience might be the reason. We have made several attempts to adjust ad targeting and messaging, but the problem continues. I would greatly appreciate any suggestions on how to enhance our campaign performance. Please inform me if you require any additional information. Thank you for your support.",Returns and Exchanges,Problem,low,DOC-007,DOC-002,DOC-008,0,"Queue: Customer Service
+Type: Incident
+Priority: medium
+Citations: DOC-002, DOC-008
+Draft response: Thank you for reaching out. I'd be happy to help you troubleshoot the issue with your digital campaigns. Could you please provide more details about your current targeting strategies and the specific outcomes you are encountering, such as engagement metrics and ad spend?",1.76,371,Customer Service,Customer Service,1,Incident,medium,"DOC-002, DOC-008"
+T34,V1_rag_open,llama3.2:3b,1,"Concern Regarding Investment Calculations. A financial company is encountering inconsistencies in investment return calculations with H2O.ai SQL Server analytics. The issue might be due to data integration errors or outdated algorithms. To date, the team has reviewed data sources and updated the software, but the inaccuracies persist. Despite attempts to troubleshoot, the problem remains unresolved. We would greatly appreciate it if you could look into this matter and provide a solution as soon as possible. Please let us know if additional information is needed.",Returns and Exchanges,Problem,low,DOC-007,DOC-005,DOC-007,1,"Queue: Returns and Exchanges
+Type: Incident
+Priority: low
+Citations: DOC-007, DOC-005, DOC-006, DOC-002
+Draft response: Dear Customer, we have received your concern regarding investment calculations with H2O.ai SQL Server analytics. We will review the data sources and algorithms to determine the cause of the inaccuracies and provide a solution as soon as possible. Please provide additional information if needed.",1.93,415,Returns and Exchanges,Returns and Exchanges,1,Incident,low,"DOC-007, DOC-005, DOC-006, DOC-002"
+T35,V1_rag_open,llama3.2:3b,1,"Data Leak. The healthcare facility's system was subjected to a data leak, resulting in the exposure of confidential medical information. This issue might be due to the use of outdated software and inadequate security protocols within the hospital's IT department. We have already updated the software, reset passwords, and performed initial security checks, but the breach still continues. We require your help to resolve this matter and ensure the security of patients' data.",Returns and Exchanges,Problem,medium,DOC-007,DOC-005,DOC-005,1,"Queue: IT Support
+Type: Incident
+Priority: high
+Citations: DOC-005, DOC-010, DOC-007
+Draft response: We are taking this incident very seriously and will investigate further. Please assist our investigation by providing details about the incident, including the date and time it occurred, and any further actions you have taken to address the data leak.",1.6,352,IT Support,IT Support,1,Incident,high,"DOC-005, DOC-010, DOC-007"
+T36,V1_rag_open,llama3.2:3b,1,"Issue with Task Disappearance on Dashboard. Hello customer support, we are experiencing delays in our project timelines because tasks are disappearing from the dashboard. Despite restarting servers, reviewing database logs, and confirming user permissions, the problem continues. Potential reasons may involve a MongoDB synchronization issue or a Chef configuration error. Your help in addressing this would greatly assist in regaining team productivity.",Sales and Pre-Sales,Problem,high,DOC-008,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Incident
+Priority: low
+Citations: DOC-006
+Draft response: We've received your report of task disappearance on the dashboard. We'll investigate the potential causes, including MongoDB synchronization and Chef configuration errors, and get back to you with a solution or further discussion if required.",1.42,329,Product Support,Product Support,1,Incident,low,DOC-006
+T37,V1_rag_open,llama3.2:3b,1,"Brand Growth Services Inquiry. Hello customer support, I am writing to seek information about the digital strategies your company provides for enhancing brand growth. Could you kindly furnish me with detailed information on these services and their potential benefits for business expansion? I would greatly appreciate any specifics you can offer. I eagerly await your response and am hopeful for a productive conversation. Thank you for your support.",Sales and Pre-Sales,Request,medium,DOC-008,DOC-002,DOC-002,1,"Queue: Customer Service
 Type: Request
 Priority: medium
-Citations: DOC-002, DOC-006
-Draft response: We will assist in updating your digital marketing strategies for brand expansion. To better understand your goals, we would like to discuss them with you and provide tailored guidance. I am available for a call at your convenience to explore the latest trends and practices that can help enhance your online presence and customer engagement.",2.65,440,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-006"
+Citations: DOC-002, DOC-008
+Draft response: Dear [Name], thank you for your interest in our brand growth services. We offer customized digital strategies, including social media marketing, content creation, and search engine optimization, to help businesses grow. We would be happy to provide more details and share case studies from previous clients.",1.77,406,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-008"
+T38,V1_rag_open,llama3.2:3b,1,Integration of Analytics Tools with RapidMiner for Investment Optimization. Could you please advise on the analytics tools that integrate with RapidMiner for the purpose of investment optimization?,Sales and Pre-Sales,Request,medium,DOC-008,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Type: Request
+Priority: low
+Citations: DOC-007
+Draft response: We will reach out to provide information on the analytics tools that integrate with RapidMiner for investment optimization. Please allow a few days for our response.",1.34,257,Returns and Exchanges,Returns and Exchanges,1,Request,low,DOC-007
+T39,V1_rag_open,llama3.2:3b,1,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Problem
+Priority: medium
+Citations: DOC-006, DOC-004
+Draft response: We appreciate your feedback on the challenges with digital campaign engagement. Our team has noticed a decline in engagement for our digital campaigns and is seeking guidance on how to refresh our approach to improve engagement. We would like to schedule a call to discuss your current strategies and target audience in more detail.",1.87,430,Product Support,Product Support,1,Problem,medium,"DOC-006, DOC-004"
+T40,V1_rag_open,llama3.2:3b,1,"Features for Medium Enterprises. Hello Customer Support, <br>I'm writing to request information about the features of your project management software as it pertains to medium-sized enterprises. <br>Could you please elaborate on the tools and functionalities your platform provides for project planning, execution, and monitoring? <br>I am particularly interested in learning about customization options, integrations with other software, and reporting capabilities. <br>Additionally, I would like to know how your solution can assist medium-sized enterprises in streamlining their project management processes and enhancing team collaboration. <br>Along with this, any details you could provide on pricing, scalability, and customer support would be greatly appreciated. <br>I look forward to your response and am eager to learn more about your project management software. <br>Thank you for your assistance. <br>Sincerely, <br>[Your Name]",Sales and Pre-Sales,Request,medium,DOC-008,DOC-008,DOC-008,1,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: medium
+Citations: DOC-008, DOC-006
+Draft response: Thank you for reaching out to us about the features of our project management software for medium-sized enterprises. Our platform includes a variety of tools and functionalities to support project planning, execution, and monitoring, such as customization options, integrations with other software, and reporting capabilities.",1.97,428,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,medium,"DOC-008, DOC-006"
+T41,V1_rag_open,llama3.2:3b,1,"Concern about Service Disruption. A service disruption has affected several software integrations, halting project management processes. This might be due to recent software updates or server issues. I've attempted to restart applications and clear cache, but the problem remains unresolved. I would greatly appreciate if you could address this urgently and provide a solution, along with an estimated time for resolution. Please inform me if there is any additional information needed to assist with the investigation.",Service Outages and Maintenance,Problem,low,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Problem
+Priority: medium
+Citations: DOC-009
+Draft response: We are investigating the service disruption. Please provide your account number and specific error messages to assist in resolving the issue.",1.24,246,Service Outages and Maintenance,Service Outages and Maintenance,1,Problem,medium,DOC-009
+T42,V1_rag_open,llama3.2:3b,1,"Alert for Data Breach. Dear Support Team, We are contacting you to alert you about a data breach which was due to a human error. We believe that an employee might have accidentally disclosed confidential information. Despite our efforts to reboot the systems, the issue is still ongoing. We are actively working to resolve this situation and are committed to preventing such breaches in the future. We will keep you informed about the progress and value your patience and understanding. We are dedicated to protecting customer data and will implement all necessary measures to prevent such occurrences in the future.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: high
+Citations: DOC-009, DOC-010
+Draft response: We are aware of the data breach and are actively working to resolve the issue. We will provide you with an update on the progress and appreciate your patience and understanding as we take necessary measures to prevent such occurrences in the future.",1.73,362,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,high,"DOC-009, DOC-010"
+T43,V1_rag_open,llama3.2:3b,1,"Problem with Services. We have encountered service interruptions on several important tools, which have impacted our marketing efforts. These disruptions could be due to recent system updates or third-party issues. Despite restarting the systems and checking the operational status, we have not found a solution.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: medium
+Citations: DOC-009
+Draft response: We have received your report of service interruptions on several important tools impacting your marketing efforts. Our team is investigating the cause of the issue and will provide an update on our progress. In the meantime, please contact us at <tel_num> to discuss potential solutions.",1.54,393,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,DOC-009
+T44,V1_rag_open,llama3.2:3b,1,"Problem with Server During Peak Hours. To Whom It May Concern, I hope this message finds you well. I am reaching out due to a server outage that happened during our busiest period. It might have been caused by a server overload. My team has tried to address the issue by restarting the servers and reviewing the logs, but the problem still exists. I kindly request your assistance in looking into this issue promptly and offering a solution to prevent similar occurrences in the future. The downtime has greatly affected our operations, and we urgently need to return to normal. Please let us know if there is any information you require from us to help investigate and resolve this matter. Thank you for your swift response. We are looking forward to hearing from you soon.",Service Outages and Maintenance,Incident,medium,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: medium
+Citations: DOC-009
+Draft response: Thank you for reaching out about the server outage during peak hours. We'll investigate the cause and work to resolve the issue as soon as possible to minimize the impact on your operations. Could you please provide more details about the server overload and the actions your team has taken so far?",1.95,404,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,DOC-009
+T45,V1_rag_open,llama3.2:3b,1,Investment Portfolio. I hope this message finds you well. I am interested in learning more about analytics tools that can be used to optimize my investment portfolio for the highest possible returns. Could you please share some information on this matter? It would be greatly appreciated if you could offer any recommendations or advice. Thank you for your time and support.,Service Outages and Maintenance,Request,high,DOC-009,DOC-002,DOC-007,0,"Queue: Returns and Exchanges
+Type: Request
+Priority: low
+Citations: DOC-007
+Draft response: Dear Customer, we appreciate your inquiry about analytics tools for optimizing investment portfolios. We will reach out to provide more information on the available tools and their features.",1.34,282,Returns and Exchanges,Returns and Exchanges,1,Request,low,DOC-007
+T46,V1_rag_open,llama3.2:3b,1,Google Cloud Integration. I require assistance in connecting Google Cloud Platform with our current project management tools to improve scalability and performance. Could you offer some guidance on this?,Technical Support,Change,high,DOC-010,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Request
+Priority: high
+Citations: DOC-007, DOC-005
+Draft response: We can provide information on the integration options available for Google Cloud Platform's project management SaaS. Would you like to discuss the details and available options at your convenience?",1.41,299,Returns and Exchanges,Returns and Exchanges,1,Request,high,"DOC-007, DOC-005"
+T47,V1_rag_open,llama3.2:3b,1,"Concerns Regarding Engagement Metric Reduction. Noticed a decline in brand engagement metrics. Recent modifications to our marketing strategies might be the reason. We have reviewed the updated campaigns and observed some positive changes, but further details are needed.",Technical Support,Problem,medium,DOC-010,DOC-008,DOC-008,1,"Queue: Sales and Pre-Sales
+Type: Incident
+Priority: medium
+Citations: DOC-008, DOC-010
+Draft response: We've reviewed your recent marketing strategy updates and observed some positive changes. To further assist, could you please provide more details on the specific changes made and any relevant performance reports?",1.43,316,Sales and Pre-Sales,Sales and Pre-Sales,1,Incident,medium,"DOC-008, DOC-010"
+T48,V1_rag_open,llama3.2:3b,1,"Problem with Access to Medical Data. I am reporting a sudden lack of access to medical records. This issue could be due to recent software compatibility issues. I have already attempted to restart the systems and verify the settings, but the problem still exists. I would greatly appreciate your assistance in looking into this and providing a solution as soon as possible. Please inform me if you need any further details from me to resolve this issue.",Technical Support,Incident,medium,DOC-010,DOC-010,DOC-010,1,"Queue: Technical Support
+Type: Problem
+Priority: low
+Citations: DOC-010
+Draft response: We acknowledge the issue with access to medical data and will assist with troubleshooting. Please provide any error messages you are experiencing, and we will arrange a call to help resolve the problem.",1.51,290,Technical Support,Technical Support,1,Problem,low,DOC-010
+T49,V1_rag_open,llama3.2:3b,1,Investment Projections Are Inexact. Investment projections are imprecise. The data analytics software seems to have a glitch. Restarted the Hub and Kubernetes.,Technical Support,Problem,low,DOC-010,DOC-003,DOC-002,0,"Queue: Customer Service
+Type: Problem
+Priority: medium
+Citations: DOC-002, DOC-003
+Draft response: Hello, thank you for reaching out about the inexact investment projections. Could you please provide more details about the data analytics software and any error messages you're seeing?",1.5,284,Customer Service,Customer Service,1,Problem,medium,"DOC-002, DOC-003"
+T50,V1_rag_open,llama3.2:3b,1,Concerns About Securing Medical Data on WhatsApp Desktop. I am looking to inquire about measures that can be taken to secure medical data when using WhatsApp Desktop for healthcare-related communications. Could you provide detailed information on the security measures that can be implemented to protect sensitive information? I would greatly appreciate any guidance or best practices for using WhatsApp Desktop in a healthcare setting. Thank you for your assistance with this matter.,Technical Support,Request,medium,DOC-010,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-002, DOC-010
+Draft response: Dear [name], we can provide guidance on securing medical data on WhatsApp Desktop. Our security measures for WhatsApp Desktop include end-to-end encryption and secure authentication. We will provide a detailed response regarding the specific protocols and technologies we use to safeguard against cyber threats.",1.68,418,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-002, DOC-010"
+T1,V2_rag_constrained,llama3.2:3b,1,"Troubleshooting Financial Firm's Data Analytics Tools. The financial firm's data analytics tools are experiencing malfunctions, which might be due to compatibility issues with recent software updates. Reinstalling the affected applications and updating drivers resolved the issue previously. We require your assistance to identify and fix the problem.",Billing and Payments,Incident,medium,DOC-001,DOC-002,DOC-002,0,"Queue: Product Support
+Type: Incident
+Priority: high
+Citations: DOC-006
+Draft response: Thank you for reaching out about the malfunctions with your financial firm's data analytics tools. We'll need more information about the issue, including error messages and software versions, to help us investigate and potentially resolve the problem.",1.85,339,Product Support,Product Support,1,Incident,high,DOC-006
+T2,V2_rag_constrained,llama3.2:3b,1,"Unanticipated Billing Variance in User Accounts. Noticed an unanticipated billing variance across multiple user accounts following a recent update. After reviewing account settings and reprocessing invoices, the discrepancies still exist. Assistance is required to resolve this issue.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Incident
+Priority: medium
+Citations: DOC-001 | queue: Billing and Payments | type: Incident | priority: medium
+Draft response: Dear customer, we have received your report of an unanticipated billing variance across multiple user accounts following a recent update. We will investigate this matter and contact you to discuss the next steps in resolving the issue.",1.95,396,Billing and Payments,Billing and Payments,1,Incident,medium,DOC-001 | queue: Billing and Payments | type: Incident | priority: medium
+T3,V2_rag_constrained,llama3.2:3b,1,"Encountered Billing Discrepancies with SaaS. Noted billing discrepancies in SaaS, with recent overcharges. These issues might be linked to recent system updates or payment gateway problems. Recalculated invoices and verified payment configurations, but the problems still exist.",Billing and Payments,Incident,medium,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Incident
+Priority: high
+Citations: DOC-001 | queue: Billing and Payments | type: Incident | priority: high
+Draft response: We are investigating the billing discrepancies affecting your SaaS subscription. To better understand the issue, could you please provide details on the recent system updates or payment gateway problems you suspect may be causing the problem? Additionally, it would be helpful if you could confirm your account number and a convenient time for us to call at <tel_num> to discuss this matter further.",2.16,556,Billing and Payments,Billing and Payments,1,Incident,high,DOC-001 | queue: Billing and Payments | type: Incident | priority: high
+T4,V2_rag_constrained,llama3.2:3b,1,"Unexpected Excessive Billing Errors This Month. Several subscriptions were overcharged at the same time due to a possible system glitch or synchronization issue. I have already contacted support and reviewed the invoices manually, but the problem remains unresolved. I would be grateful if you could look into this issue and provide a solution as soon as possible.",Billing and Payments,Incident,high,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Problem
+Priority: low
+Citations: DOC-001 | queue: Billing and Payments | type: Problem | priority: low, DOC-001 | queue: Billing and Payments | type: Incident | priority: high
+Draft response: We acknowledge your email regarding the unexpected excessive billing errors this month. We will review your account and work to resolve the issue as soon as possible. Please provide your account number and a copy of the relevant invoices so we can better understand the issue.",2.1,502,Billing and Payments,Billing and Payments,1,Problem,low,"DOC-001 | queue: Billing and Payments | type: Problem | priority: low, DOC-001 | queue: Billing and Payments | type: Incident | priority: high"
+T5,V2_rag_constrained,llama3.2:3b,1,Concerns Regarding Subscription Billing Services. Facing issues with billing amounts,Billing and Payments,Problem,high,DOC-001,DOC-001,DOC-001,1,"Queue: Billing and Payments
+Type: Problem
+Priority: high
+Citations: DOC-001 | queue: Billing and Payments | type: Problem | priority: high
+Draft response: We noticed issues with your billing for your subscription services. Please review your account and contact us at <tel_num> to address these discrepancies.",1.42,309,Billing and Payments,Billing and Payments,1,Problem,high,DOC-001 | queue: Billing and Payments | type: Problem | priority: high
+T6,V2_rag_constrained,llama3.2:3b,1,"Inquiry About ClickUp Integration Specifications. Seeking comprehensive information on integrating ClickUp for scalable SaaS project management. This would significantly aid in streamlining our workflow and enhancing productivity. Thank you for your assistance, and we look forward to your response soon.",Customer Service,Request,medium,DOC-002,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-008
+Draft response: Thank you for reaching out to us regarding your inquiry on ClickUp integration specifications. We'll be happy to provide you with comprehensive information on integrating ClickUp for scalable SaaS project management. Our team will review your request and get back to you soon.",1.91,374,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-008"
+T7,V2_rag_constrained,llama3.2:3b,1,Security Requirement. It is crucial to implement strengthened security measures to protect medical data in our hospital systems urgently. This will enhance overall safety.,Customer Service,Change,high,DOC-002,DOC-001,DOC-001,0,"Queue: Service Outages and Maintenance
+Type: Change
+Priority: high
+Citations: DOC-009
+Draft response: Thank you for bringing this to our attention. We will review and implement strengthened security measures to protect medical data in our hospital systems urgently, as per your request. We will keep you updated on the progress.",1.7,328,Service Outages and Maintenance,Service Outages and Maintenance,1,Change,high,DOC-009
+T8,V2_rag_constrained,llama3.2:3b,1,"Guidance on ClickUp Adobe Photoshop CC 2021 Integration. Hello Customer Support, I am writing to seek integration guidelines for ClickUp and Adobe Photoshop CC 2021. Can you offer me detailed instructions or documentation on how to integrate these tools? My goal is to optimize my workflow and boost productivity. Particularly, I am interested in learning how to import and export files, as well as how to synchronize tasks and projects between the platforms. Any support or resources you can provide would be very helpful. Thank you for your time and help.",Customer Service,Request,medium,DOC-002,DOC-005,DOC-005,0,"Queue: IT Support
+Type: Request
+Priority: low
+Citations: DOC-005, DOC-006
+Draft response: Thank you for reaching out to our IT Support team regarding the integration of ClickUp and Adobe Photoshop CC 2021. We will review our current resources and provide you with detailed instructions or documentation on how to integrate these tools. We will also look into the possibility of adding this integration to our roadmap for future enhancements.",1.97,441,IT Support,IT Support,1,Request,low,"DOC-005, DOC-006"
+T9,V2_rag_constrained,llama3.2:3b,1,Improve Customer Support. Seeking to enhance data analytics tools to improve investment optimization and decision-making for our firm. Upgrading these tools is essential for making informed decisions and staying competitive in the market. We believe this enhancement is crucial for our growth and success. We look forward to hearing back from you soon. Thank you for your time and assistance.,Customer Service,Change,low,DOC-002,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Change
+Priority: high
+Citations: DOC-006, DOC-001
+Draft response: Thank you for reaching out to us about enhancing your data analytics tools. Our team is committed to providing solutions that meet your needs, and we're happy to discuss ways to improve investment optimization and decision-making for your firm.",1.85,339,Product Support,Product Support,1,Change,high,"DOC-006, DOC-001"
+T10,V2_rag_constrained,llama3.2:3b,1,Safekeeping of Medical Data. Could you suggest security measures for safeguarding medical data stored on USB drives? Are there any specific encryption techniques or applications that should be employed to ensure the confidentiality of patient data?,Customer Service,Request,low,DOC-002,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-007
+Draft response: We can provide general information on securing medical data solutions. Our security measures encompass encryption, secure authentication, and regular updates to safeguard sensitive patient information on our devices and software.",1.55,327,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-007"
+T11,V2_rag_constrained,llama3.2:3b,1,Support for Data Integration. Improve the integration of data between IBM SPSS Statistics and SAP ERP to enhance investment analytics and predictive capabilities.,General Inquiry,Change,low,DOC-003,DOC-002,DOC-002,0,"Queue: Customer Service
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-001
+Draft response: We can provide guidance on improving the integration of data between IBM SPSS Statistics and SAP ERP to enhance investment analytics and predictive capabilities. We will also offer some case studies and examples to support your investment decisions. Please call <tel_num> for a detailed discussion.",1.74,397,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-001"
+T12,V2_rag_constrained,llama3.2:3b,1,Services in Data Analytics. Is it possible to receive data analytics services that optimize investment strategies? Thank you.,General Inquiry,Request,medium,DOC-003,DOC-001,DOC-001,0,"Queue: Customer Service
+Type: Request
+Priority: low
+Citations: DOC-002, DOC-008
+Draft response: Thank you for your inquiry regarding data analytics services. We use advanced tools and techniques to analyze market trends and predict investment outcomes. We would be happy to discuss the costs and provide case studies.",1.64,317,Customer Service,Customer Service,1,Request,low,"DOC-002, DOC-008"
+T13,V2_rag_constrained,llama3.2:3b,1,"Support Request: Issue with Integrating SendGrid, GitHub, and Airtable. Greetings, I am encountering difficulties in setting up an automated workflow update system by integrating SendGrid and GitHub with Airtable. Could you please offer assistance with this problem?",General Inquiry,Change,low,DOC-003,DOC-010,DOC-010,0,"Queue: Technical Support
+Type: Problem
+Priority: low
+Citations: DOC-010
+Draft response: Thank you for reaching out about the issue with integrating SendGrid, GitHub, and Airtable. I'd be happy to help you troubleshoot the problem and provide guidance on setting up an automated workflow update system. Can you please provide more details about the specific difficulties you're experiencing?",1.93,390,Technical Support,Technical Support,1,Problem,low,DOC-010
+T14,V2_rag_constrained,llama3.2:3b,1,Digital campaigns showing poor performance. Limited data analysis tools are currently utilized,General Inquiry,Problem,low,DOC-003,DOC-003,DOC-003,1,"Queue: General Inquiry
+Type: Problem
+Priority: low
+Citations: DOC-003, DOC-002
+Draft response: Thank you for reaching out about the poor performance of your digital campaigns. We'll examine your current data analysis tools and campaigns to identify areas for enhancement and suggest appropriate alternatives to boost performance.",1.61,329,General Inquiry,General Inquiry,1,Problem,low,"DOC-003, DOC-002"
+T15,V2_rag_constrained,llama3.2:3b,1,"Investment Portfolio Optimization Report Issue. Hello Customer Support, I require assistance with a problem concerning my investment portfolio optimization report. It has not been generated, and I suspect this might be due to a data feed disruption or a system error. Despite restarting my system and verifying the data feeds, the issue remains unresolved. I kindly request that you investigate this matter and offer a solution at your earliest convenience. Please inform me if you require any further information from me to address this issue. Thank you for your attention and support. I am awaiting your response.",General Inquiry,Incident,low,DOC-003,DOC-010,DOC-010,1,"Queue: Technical Support
+Type: Incident
+Priority: high
+Citations: DOC-010, DOC-003
+Draft response: We regret the issue with your investment portfolio optimization report not being generated. We will investigate the matter and offer a solution at your earliest convenience. Please provide any additional information you can to help us troubleshoot the issue.",1.94,357,Technical Support,Technical Support,1,Incident,high,"DOC-010, DOC-003"
+T16,V2_rag_constrained,llama3.2:3b,1,"Problem with Project Management Features. We are facing a significant issue with the project management features, impacting a large number of users across various platforms. The problem seems to have started after recent software updates, which may suggest potential compatibility issues. Despite attempts to troubleshoot, including clearing the cache, updating software versions, and running system checks, the issue remains unresolved. This is causing affected users difficulty in managing projects, which is impacting their productivity.",Human Resources,Incident,medium,DOC-004,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Type: Incident
+Priority: medium
+Citations: DOC-007, DOC-002, DOC-007, DOC-009
+Draft response: We have received your report of issues with project management features and are investigating further to identify the root cause. Please provide specific error messages and detailed descriptions of the symptoms you are experiencing, as this will help us provide an accurate solution to your problem.",2.0,422,Returns and Exchanges,Returns and Exchanges,1,Incident,medium,"DOC-007, DOC-002, DOC-007, DOC-009"
+T17,V2_rag_constrained,llama3.2:3b,1,Query on Gaming Product Digital Promotion Tactics. Could you furnish more information on digital strategies for promoting gaming products? Thank you!,Human Resources,Request,medium,DOC-004,DOC-002,DOC-002,0,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: medium
+Citations: DOC-008, DOC-007
+Draft response: Thank you for reaching out to us about digital strategies for promoting gaming products. We'd be happy to provide you with information on methods used to boost online presence and engagement. Our digital team can offer insights on successful tactics and techniques used by brands similar to Microsoft Surface Pro 8.",1.78,417,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,medium,"DOC-008, DOC-007"
+T18,V2_rag_constrained,llama3.2:3b,1,Hospital Systems Security Breach Detected. security issue identified in hospital systems,Human Resources,Incident,high,DOC-004,DOC-010,DOC-010,0,"Queue: Technical Support
+Type: Problem
+Priority: high
+Citations: DOC-010, DOC-006
+Draft response: We have detected a security issue in your hospital systems and are taking immediate action to investigate and resolve the issue. Please provide information about the error messages encountered with the security issue, so we can schedule a call at your convenience to discuss this matter further.",1.65,393,Technical Support,Technical Support,1,Problem,high,"DOC-010, DOC-006"
+T19,V2_rag_constrained,llama3.2:3b,1,"Concern Regarding Precision of QuickBooks Software. Recently encountered problems with the accuracy of QuickBooks, impacting financial reporting.",Human Resources,Incident,low,DOC-004,DOC-005,DOC-005,0,"Queue: IT Support
+Type: Incident
+Priority: medium
+Citations: DOC-001, DOC-006
+Draft response: We acknowledge the issue with the precision of QuickBooks software impacting financial reporting. We will investigate the root cause and provide an update shortly to mitigate any further disruptions.",1.4,293,IT Support,IT Support,1,Incident,medium,"DOC-001, DOC-006"
+T20,V2_rag_constrained,llama3.2:3b,1,"Company Policies on Remote Work and Flexible Scheduling. I am reaching out to inquire about the company's policies regarding remote work and flexible scheduling, as a prospective employee. I am particularly interested in learning about the company's stance on work-life balance and flexibility. Could you provide me with information on the company's remote work and flexible scheduling policies, as well as any additional benefits that may be available? Additionally, I would be grateful if you could share how these policies are put into practice, including any criteria or responsibilities that employees need to fulfill to participate. Furthermore, I am curious to know if certain roles or departments are eligible for remote work or flexible scheduling. I am excited about the prospect of joining the company and believe that a thorough understanding of these policies will aid in my decision-making. Thank you for your time and assistance, and I look forward to a prompt response. Sincerely, [Your Name]",Human Resources,Request,low,DOC-004,DOC-004,DOC-004,1,"Queue: Human Resources
+Type: Request
+Priority: low
+Citations: DOC-004
+Draft response: Thank you for your interest in our company's policies regarding remote work and flexible scheduling. I've noted your request and will forward it to our HR department for review and implementation. You will be informed once the update is finalized.",1.84,333,Human Resources,Human Resources,1,Request,low,DOC-004
+T21,V2_rag_constrained,llama3.2:3b,1,Request for Information on Securing Medical Data Services for Healthcare Providers. Could you provide detailed information on securing medical data services for healthcare providers to ensure the confidentiality and integrity of patient information? Your assistance would be greatly appreciated.,IT Support,Request,high,DOC-005,DOC-002,DOC-008,0,"Queue: Customer Service
+Type: Request
+Priority: high
+Citations: DOC-002, DOC-008
+Draft response: We appreciate your inquiry about securing medical data services for healthcare providers. Ensuring the confidentiality and integrity of patient information is of utmost importance, and we're happy to provide guidance on the practices and measures that can help achieve this.",1.72,371,Customer Service,Customer Service,1,Request,high,"DOC-002, DOC-008"
+T22,V2_rag_constrained,llama3.2:3b,1,Enhancing Digital Marketing Tactics. Is it possible to offer insights on optimizing digital marketing strategies for our marketing agency? We are looking to enhance our online presence and reach a broader audience. Our team is exploring ways to effectively utilize the products at our disposal to achieve our goals. We would greatly appreciate any guidance or support in this matter.,IT Support,Request,high,DOC-005,DOC-006,DOC-006,0,"Queue: Customer Service
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-002, DOC-008
+Draft response: Thank you for reaching out to us regarding your digital marketing tactics. We'd be happy to provide guidance and support to help you optimize your strategies and enhance your online presence. Please allow us to review your request and schedule a call at your convenience.",1.83,379,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-002, DOC-008"
+T23,V2_rag_constrained,llama3.2:3b,1,"Request for Assistance with Security Incident. I need support in writing a report on a critical security incident. An unauthorized access incident occurred, which could have potentially exposed sensitive medical data and compromised hospital systems. The breach may have happened due to a configuration error in cloud services. I have already reinforced passwords and monitored access logs, but I successfully resolved the immediate issue and now urgently need assistance in containing and investigating the breach. Please provide guidance on the next steps and any additional information required to resolve this matter.",IT Support,Incident,high,DOC-005,DOC-001,DOC-001,0,"Queue: Billing and Payments
+Type: Incident
+Priority: medium
+Citations: DOC-001, DOC-007
+Draft response: Thank you for reporting the security incident. We will investigate the potential unauthorized access to medical data and review our systems for any configuration errors in cloud services.",1.8,291,Billing and Payments,Billing and Payments,1,Incident,medium,"DOC-001, DOC-007"
+T24,V2_rag_constrained,llama3.2:3b,1,"Improvements. Hello, I need assistance in optimizing digital tools and refining marketing strategies. Could you please inform me about any available upgrades that could help enhance brand growth? I would greatly appreciate your help with this matter.",IT Support,Change,high,DOC-005,DOC-003,DOC-003,0,"Queue: General Inquiry
+Type: Request
+Priority: low
+Citations: DOC-003, DOC-002
+Draft response: Thank you for reaching out to us about optimizing digital tools and refining marketing strategies. We'd be happy to provide you with information and insights on methods to enhance brand growth. Please allow us to contact you at a later time to discuss these further.",1.75,361,General Inquiry,General Inquiry,1,Request,low,"DOC-003, DOC-002"
+T25,V2_rag_constrained,llama3.2:3b,1,Data Protection. Seeking advice on data security measures for a hospital's Linux and Alteryx environment. Could offer some general guidance on this matter?,IT Support,Request,medium,DOC-005,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Request
+Priority: medium
+Citations: DOC-007, DOC-009
+Draft response: We appreciate your inquiry on data security measures for a hospital's Linux and Alteryx environment. Our past experience has shown that robust security measures are essential for protecting sensitive medical information, and we can provide guidance on implementing encryption methods, access controls, and data backup procedures to ensure confidentiality and integrity.",1.82,473,Returns and Exchanges,Returns and Exchanges,1,Request,medium,"DOC-007, DOC-009"
+T26,V2_rag_constrained,llama3.2:3b,1,"Problem during campaign activation. Campaign launches have not been successful because of potential integration complications with Netgear Wi-Fi. Despite restarting the router and examining MongoDB connections, the problem remains unresolved.",Product Support,Incident,high,DOC-006,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Incident
+Priority: low
+Citations: DOC-006, DOC-010
+Draft response: We are investigating the issue with your campaign activation. Please call <tel_num> at your convenience to troubleshoot and provide a solution. We will reach out to you with an update on the status of your campaign.",1.72,311,Product Support,Product Support,1,Incident,low,"DOC-006, DOC-010"
+T27,V2_rag_constrained,llama3.2:3b,1,ClickUp Support Inquiry. The ClickUp integration has suddenly stopped working.,Product Support,Incident,medium,DOC-006,DOC-005,DOC-005,1,"Queue: IT Support
+Type: Incident
+Priority: medium
+Citations: DOC-005, DOC-007
+Draft response: We've received your report that the ClickUp integration has stopped working. Can you please provide more details about the issue, such as any error messages you've encountered?",1.63,270,IT Support,IT Support,1,Incident,medium,"DOC-005, DOC-007"
+T28,V2_rag_constrained,llama3.2:3b,1,"Problem with Login in Mobile Application. I am currently facing difficulties in logging into my mobile application, which I suspect is due to the recent software update. Despite attempting to restart the application and clearing the cache, the issue has not been resolved. I kindly request you to look into this matter and provide a prompt solution. Please inform me if there are any specific actions I should take to address this problem. I am eager to receive your feedback and find a solution to my issue. Thank you for your time and assistance.",Product Support,Incident,low,DOC-006,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Type: Incident
+Priority: medium
+Citations: DOC-007, DOC-010
+Draft response: I've reviewed your issue with the login problem in the mobile application, and I'd like to investigate further. Can you please provide more information about the error message you're receiving so I can assist you better?",1.65,325,Returns and Exchanges,Returns and Exchanges,1,Incident,medium,"DOC-007, DOC-010"
+T29,V2_rag_constrained,llama3.2:3b,1,"Request for Cassandra 4.0 Integration Documentation with Project Management SaaS. I am contacting you to seek information on the available documentation for integrating Cassandra 4.0 with project management software as a service. Could you kindly share any guides, tutorials, or API documentation that might be available? I would greatly appreciate any support you can offer in this regard.",Product Support,Request,medium,DOC-006,DOC-008,DOC-002,0,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: low
+Citations: DOC-008
+Draft response: Thank you for reaching out to our sales team regarding the integration of Cassandra 4.0 with your project management SaaS platform. We would be happy to provide you with pricing information and discuss the details of the integration. Please allow us some time to review your request and get back to you with a more detailed response.",2.11,423,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,low,DOC-008
+T30,V2_rag_constrained,llama3.2:3b,1,"Support Case. An unauthorized access incident has taken place, possibly leading to the exposure of sensitive medical information.",Product Support,Incident,high,DOC-006,DOC-001,DOC-001,0,"Queue: Billing and Payments
+Type: Problem
+Priority: medium
+Citations: DOC-001
+Draft response: We acknowledge the unauthorized access incident and are investigating further. Please provide details about the incident, including the date and time it occurred and any error messages received.",1.55,288,Billing and Payments,Billing and Payments,1,Problem,medium,DOC-001
+T31,V2_rag_constrained,llama3.2:3b,1,"Detected Unlawful Access to Patient Information. Esteemed Customer Support, <br>We have identified unauthorized access to patient data. This may have resulted from inadequate firewall settings. Despite verifying user authentication methods, the problem continues. We require your immediate help to address this emergency and avoid future security breaches. <br>Please instruct us on measures to safeguard our system and prevent such unauthorized access. <br>We are grateful for your rapid intervention. <br>Thank you for your cooperation.",Returns and Exchanges,Incident,low,DOC-007,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Incident
+Priority: low
+Citations: DOC-007
+Draft response: We have detected unauthorized access to patient records and are investigating the cause. Please provide your account number and a suitable time for a call to discuss this further.",1.77,272,Returns and Exchanges,Returns and Exchanges,1,Incident,low,DOC-007
+T32,V2_rag_constrained,llama3.2:3b,1,"Problem with Data Analysis Tools. Customers are having trouble accessing critical data analysis tools for investment optimization. The issue might be related to recent software compatibility updates. Restarting applications and reinstalling software seemed to have resolved it for some, but further assistance is needed promptly. Could you please provide the most recent updates and any error messages received when trying to access the data analysis tools? Also, let me know a convenient time to call and discuss this further.",Returns and Exchanges,Incident,medium,DOC-007,DOC-004,DOC-004,0,"Queue: Product Support
+Type: Incident
+Priority: high
+Citations: DOC-006, DOC-004
+Draft response: Thank you for reaching out to us about the issue with your data analysis tools. We apologize for the inconvenience this has caused and would like to assist you in resolving the problem as soon as possible. Please provide the most recent updates and any error messages received when trying to access the data analysis tools.",1.92,420,Product Support,Product Support,1,Incident,high,"DOC-006, DOC-004"
+T33,V2_rag_constrained,llama3.2:3b,1,"Support for Campaign Performance Issues. Hello Customer Support, I am contacting you to address the underperformance of our digital campaigns. We suspect that insufficient research on the target audience might be the reason. We have made several attempts to adjust ad targeting and messaging, but the problem continues. I would greatly appreciate any suggestions on how to enhance our campaign performance. Please inform me if you require any additional information. Thank you for your support.",Returns and Exchanges,Problem,low,DOC-007,DOC-002,DOC-008,0,"Queue: Customer Service
+Type: Incident
+Priority: medium
+Citations: DOC-002, DOC-008
+Draft response: Thank you for reaching out to us about your digital campaign performance issues. We'd be happy to help you troubleshoot the problem and provide suggestions on how to enhance your campaign's performance. Could you please provide more details about your current targeting strategies and the specific outcomes you're encountering?",1.97,427,Customer Service,Customer Service,1,Incident,medium,"DOC-002, DOC-008"
+T34,V2_rag_constrained,llama3.2:3b,1,"Concern Regarding Investment Calculations. A financial company is encountering inconsistencies in investment return calculations with H2O.ai SQL Server analytics. The issue might be due to data integration errors or outdated algorithms. To date, the team has reviewed data sources and updated the software, but the inaccuracies persist. Despite attempts to troubleshoot, the problem remains unresolved. We would greatly appreciate it if you could look into this matter and provide a solution as soon as possible. Please let us know if additional information is needed.",Returns and Exchanges,Problem,low,DOC-007,DOC-005,DOC-007,1,"Queue: Returns and Exchanges
+Type: Incident
+Priority: low
+Citations: DOC-007, DOC-005, DOC-006, DOC-002
+Draft response: We have received your concern regarding investment calculations with H2O.ai SQL Server analytics. Our past experience suggests that data integration errors or outdated algorithms may be the cause of the issue. We would like to assist you in resolving the problem and would appreciate any additional information you can provide.",2.17,447,Returns and Exchanges,Returns and Exchanges,1,Incident,low,"DOC-007, DOC-005, DOC-006, DOC-002"
+T35,V2_rag_constrained,llama3.2:3b,1,"Data Leak. The healthcare facility's system was subjected to a data leak, resulting in the exposure of confidential medical information. This issue might be due to the use of outdated software and inadequate security protocols within the hospital's IT department. We have already updated the software, reset passwords, and performed initial security checks, but the breach still continues. We require your help to resolve this matter and ensure the security of patients' data.",Returns and Exchanges,Problem,medium,DOC-007,DOC-005,DOC-005,1,"Queue: IT Support
+Type: Incident
+Priority: high
+Citations: DOC-005, DOC-010
+Draft response: We are taking this incident very seriously and will investigate further. Please assist our investigation by providing details about the incident, including the date and time it occurred.",1.59,278,IT Support,IT Support,1,Incident,high,"DOC-005, DOC-010"
+T36,V2_rag_constrained,llama3.2:3b,1,"Issue with Task Disappearance on Dashboard. Hello customer support, we are experiencing delays in our project timelines because tasks are disappearing from the dashboard. Despite restarting servers, reviewing database logs, and confirming user permissions, the problem continues. Potential reasons may involve a MongoDB synchronization issue or a Chef configuration error. Your help in addressing this would greatly assist in regaining team productivity.",Sales and Pre-Sales,Problem,high,DOC-008,DOC-006,DOC-006,0,"Queue: Product Support
+Type: Incident
+Priority: low
+Citations: DOC-006, DOC-010
+Draft response: Thank you for reaching out about the task disappearance issue on your dashboard. We'll investigate the potential MongoDB synchronization issue or Chef configuration error to help you regain team productivity. We'll look into this further and get back to you with a solution or arrange a call at a suitable time if required.",1.77,419,Product Support,Product Support,1,Incident,low,"DOC-006, DOC-010"
+T37,V2_rag_constrained,llama3.2:3b,1,"Brand Growth Services Inquiry. Hello customer support, I am writing to seek information about the digital strategies your company provides for enhancing brand growth. Could you kindly furnish me with detailed information on these services and their potential benefits for business expansion? I would greatly appreciate any specifics you can offer. I eagerly await your response and am hopeful for a productive conversation. Thank you for your support.",Sales and Pre-Sales,Request,medium,DOC-008,DOC-002,DOC-002,1,"Queue: Sales and Pre-Sales
+Type: Request
+Priority: medium
+Citations: DOC-008, DOC-002
+Draft response: Dear [Name], thank you for your interest in our brand growth services. We offer customized digital strategies, including social media marketing, content creation, and search engine optimization, to help businesses grow.",1.79,321,Sales and Pre-Sales,Sales and Pre-Sales,1,Request,medium,"DOC-008, DOC-002"
+T38,V2_rag_constrained,llama3.2:3b,1,Integration of Analytics Tools with RapidMiner for Investment Optimization. Could you please advise on the analytics tools that integrate with RapidMiner for the purpose of investment optimization?,Sales and Pre-Sales,Request,medium,DOC-008,DOC-007,DOC-007,0,"Queue: Returns and Exchanges
+Type: Request
+Priority: low
+Citations: DOC-007
+Draft response: This is a follow-up to your previous query on analytics tools for investment optimization. We can provide more information on the available analytics tools that integrate with RapidMiner for investment optimization.",1.41,307,Returns and Exchanges,Returns and Exchanges,1,Request,low,DOC-007
+T39,V2_rag_constrained,llama3.2:3b,1,"Support for Enhancing Digital Campaign Engagement. Facing challenges with digital campaign engagement, despite recent efforts to adjust budgets and review analytics. The team feels that the current strategies might be outdated and need to align with current market trends. We would greatly appreciate your guidance on how to refresh our approach to improve engagement. Specifically, we would like recommendations and resources to help us better understand our audience and create more effective campaigns. We look forward to your assistance in resolving this issue. Thank you for your time and support.",Sales and Pre-Sales,Incident,low,DOC-008,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Problem
+Priority: medium
+Citations: DOC-006, DOC-004
+Draft response: Thank you for reaching out to us regarding your challenges with digital campaign engagement. We've seen similar issues in the past and would be happy to help you refresh your approach to improve engagement. We'll review your current strategies and provide recommendations to help you better understand your audience and create more effective campaigns.",2.07,450,Product Support,Product Support,1,Problem,medium,"DOC-006, DOC-004"
+T40,V2_rag_constrained,llama3.2:3b,1,"Features for Medium Enterprises. Hello Customer Support, <br>I'm writing to request information about the features of your project management software as it pertains to medium-sized enterprises. <br>Could you please elaborate on the tools and functionalities your platform provides for project planning, execution, and monitoring? <br>I am particularly interested in learning about customization options, integrations with other software, and reporting capabilities. <br>Additionally, I would like to know how your solution can assist medium-sized enterprises in streamlining their project management processes and enhancing team collaboration. <br>Along with this, any details you could provide on pricing, scalability, and customer support would be greatly appreciated. <br>I look forward to your response and am eager to learn more about your project management software. <br>Thank you for your assistance. <br>Sincerely, <br>[Your Name]",Sales and Pre-Sales,Request,medium,DOC-008,DOC-008,DOC-008,1,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-002, DOC-009
+Draft response: Thank you for reaching out to our customer support regarding the features of our project management software for medium-sized enterprises. We'd be happy to provide more information on the tools and functionalities our platform provides for project planning, execution, and monitoring, as well as details on customization options, integrations, and reporting capabilities.",2.18,478,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-002, DOC-009"
+T41,V2_rag_constrained,llama3.2:3b,1,"Concern about Service Disruption. A service disruption has affected several software integrations, halting project management processes. This might be due to recent software updates or server issues. I've attempted to restart applications and clear cache, but the problem remains unresolved. I would greatly appreciate if you could address this urgently and provide a solution, along with an estimated time for resolution. Please inform me if there is any additional information needed to assist with the investigation.",Service Outages and Maintenance,Problem,low,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Problem
+Priority: medium
+Citations: DOC-009
+Draft response: We are investigating the service disruption. Please provide your account number and specific error messages to assist in resolving the issue.",1.35,246,Service Outages and Maintenance,Service Outages and Maintenance,1,Problem,medium,DOC-009
+T42,V2_rag_constrained,llama3.2:3b,1,"Alert for Data Breach. Dear Support Team, We are contacting you to alert you about a data breach which was due to a human error. We believe that an employee might have accidentally disclosed confidential information. Despite our efforts to reboot the systems, the issue is still ongoing. We are actively working to resolve this situation and are committed to preventing such breaches in the future. We will keep you informed about the progress and value your patience and understanding. We are dedicated to protecting customer data and will implement all necessary measures to prevent such occurrences in the future.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: high
+Citations: DOC-009, DOC-007
+Draft response: We are aware of the data breach and are actively working to resolve the issue. We will provide you with an update on the progress and appreciate your patience and understanding.",1.8,290,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,high,"DOC-009, DOC-007"
+T43,V2_rag_constrained,llama3.2:3b,1,"Problem with Services. We have encountered service interruptions on several important tools, which have impacted our marketing efforts. These disruptions could be due to recent system updates or third-party issues. Despite restarting the systems and checking the operational status, we have not found a solution.",Service Outages and Maintenance,Incident,high,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: medium
+Citations: DOC-009
+Draft response: We acknowledge your report of service interruptions impacting your marketing efforts. Our investigation is underway to identify the root cause and potential solutions. We will provide an update on our progress as soon as possible.",1.61,336,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,DOC-009
+T44,V2_rag_constrained,llama3.2:3b,1,"Problem with Server During Peak Hours. To Whom It May Concern, I hope this message finds you well. I am reaching out due to a server outage that happened during our busiest period. It might have been caused by a server overload. My team has tried to address the issue by restarting the servers and reviewing the logs, but the problem still exists. I kindly request your assistance in looking into this issue promptly and offering a solution to prevent similar occurrences in the future. The downtime has greatly affected our operations, and we urgently need to return to normal. Please let us know if there is any information you require from us to help investigate and resolve this matter. Thank you for your swift response. We are looking forward to hearing from you soon.",Service Outages and Maintenance,Incident,medium,DOC-009,DOC-009,DOC-009,1,"Queue: Service Outages and Maintenance
+Type: Incident
+Priority: medium
+Citations: DOC-009
+Draft response: Thank you for reaching out about the server outage during your busiest period. We'll investigate the cause and work to resolve the issue promptly to prevent similar occurrences in the future. Please provide more details about the server overload and the actions your team has taken so far.",2.0,395,Service Outages and Maintenance,Service Outages and Maintenance,1,Incident,medium,DOC-009
+T45,V2_rag_constrained,llama3.2:3b,1,Investment Portfolio. I hope this message finds you well. I am interested in learning more about analytics tools that can be used to optimize my investment portfolio for the highest possible returns. Could you please share some information on this matter? It would be greatly appreciated if you could offer any recommendations or advice. Thank you for your time and support.,Service Outages and Maintenance,Request,high,DOC-009,DOC-002,DOC-007,0,"Queue: Customer Service
+Type: Request
+Priority: medium
+Citations: DOC-002, DOC-008
+Draft response: We will reach out to provide information about available data analytics tools shortly. Our team will be happy to assist you in finding the best tools for your investment portfolio needs.",1.56,285,Customer Service,Customer Service,1,Request,medium,"DOC-002, DOC-008"
+T46,V2_rag_constrained,llama3.2:3b,1,Google Cloud Integration. I require assistance in connecting Google Cloud Platform with our current project management tools to improve scalability and performance. Could you offer some guidance on this?,Technical Support,Change,high,DOC-010,DOC-007,DOC-007,1,"Queue: Returns and Exchanges
+Type: Request
+Priority: high
+Citations: DOC-007
+Draft response: This ticket is related to integrating Google Cloud Platform's project management SaaS solutions to enhance our workflow. We will provide information on the available options and discuss the details at your convenience.",1.59,311,Returns and Exchanges,Returns and Exchanges,1,Request,high,DOC-007
+T47,V2_rag_constrained,llama3.2:3b,1,"Concerns Regarding Engagement Metric Reduction. Noticed a decline in brand engagement metrics. Recent modifications to our marketing strategies might be the reason. We have reviewed the updated campaigns and observed some positive changes, but further details are needed.",Technical Support,Problem,medium,DOC-010,DOC-008,DOC-008,1,"Queue: Sales and Pre-Sales
+Type: Incident
+Priority: medium
+Citations: DOC-008, DOC-010
+Draft response: We noticed a decline in brand engagement metrics and would like to discuss potential causes and solutions. Our marketing agency has recently observed a significant decline in brand engagement metrics, which might be due to recent algorithm changes or ineffective strategies.",1.72,377,Sales and Pre-Sales,Sales and Pre-Sales,1,Incident,medium,"DOC-008, DOC-010"
+T48,V2_rag_constrained,llama3.2:3b,1,"Problem with Access to Medical Data. I am reporting a sudden lack of access to medical records. This issue could be due to recent software compatibility issues. I have already attempted to restart the systems and verify the settings, but the problem still exists. I would greatly appreciate your assistance in looking into this and providing a solution as soon as possible. Please inform me if you need any further details from me to resolve this issue.",Technical Support,Incident,medium,DOC-010,DOC-010,DOC-010,1,"Queue: Technical Support
+Type: Problem
+Priority: low
+Citations: DOC-010, DOC-001
+Draft response: We will assist with the Medical Data Access System issue. Please provide any error messages and arrange a call to help troubleshoot the problem.",1.66,241,Technical Support,Technical Support,1,Problem,low,"DOC-010, DOC-001"
+T49,V2_rag_constrained,llama3.2:3b,1,Investment Projections Are Inexact. Investment projections are imprecise. The data analytics software seems to have a glitch. Restarted the Hub and Kubernetes.,Technical Support,Problem,low,DOC-010,DOC-003,DOC-002,0,"Queue: Customer Service
+Type: Problem
+Priority: medium
+Citations: DOC-002, DOC-003
+Draft response: Hello, we've received your message about the inexact investment projections. We'll investigate the issue and get back to you with a suitable time to discuss further.",1.61,264,Customer Service,Customer Service,1,Problem,medium,"DOC-002, DOC-003"
+T50,V2_rag_constrained,llama3.2:3b,1,Concerns About Securing Medical Data on WhatsApp Desktop. I am looking to inquire about measures that can be taken to secure medical data when using WhatsApp Desktop for healthcare-related communications. Could you provide detailed information on the security measures that can be implemented to protect sensitive information? I would greatly appreciate any guidance or best practices for using WhatsApp Desktop in a healthcare setting. Thank you for your assistance with this matter.,Technical Support,Request,medium,DOC-010,DOC-006,DOC-006,1,"Queue: Product Support
+Type: Request
+Priority: medium
+Citations: DOC-006, DOC-002
+Draft response: We have robust security measures in place to protect medical data, including encryption and secure authentication. Our security protocols are designed to safeguard sensitive patient information on our devices and software, and we adhere to industry standards and regulations to maintain confidentiality and integrity.",1.89,415,Product Support,Product Support,1,Request,medium,"DOC-006, DOC-002"

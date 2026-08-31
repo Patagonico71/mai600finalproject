@@ -1,0 +1,36 @@
+test_id,failure_stage,true_queue,pred_queue,retrieval_hit_topk,vote_source_match
+T1,A_retrieval_miss,Billing and Payments,Product Support,0,0
+T6,A_retrieval_miss,Customer Service,Product Support,0,0
+T7,A_retrieval_miss,Customer Service,Service Outages and Maintenance,0,0
+T8,A_retrieval_miss,Customer Service,IT Support,0,0
+T9,A_retrieval_miss,Customer Service,Product Support,0,0
+T10,B_ranking_miss,Customer Service,Product Support,1,0
+T11,A_retrieval_miss,General Inquiry,Customer Service,0,0
+T12,A_retrieval_miss,General Inquiry,Customer Service,0,0
+T13,A_retrieval_miss,General Inquiry,Technical Support,0,0
+T15,B_ranking_miss,General Inquiry,Technical Support,1,0
+T16,A_retrieval_miss,Human Resources,Returns and Exchanges,0,0
+T17,A_retrieval_miss,Human Resources,Sales and Pre-Sales,0,0
+T18,A_retrieval_miss,Human Resources,Technical Support,0,0
+T19,A_retrieval_miss,Human Resources,IT Support,0,0
+T21,A_retrieval_miss,IT Support,Customer Service,0,0
+T22,A_retrieval_miss,IT Support,Customer Service,0,0
+T23,A_retrieval_miss,IT Support,Billing and Payments,0,0
+T24,A_retrieval_miss,IT Support,General Inquiry,0,0
+T25,B_ranking_miss,IT Support,Returns and Exchanges,1,0
+T27,B_ranking_miss,Product Support,IT Support,1,0
+T28,A_retrieval_miss,Product Support,Returns and Exchanges,0,0
+T29,A_retrieval_miss,Product Support,Sales and Pre-Sales,0,0
+T30,A_retrieval_miss,Product Support,Billing and Payments,0,0
+T32,A_retrieval_miss,Returns and Exchanges,Product Support,0,0
+T33,A_retrieval_miss,Returns and Exchanges,Customer Service,0,0
+T35,B_ranking_miss,Returns and Exchanges,IT Support,1,0
+T36,A_retrieval_miss,Sales and Pre-Sales,Product Support,0,0
+T38,A_retrieval_miss,Sales and Pre-Sales,Returns and Exchanges,0,0
+T39,B_ranking_miss,Sales and Pre-Sales,Product Support,1,0
+T40,C_model_override,Sales and Pre-Sales,Product Support,1,1
+T45,A_retrieval_miss,Service Outages and Maintenance,Customer Service,0,0
+T46,B_ranking_miss,Technical Support,Returns and Exchanges,1,0
+T47,B_ranking_miss,Technical Support,Sales and Pre-Sales,1,0
+T49,A_retrieval_miss,Technical Support,Customer Service,0,0
+T50,B_ranking_miss,Technical Support,Product Support,1,0

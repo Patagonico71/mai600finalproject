@@ -1,0 +1,5 @@
+field,measured,rag_fit,finetuning_fit,decision,why
+Queue,"retrieval 0.00 -> 0.30, p = 0.0001",High,Low,RAG,"The knowledge missing from the baseline is the list of queues this organisation runs. Those change when the support team reorganises, and weights encoding them go stale. Retrieval also produces the citations this use case needs."
+Type,"floor 0.40, baseline 0.58, RAG 0.72",Low,High,Fine-tuning candidate,"A fixed four-way taxonomy that does not change. Retrieval barely moves it: passing the retrieved cases' type labels into the prompt changed the score by nothing. This is repeated judgement, which is what adapters teach."
+Priority,"floor 0.40, RAG 0.44",Low,Low,Neither,"Urgency depends on contract tier, SLA and blast radius. None of it is in the ticket text, so no amount of retrieval or adaptation can recover it. This needs a different input, not a different method."
+Draft response,format adherence 1.00,High,Medium,RAG,"The reply has to reflect how this team actually resolves the issue, which is what the retrieved resolutions supply. Format already holds at 1.00, so there is nothing for an adapter to fix."

@@ -1,0 +1,11 @@
+rank,chunk_id,doc_id,title,score,is_expected_source
+1,DOC-002-CASE-94,DOC-002,Customer Service,0.80202496,0
+2,DOC-006-CASE-126,DOC-006,Product Support,0.8016051,0
+3,DOC-010-CASE-23,DOC-010,Technical Support,0.7943239,0
+4,DOC-005-CASE-43,DOC-005,IT Support,0.79274863,0
+5,DOC-003-CASE-3,DOC-003,General Inquiry,0.77133685,0
+6,DOC-007-CASE-57,DOC-007,Returns and Exchanges,0.7630459,0
+7,DOC-006-CASE-151,DOC-006,Product Support,0.7616794,0
+8,DOC-003-CASE-49,DOC-003,General Inquiry,0.758448,0
+9,DOC-004-CASE-18,DOC-004,Human Resources,0.7530772,0
+10,DOC-009-CASE-16,DOC-009,Service Outages and Maintenance,0.74907446,0

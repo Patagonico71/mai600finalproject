@@ -1,41 +1,151 @@
 test_id,version,model,true_queue,pred_queue,pred_queue_raw,queue_valid,routing_correct,true_type,pred_type,type_correct,true_priority,pred_priority,priority_correct,retrieval_hit_topk,vote_source_match,citation_correct,format_ok,response_time_s,answer_chars
-T1,V0_baseline,llama3.2:3b,Billing and Payments,,Excessive Billing Inquiry,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,4.4,384
-T2,V0_baseline,llama3.2:3b,Billing and Payments,,Payment Processing,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,2.24,417
-T3,V0_baseline,llama3.2:3b,Customer Service,,SAP Integration Support,0,0,Incident,Incident,1,medium,high,0,0,0,0,1,1.85,334
-T4,V0_baseline,llama3.2:3b,Customer Service,,Critical System Issue,0,0,Incident,Problem,0,low,high,0,0,0,0,1,1.82,355
-T5,V0_baseline,llama3.2:3b,General Inquiry,,Digital Toolkit Upgrade,0,0,Change,Request,0,low,medium,0,0,0,0,1,2.07,428
-T6,V0_baseline,llama3.2:3b,General Inquiry,,Investment Optimization Tool Support,0,0,Incident,Problem,0,low,medium,0,0,0,0,1,1.72,338
-T7,V0_baseline,llama3.2:3b,Human Resources,,Technical Issue Queue,0,0,Problem,Problem,1,low,medium,0,0,0,0,1,1.78,377
-T8,V0_baseline,llama3.2:3b,Human Resources,,Digital Marketing Strategies,0,0,Change,Request,0,medium,medium,1,0,0,0,1,1.64,401
-T9,V0_baseline,llama3.2:3b,IT Support,,Critical Incident Response,0,0,Problem,Problem,1,high,high,1,0,0,0,1,1.62,378
-T10,V0_baseline,llama3.2:3b,IT Support,,Premiere Pro Crash Reports,0,0,Incident,Problem,0,high,medium,0,0,0,0,1,1.84,391
-T11,V0_baseline,llama3.2:3b,Product Support,,Critical Campaign Support,0,0,Incident,Incident,1,low,high,0,0,0,0,1,1.53,322
-T12,V0_baseline,llama3.2:3b,Product Support,,Campaign Analytics Dashboard,0,0,Problem,Problem,1,medium,medium,1,0,0,0,1,1.6,389
-T13,V0_baseline,llama3.2:3b,Returns and Exchanges,,Investment Analytics Optimization,0,0,Change,Request,0,low,medium,0,0,0,0,1,2.09,382
-T14,V0_baseline,llama3.2:3b,Returns and Exchanges,,Campaign Engagement Issues,0,0,Incident,Problem,0,medium,high,0,0,0,0,1,1.71,417
-T15,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Digital Campaign Support,0,0,Incident,Request,0,low,medium,0,0,0,0,1,1.65,410
-T16,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Marketing Campaign Optimization,0,0,Problem,Problem,1,medium,medium,1,0,0,0,1,1.39,336
-T17,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Investment Optimization Tools Support,0,0,Change,Incident,0,high,medium,0,0,0,0,1,1.3,351
-T18,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Platform Crash,0,0,Incident,Incident,1,high,high,1,0,0,0,1,1.67,367
-T19,V0_baseline,llama3.2:3b,Technical Support,,Brand Expansion and Growth,0,0,Request,Request,1,high,medium,0,0,0,0,1,1.4,286
-T20,V0_baseline,llama3.2:3b,Technical Support,,Marketing Assistance,0,0,Change,Request,0,high,medium,0,0,0,0,1,1.62,430
-T1,V1_rag,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Problem,0,medium,medium,1,1,1,1,1,2.34,279
-T2,V1_rag,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Incident,1,medium,high,0,1,1,1,1,2.35,316
-T3,V1_rag,llama3.2:3b,Customer Service,General Inquiry,General Inquiry,1,0,Incident,Incident,1,medium,medium,1,0,0,0,1,2.9,463
-T4,V1_rag,llama3.2:3b,Customer Service,Technical Support,Technical Support,1,0,Incident,Incident,1,low,medium,0,0,0,0,1,2.44,386
-T5,V1_rag,llama3.2:3b,General Inquiry,Returns and Exchanges,Returns and Exchanges,1,0,Change,Change,1,low,medium,0,0,0,0,1,2.49,319
-T6,V1_rag,llama3.2:3b,General Inquiry,General Inquiry,General Inquiry,1,1,Incident,Problem,0,low,high,0,1,1,1,1,3.16,424
-T7,V1_rag,llama3.2:3b,Human Resources,General Inquiry,General Inquiry,1,0,Problem,Incident,0,low,low,1,0,0,0,1,2.52,340
-T8,V1_rag,llama3.2:3b,Human Resources,General Inquiry,General Inquiry,1,0,Change,Request,0,medium,low,0,0,0,0,1,2.5,353
-T9,V1_rag,llama3.2:3b,IT Support,Human Resources,Human Resources,1,0,Problem,Incident,0,high,medium,0,0,0,0,1,2.64,392
-T10,V1_rag,llama3.2:3b,IT Support,Technical Support,Technical Support,1,0,Incident,Incident,1,high,high,1,1,0,0,1,2.84,359
-T11,V1_rag,llama3.2:3b,Product Support,Service Outages and Maintenance,Service Outages and Maintenance,1,0,Incident,Incident,1,low,high,0,0,0,0,1,2.27,326
-T12,V1_rag,llama3.2:3b,Product Support,General Inquiry,General Inquiry,1,0,Problem,Incident,0,medium,medium,1,0,0,0,1,2.27,353
-T13,V1_rag,llama3.2:3b,Returns and Exchanges,General Inquiry,General Inquiry,1,0,Change,Request,0,low,medium,0,1,0,0,1,2.64,345
-T14,V1_rag,llama3.2:3b,Returns and Exchanges,Customer Service,Customer Service,1,0,Incident,Incident,1,medium,medium,1,1,1,1,1,2.7,356
-T15,V1_rag,llama3.2:3b,Sales and Pre-Sales,Sales and Pre-Sales,Sales and Pre-Sales,1,1,Incident,Problem,0,low,low,1,1,0,1,1,2.98,431
-T16,V1_rag,llama3.2:3b,Sales and Pre-Sales,General Inquiry,General Inquiry,1,0,Problem,Incident,0,medium,low,0,1,0,1,1,2.59,361
-T17,V1_rag,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Change,Incident,0,high,medium,0,1,1,1,1,2.45,414
-T18,V1_rag,llama3.2:3b,Service Outages and Maintenance,General Inquiry,General Inquiry,1,0,Incident,Incident,1,high,low,0,1,1,1,1,2.98,403
-T19,V1_rag,llama3.2:3b,Technical Support,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Request,Request,1,high,high,1,0,0,0,1,2.74,454
-T20,V1_rag,llama3.2:3b,Technical Support,Customer Service,Customer Service,1,0,Change,Request,0,high,medium,0,0,0,0,1,2.65,440
+T1,V0_baseline,llama3.2:3b,Billing and Payments,,Financial Tools Support,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,4.35,411
+T2,V0_baseline,llama3.2:3b,Billing and Payments,,Billing Variance,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,0.81,315
+T3,V0_baseline,llama3.2:3b,Billing and Payments,,Billing Discrepancies,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,0.96,356
+T4,V0_baseline,llama3.2:3b,Billing and Payments,,Billing and Invoicing,0,0,Incident,Incident,1,high,high,1,0,0,0,1,1.1,358
+T5,V0_baseline,llama3.2:3b,Billing and Payments,,Billing Services,0,0,Problem,Problem,1,high,medium,0,0,0,0,1,0.86,316
+T6,V0_baseline,llama3.2:3b,Customer Service,,Integration and API Support,0,0,Request,Request,1,medium,medium,1,0,0,0,1,0.92,394
+T7,V0_baseline,llama3.2:3b,Customer Service,,Security and Compliance,0,0,Change,Request,0,high,high,1,0,0,0,1,0.97,419
+T8,V0_baseline,llama3.2:3b,Customer Service,,Integration and Third-Party App Support,0,0,Request,Request,1,medium,medium,1,0,0,0,1,1.2,476
+T9,V0_baseline,llama3.2:3b,Customer Service,,Customer Support Analytics Enhancement,0,0,Change,Request,0,low,medium,0,0,0,0,1,0.84,373
+T10,V0_baseline,llama3.2:3b,Customer Service,,Medical Data Security,0,0,Request,Request,1,low,medium,0,0,0,0,1,0.8,340
+T11,V0_baseline,llama3.2:3b,General Inquiry,,Data Integration Support,0,0,Change,Request,0,low,medium,0,0,0,0,1,0.97,396
+T12,V0_baseline,llama3.2:3b,General Inquiry,,Data Analytics Services,0,0,Request,Request,1,medium,low,0,0,0,0,1,0.82,362
+T13,V0_baseline,llama3.2:3b,General Inquiry,,Integration Assistance,0,0,Change,Problem,0,low,medium,0,0,0,0,1,0.87,349
+T14,V0_baseline,llama3.2:3b,General Inquiry,,Digital Campaigns Support,0,0,Problem,Problem,1,low,medium,0,0,0,0,1,0.8,360
+T15,V0_baseline,llama3.2:3b,General Inquiry,,Investment Portfolio Optimization Report,0,0,Incident,Problem,0,low,high,0,0,0,0,1,1.05,407
+T16,V0_baseline,llama3.2:3b,Human Resources,,Project Management Issues,0,0,Incident,Problem,0,medium,high,0,0,0,0,1,0.98,401
+T17,V0_baseline,llama3.2:3b,Human Resources,Product Support,Gaming Product Support,1,0,Request,Request,1,medium,low,0,0,0,0,1,0.81,316
+T18,V0_baseline,llama3.2:3b,Human Resources,,Hospital Systems Security Breach Response,0,0,Incident,Incident,1,high,high,1,0,0,0,1,1.08,449
+T19,V0_baseline,llama3.2:3b,Human Resources,,QuickBooks Accuracy Issues,0,0,Incident,Problem,0,low,medium,0,0,0,0,1,0.92,371
+T20,V0_baseline,llama3.2:3b,Human Resources,,Remote Work and Flexible Scheduling Inquiries,0,0,Request,Request,1,low,low,1,0,0,0,1,1.32,468
+T21,V0_baseline,llama3.2:3b,IT Support,,Medical Data Security,0,0,Request,Request,1,high,medium,0,0,0,0,1,0.85,368
+T22,V0_baseline,llama3.2:3b,IT Support,,Digital Marketing Strategy Support,0,0,Request,Request,1,high,medium,0,0,0,0,1,0.86,351
+T23,V0_baseline,llama3.2:3b,IT Support,,Critical Incident Response,0,0,Incident,Incident,1,high,high,1,0,0,0,1,1.14,455
+T24,V0_baseline,llama3.2:3b,IT Support,,Improvements and Enhancements,0,0,Change,Request,0,high,medium,0,0,0,0,1,0.91,381
+T25,V0_baseline,llama3.2:3b,IT Support,,Data Protection and Security,0,0,Request,Request,1,medium,medium,1,0,0,0,1,0.84,313
+T26,V0_baseline,llama3.2:3b,Product Support,,Network Integration Issues,0,0,Incident,Problem,0,high,high,1,0,0,0,1,0.92,394
+T27,V0_baseline,llama3.2:3b,Product Support,,General Support,0,0,Incident,Incident,1,medium,high,0,0,0,0,1,0.71,281
+T28,V0_baseline,llama3.2:3b,Product Support,,Mobile Application Support,0,0,Incident,Problem,0,low,medium,0,0,0,0,1,0.98,399
+T29,V0_baseline,llama3.2:3b,Product Support,,Integration Documentation Support,0,0,Request,Request,1,medium,medium,1,0,0,0,1,1.0,447
+T30,V0_baseline,llama3.2:3b,Product Support,,Incident Response,0,0,Incident,Incident,1,high,high,1,0,0,0,1,1.04,447
+T31,V0_baseline,llama3.2:3b,Returns and Exchanges,,Security Breach Response,0,0,Incident,Incident,1,low,high,0,0,0,0,1,1.28,541
+T32,V0_baseline,llama3.2:3b,Returns and Exchanges,,Data Analysis Tools Support,0,0,Incident,Problem,0,medium,medium,1,0,0,0,1,0.99,356
+T33,V0_baseline,llama3.2:3b,Returns and Exchanges,,Campaign Performance Issues,0,0,Problem,Problem,1,low,medium,0,0,0,0,1,0.94,381
+T34,V0_baseline,llama3.2:3b,Returns and Exchanges,,Financial Analytics Support,0,0,Problem,Problem,1,low,high,0,0,0,0,1,1.03,371
+T35,V0_baseline,llama3.2:3b,Returns and Exchanges,,Incident Response,0,0,Problem,Incident,0,medium,high,0,0,0,0,1,1.08,435
+T36,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Incident Response,0,0,Problem,Incident,0,high,high,1,0,0,0,1,0.91,372
+T37,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Brand Growth Services Inquiry,0,0,Request,Request,1,medium,medium,1,0,0,0,1,0.95,367
+T38,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Investment Optimization Tools Integration,0,0,Request,Request,1,medium,medium,1,0,0,0,1,0.96,394
+T39,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Digital Campaign Support,0,0,Incident,Request,0,low,medium,0,0,0,0,1,0.98,391
+T40,V0_baseline,llama3.2:3b,Sales and Pre-Sales,,Enterprise Features Inquiry,0,0,Request,Request,1,medium,medium,1,0,0,0,1,1.24,543
+T41,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Critical Service Disruption,0,0,Problem,Incident,0,low,high,0,0,0,0,1,1.09,419
+T42,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Incident Response,0,0,Incident,Incident,1,high,high,1,0,0,0,1,0.88,317
+T43,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Problem Resolution,0,0,Incident,Problem,0,high,high,1,0,0,0,1,0.92,343
+T44,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Server Outage,0,0,Incident,Incident,1,medium,high,0,0,0,0,1,1.1,388
+T45,V0_baseline,llama3.2:3b,Service Outages and Maintenance,,Investment Portfolio Analytics Tools,0,0,Request,Request,1,high,low,0,0,0,0,1,0.82,343
+T46,V0_baseline,llama3.2:3b,Technical Support,,Google Cloud Integration,0,0,Change,Request,0,high,medium,0,0,0,0,1,0.75,308
+T47,V0_baseline,llama3.2:3b,Technical Support,,Marketing Strategy Support,0,0,Problem,Problem,1,medium,medium,1,0,0,0,1,0.8,324
+T48,V0_baseline,llama3.2:3b,Technical Support,,Medical Data Access,0,0,Incident,Problem,0,medium,high,0,0,0,0,1,0.98,386
+T49,V0_baseline,llama3.2:3b,Technical Support,,Investment Projections Glitch,0,0,Problem,Problem,1,low,medium,0,0,0,0,1,0.8,332
+T50,V0_baseline,llama3.2:3b,Technical Support,,Healthcare Security,0,0,Request,Request,1,medium,medium,1,0,0,0,1,0.84,378
+T1,V1_rag_open,llama3.2:3b,Billing and Payments,Customer Service,Customer Service,1,0,Incident,Problem,0,medium,medium,1,0,0,0,1,1.97,445
+T2,V1_rag_open,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Incident,1,medium,medium,1,1,1,1,1,1.78,400
+T3,V1_rag_open,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Incident,1,medium,medium,1,1,1,1,1,1.76,372
+T4,V1_rag_open,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Problem,0,high,low,0,1,1,1,1,1.73,426
+T5,V1_rag_open,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Problem,Incident,0,high,high,1,1,1,1,1,1.19,278
+T6,V1_rag_open,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,0,0,0,1,1.74,391
+T7,V1_rag_open,llama3.2:3b,Customer Service,Billing and Payments,Billing and Payments,1,0,Change,Change,1,high,medium,0,0,0,0,1,1.44,288
+T8,V1_rag_open,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,0,0,0,1,1.87,483
+T9,V1_rag_open,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Change,Change,1,low,high,0,0,0,0,1,1.62,341
+T10,V1_rag_open,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Request,Request,1,low,medium,0,1,0,0,1,1.42,304
+T11,V1_rag_open,llama3.2:3b,General Inquiry,Customer Service,Customer Service,1,0,Change,Request,0,low,medium,0,0,0,0,1,1.57,387
+T12,V1_rag_open,llama3.2:3b,General Inquiry,Customer Service,Customer Service,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.54,317
+T13,V1_rag_open,llama3.2:3b,General Inquiry,Technical Support,Technical Support,1,0,Change,Problem,0,low,low,1,0,0,0,1,1.58,316
+T14,V1_rag_open,llama3.2:3b,General Inquiry,General Inquiry,General Inquiry,1,1,Problem,Problem,1,low,low,1,1,1,1,1,1.58,405
+T15,V1_rag_open,llama3.2:3b,General Inquiry,Technical Support,Technical Support,1,0,Incident,Incident,1,low,high,0,1,0,1,1,1.77,352
+T16,V1_rag_open,llama3.2:3b,Human Resources,Returns and Exchanges,Returns and Exchanges,1,0,Incident,Incident,1,medium,medium,1,0,0,0,1,1.92,467
+T17,V1_rag_open,llama3.2:3b,Human Resources,Customer Service,Customer Service,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.45,355
+T18,V1_rag_open,llama3.2:3b,Human Resources,Technical Support,Technical Support,1,0,Incident,Incident,1,high,high,1,0,0,0,1,1.42,344
+T19,V1_rag_open,llama3.2:3b,Human Resources,Billing and Payments,Billing and Payments,1,0,Incident,Incident,1,low,medium,0,0,0,0,1,1.44,384
+T20,V1_rag_open,llama3.2:3b,Human Resources,Human Resources,Human Resources,1,1,Request,Request,1,low,low,1,1,1,1,1,1.92,425
+T21,V1_rag_open,llama3.2:3b,IT Support,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Request,Request,1,high,medium,0,0,0,0,1,1.81,471
+T22,V1_rag_open,llama3.2:3b,IT Support,Customer Service,Customer Service,1,0,Request,Request,1,high,medium,0,0,0,0,1,1.66,380
+T23,V1_rag_open,llama3.2:3b,IT Support,Billing and Payments,Billing and Payments,1,0,Incident,Incident,1,high,medium,0,0,0,0,1,2.0,420
+T24,V1_rag_open,llama3.2:3b,IT Support,General Inquiry,General Inquiry,1,0,Change,Request,0,high,low,0,0,0,0,1,1.64,385
+T25,V1_rag_open,llama3.2:3b,IT Support,Returns and Exchanges,Returns and Exchanges,1,0,Request,Request,1,medium,medium,1,1,0,0,1,1.56,379
+T26,V1_rag_open,llama3.2:3b,Product Support,Product Support,Product Support,1,1,Incident,Incident,1,high,low,0,1,1,1,1,1.51,323
+T27,V1_rag_open,llama3.2:3b,Product Support,IT Support,IT Support,1,0,Incident,Incident,1,medium,medium,1,1,0,0,1,1.58,348
+T28,V1_rag_open,llama3.2:3b,Product Support,IT Support,IT Support,1,0,Incident,Incident,1,low,medium,0,0,0,0,1,1.58,373
+T29,V1_rag_open,llama3.2:3b,Product Support,Customer Service,Customer Service,1,0,Request,Request,1,medium,high,0,0,0,0,1,2.01,459
+T30,V1_rag_open,llama3.2:3b,Product Support,Billing and Payments,Billing and Payments,1,0,Incident,Problem,0,high,medium,0,0,0,0,1,1.46,321
+T31,V1_rag_open,llama3.2:3b,Returns and Exchanges,Returns and Exchanges,Returns and Exchanges,1,1,Incident,Incident,1,low,low,1,1,1,1,1,1.71,295
+T32,V1_rag_open,llama3.2:3b,Returns and Exchanges,Product Support,Product Support,1,0,Incident,Incident,1,medium,high,0,0,0,0,1,1.82,445
+T33,V1_rag_open,llama3.2:3b,Returns and Exchanges,Customer Service,Customer Service,1,0,Problem,Incident,0,low,medium,0,0,0,0,1,1.76,371
+T34,V1_rag_open,llama3.2:3b,Returns and Exchanges,Returns and Exchanges,Returns and Exchanges,1,1,Problem,Incident,0,low,low,1,1,0,1,1,1.93,415
+T35,V1_rag_open,llama3.2:3b,Returns and Exchanges,IT Support,IT Support,1,0,Problem,Incident,0,medium,high,0,1,0,1,1,1.6,352
+T36,V1_rag_open,llama3.2:3b,Sales and Pre-Sales,Product Support,Product Support,1,0,Problem,Incident,0,high,low,0,0,0,0,1,1.42,329
+T37,V1_rag_open,llama3.2:3b,Sales and Pre-Sales,Customer Service,Customer Service,1,0,Request,Request,1,medium,medium,1,1,0,1,1,1.77,406
+T38,V1_rag_open,llama3.2:3b,Sales and Pre-Sales,Returns and Exchanges,Returns and Exchanges,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.34,257
+T39,V1_rag_open,llama3.2:3b,Sales and Pre-Sales,Product Support,Product Support,1,0,Incident,Problem,0,low,medium,0,1,0,0,1,1.87,430
+T40,V1_rag_open,llama3.2:3b,Sales and Pre-Sales,Sales and Pre-Sales,Sales and Pre-Sales,1,1,Request,Request,1,medium,medium,1,1,1,1,1,1.97,428
+T41,V1_rag_open,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Problem,Problem,1,low,medium,0,1,1,1,1,1.24,246
+T42,V1_rag_open,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,high,high,1,1,1,1,1,1.73,362
+T43,V1_rag_open,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,high,medium,0,1,1,1,1,1.54,393
+T44,V1_rag_open,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,medium,medium,1,1,1,1,1,1.95,404
+T45,V1_rag_open,llama3.2:3b,Service Outages and Maintenance,Returns and Exchanges,Returns and Exchanges,1,0,Request,Request,1,high,low,0,0,0,0,1,1.34,282
+T46,V1_rag_open,llama3.2:3b,Technical Support,Returns and Exchanges,Returns and Exchanges,1,0,Change,Request,0,high,high,1,1,0,0,1,1.41,299
+T47,V1_rag_open,llama3.2:3b,Technical Support,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Problem,Incident,0,medium,medium,1,1,0,1,1,1.43,316
+T48,V1_rag_open,llama3.2:3b,Technical Support,Technical Support,Technical Support,1,1,Incident,Problem,0,medium,low,0,1,1,1,1,1.51,290
+T49,V1_rag_open,llama3.2:3b,Technical Support,Customer Service,Customer Service,1,0,Problem,Problem,1,low,medium,0,0,0,0,1,1.5,284
+T50,V1_rag_open,llama3.2:3b,Technical Support,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,1,0,1,1,1.68,418
+T1,V2_rag_constrained,llama3.2:3b,Billing and Payments,Product Support,Product Support,1,0,Incident,Incident,1,medium,high,0,0,0,0,1,1.85,339
+T2,V2_rag_constrained,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Incident,1,medium,medium,1,1,1,1,1,1.95,396
+T3,V2_rag_constrained,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Incident,1,medium,high,0,1,1,1,1,2.16,556
+T4,V2_rag_constrained,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Incident,Problem,0,high,low,0,1,1,1,1,2.1,502
+T5,V2_rag_constrained,llama3.2:3b,Billing and Payments,Billing and Payments,Billing and Payments,1,1,Problem,Problem,1,high,high,1,1,1,1,1,1.42,309
+T6,V2_rag_constrained,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,0,0,0,1,1.91,374
+T7,V2_rag_constrained,llama3.2:3b,Customer Service,Service Outages and Maintenance,Service Outages and Maintenance,1,0,Change,Change,1,high,high,1,0,0,0,1,1.7,328
+T8,V2_rag_constrained,llama3.2:3b,Customer Service,IT Support,IT Support,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.97,441
+T9,V2_rag_constrained,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Change,Change,1,low,high,0,0,0,0,1,1.85,339
+T10,V2_rag_constrained,llama3.2:3b,Customer Service,Product Support,Product Support,1,0,Request,Request,1,low,medium,0,1,0,0,1,1.55,327
+T11,V2_rag_constrained,llama3.2:3b,General Inquiry,Customer Service,Customer Service,1,0,Change,Request,0,low,medium,0,0,0,0,1,1.74,397
+T12,V2_rag_constrained,llama3.2:3b,General Inquiry,Customer Service,Customer Service,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.64,317
+T13,V2_rag_constrained,llama3.2:3b,General Inquiry,Technical Support,Technical Support,1,0,Change,Problem,0,low,low,1,0,0,0,1,1.93,390
+T14,V2_rag_constrained,llama3.2:3b,General Inquiry,General Inquiry,General Inquiry,1,1,Problem,Problem,1,low,low,1,1,1,1,1,1.61,329
+T15,V2_rag_constrained,llama3.2:3b,General Inquiry,Technical Support,Technical Support,1,0,Incident,Incident,1,low,high,0,1,0,1,1,1.94,357
+T16,V2_rag_constrained,llama3.2:3b,Human Resources,Returns and Exchanges,Returns and Exchanges,1,0,Incident,Incident,1,medium,medium,1,0,0,0,1,2.0,422
+T17,V2_rag_constrained,llama3.2:3b,Human Resources,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Request,Request,1,medium,medium,1,0,0,0,1,1.78,417
+T18,V2_rag_constrained,llama3.2:3b,Human Resources,Technical Support,Technical Support,1,0,Incident,Problem,0,high,high,1,0,0,0,1,1.65,393
+T19,V2_rag_constrained,llama3.2:3b,Human Resources,IT Support,IT Support,1,0,Incident,Incident,1,low,medium,0,0,0,0,1,1.4,293
+T20,V2_rag_constrained,llama3.2:3b,Human Resources,Human Resources,Human Resources,1,1,Request,Request,1,low,low,1,1,1,1,1,1.84,333
+T21,V2_rag_constrained,llama3.2:3b,IT Support,Customer Service,Customer Service,1,0,Request,Request,1,high,high,1,0,0,0,1,1.72,371
+T22,V2_rag_constrained,llama3.2:3b,IT Support,Customer Service,Customer Service,1,0,Request,Request,1,high,medium,0,0,0,0,1,1.83,379
+T23,V2_rag_constrained,llama3.2:3b,IT Support,Billing and Payments,Billing and Payments,1,0,Incident,Incident,1,high,medium,0,0,0,0,1,1.8,291
+T24,V2_rag_constrained,llama3.2:3b,IT Support,General Inquiry,General Inquiry,1,0,Change,Request,0,high,low,0,0,0,0,1,1.75,361
+T25,V2_rag_constrained,llama3.2:3b,IT Support,Returns and Exchanges,Returns and Exchanges,1,0,Request,Request,1,medium,medium,1,1,0,0,1,1.82,473
+T26,V2_rag_constrained,llama3.2:3b,Product Support,Product Support,Product Support,1,1,Incident,Incident,1,high,low,0,1,1,1,1,1.72,311
+T27,V2_rag_constrained,llama3.2:3b,Product Support,IT Support,IT Support,1,0,Incident,Incident,1,medium,medium,1,1,0,0,1,1.63,270
+T28,V2_rag_constrained,llama3.2:3b,Product Support,Returns and Exchanges,Returns and Exchanges,1,0,Incident,Incident,1,low,medium,0,0,0,0,1,1.65,325
+T29,V2_rag_constrained,llama3.2:3b,Product Support,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Request,Request,1,medium,low,0,0,0,0,1,2.11,423
+T30,V2_rag_constrained,llama3.2:3b,Product Support,Billing and Payments,Billing and Payments,1,0,Incident,Problem,0,high,medium,0,0,0,0,1,1.55,288
+T31,V2_rag_constrained,llama3.2:3b,Returns and Exchanges,Returns and Exchanges,Returns and Exchanges,1,1,Incident,Incident,1,low,low,1,1,1,1,1,1.77,272
+T32,V2_rag_constrained,llama3.2:3b,Returns and Exchanges,Product Support,Product Support,1,0,Incident,Incident,1,medium,high,0,0,0,0,1,1.92,420
+T33,V2_rag_constrained,llama3.2:3b,Returns and Exchanges,Customer Service,Customer Service,1,0,Problem,Incident,0,low,medium,0,0,0,0,1,1.97,427
+T34,V2_rag_constrained,llama3.2:3b,Returns and Exchanges,Returns and Exchanges,Returns and Exchanges,1,1,Problem,Incident,0,low,low,1,1,0,1,1,2.17,447
+T35,V2_rag_constrained,llama3.2:3b,Returns and Exchanges,IT Support,IT Support,1,0,Problem,Incident,0,medium,high,0,1,0,0,1,1.59,278
+T36,V2_rag_constrained,llama3.2:3b,Sales and Pre-Sales,Product Support,Product Support,1,0,Problem,Incident,0,high,low,0,0,0,0,1,1.77,419
+T37,V2_rag_constrained,llama3.2:3b,Sales and Pre-Sales,Sales and Pre-Sales,Sales and Pre-Sales,1,1,Request,Request,1,medium,medium,1,1,0,1,1,1.79,321
+T38,V2_rag_constrained,llama3.2:3b,Sales and Pre-Sales,Returns and Exchanges,Returns and Exchanges,1,0,Request,Request,1,medium,low,0,0,0,0,1,1.41,307
+T39,V2_rag_constrained,llama3.2:3b,Sales and Pre-Sales,Product Support,Product Support,1,0,Incident,Problem,0,low,medium,0,1,0,0,1,2.07,450
+T40,V2_rag_constrained,llama3.2:3b,Sales and Pre-Sales,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,1,1,0,1,2.18,478
+T41,V2_rag_constrained,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Problem,Problem,1,low,medium,0,1,1,1,1,1.35,246
+T42,V2_rag_constrained,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,high,high,1,1,1,1,1,1.8,290
+T43,V2_rag_constrained,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,high,medium,0,1,1,1,1,1.61,336
+T44,V2_rag_constrained,llama3.2:3b,Service Outages and Maintenance,Service Outages and Maintenance,Service Outages and Maintenance,1,1,Incident,Incident,1,medium,medium,1,1,1,1,1,2.0,395
+T45,V2_rag_constrained,llama3.2:3b,Service Outages and Maintenance,Customer Service,Customer Service,1,0,Request,Request,1,high,medium,0,0,0,0,1,1.56,285
+T46,V2_rag_constrained,llama3.2:3b,Technical Support,Returns and Exchanges,Returns and Exchanges,1,0,Change,Request,0,high,high,1,1,0,0,1,1.59,311
+T47,V2_rag_constrained,llama3.2:3b,Technical Support,Sales and Pre-Sales,Sales and Pre-Sales,1,0,Problem,Incident,0,medium,medium,1,1,0,1,1,1.72,377
+T48,V2_rag_constrained,llama3.2:3b,Technical Support,Technical Support,Technical Support,1,1,Incident,Problem,0,medium,low,0,1,1,1,1,1.66,241
+T49,V2_rag_constrained,llama3.2:3b,Technical Support,Customer Service,Customer Service,1,0,Problem,Problem,1,low,medium,0,0,0,0,1,1.61,264
+T50,V2_rag_constrained,llama3.2:3b,Technical Support,Product Support,Product Support,1,0,Request,Request,1,medium,medium,1,1,0,0,1,1.89,415
