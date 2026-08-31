@@ -1,3 +1,5 @@
+// Generates the article draft as .docx. The submitted deliverable is the PDF exported
+// from it, MAI600_FinalPrj_Arnedo.pdf, which is what the README points at.
 const fs = require("fs");
 const D = require("docx");
 const {Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, PageBreak,

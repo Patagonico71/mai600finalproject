@@ -812,7 +812,7 @@ md("""
 ## Module summary
 
 Each artefact above is referenced from the written deliverables: `results.md` for the
-evaluation, `final_article_APA.docx` for the argument, and `README.md` for the file map.
+evaluation, `MAI600_FinalPrj_Arnedo.pdf` for the argument, and `README.md` for the file map.
 """)
 
 for c in cells:

@@ -132,6 +132,7 @@ the machine.
 
 | Path | What it is |
 |---|---|
+| `MAI600_FinalPrj_Arnedo.pdf` | the final article (APA) |
 | `notebooks/final_project_notebook.ipynb` | the full pipeline, with outputs |
 | `results.md` | results and discussion |
 | `ai_usage_disclosure.md` | how AI tools were used, and what they got wrong |
